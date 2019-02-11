@@ -26,6 +26,7 @@ import ru.razornd.vk.scanner.model.Post;
 import ru.razornd.vk.scanner.service.ScannerService;
 import ru.razornd.vk.scanner.service.UserService;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
@@ -46,14 +47,12 @@ public class ScannerApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        List<Post> posts = scannerService.scan(
-                79364564,
-                postOrCommentFrom(65955713)
-                        .or(postOrCommentFrom("mmnstrct")
-                                .or(postOrCommentFrom("maria_shiro")))
-                        .or(postOrCommentFrom("thomascatt"))
-                        .or(postOrCommentFrom(107541193))
-        );
+        final Predicate<Post> postPredicate = Arrays.stream(args)
+                .map(this::postOrCommentFrom)
+                .reduce(Predicate::or)
+                .orElseThrow(IllegalArgumentException::new);
+
+        List<Post> posts = scannerService.scan(79364564, postPredicate);
 
         posts.forEach(post -> log.info(post.toString()));
     }
