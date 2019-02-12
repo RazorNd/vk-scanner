@@ -17,8 +17,11 @@
 package ru.razornd.vk.scanner.model;
 
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -27,22 +30,22 @@ import java.util.Optional;
 
 import static java.util.Collections.unmodifiableList;
 
-@RequiredArgsConstructor
+@Data
 @Builder
-@Getter
+@Document
 public class Post {
-    private final int id;
+    @Id
+    private final PostKey id;
     private final LocalDateTime dateTime;
     private final String text;
     private final User from;
+    private final int owner;
+    @DBRef
+    @Builder.Default
     private final List<Comment> comments = new ArrayList<>();
 
     public List<Comment> getComments() {
         return unmodifiableList(comments);
-    }
-
-    public void addComment(Comment comment) {
-        comments.add(comment);
     }
 
     public boolean isFrom(int userId) {
@@ -72,5 +75,16 @@ public class Post {
                     .append("\n");
         }
         return stringBuilder.toString();
+    }
+
+    public static PostKey key(int ownerId, int postId) {
+        return new PostKey(ownerId, postId);
+    }
+
+    @RequiredArgsConstructor
+    @Data
+    public static class PostKey {
+        private final int ownerId;
+        private final int postId;
     }
 }

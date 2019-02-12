@@ -17,18 +17,20 @@
 package ru.razornd.vk.scanner.model;
 
 import lombok.Builder;
-import lombok.Getter;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
 
-@RequiredArgsConstructor
+@Data
 @Builder
-@Getter
+@Document
 public class Comment {
-
-    private final int id;
+    @Id
+    private final CommentKey id;
     private final LocalDateTime dateTime;
     private final String text;
     private final User from;
@@ -43,5 +45,17 @@ public class Comment {
     @Override
     public String toString() {
         return "Коммент: " + from + " " + dateTime + "\n" + text + "\n";
+    }
+
+    public static CommentKey key(int ownerId, int postId, int commentId) {
+        return new CommentKey(ownerId, postId, commentId);
+    }
+
+    @RequiredArgsConstructor
+    @Data
+    public static class CommentKey {
+        private final int ownerId;
+        private final int postId;
+        private final int commentId;
     }
 }
