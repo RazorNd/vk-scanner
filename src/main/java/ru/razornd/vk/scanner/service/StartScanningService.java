@@ -14,26 +14,20 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.model;
+package ru.razornd.vk.scanner.service;
 
-import com.vk.api.sdk.objects.base.Sex;
-import lombok.Builder;
-import lombok.Data;
-import org.springframework.data.annotation.Id;
+import lombok.RequiredArgsConstructor;
 
-@Builder
-@Data
-public class User {
-    @Id
-    private final int id;
-    private final String firstName;
-    private final String lastName;
-    private final String birthday;
-    private final String screenName;
-    private final Sex sex;
+import java.time.Period;
+import java.util.concurrent.Executor;
 
-    @Override
-    public String toString() {
-        return firstName + " " + lastName;
+@RequiredArgsConstructor
+public class StartScanningService {
+
+    private final Executor executor;
+    private final ScannerService scannerService;
+
+    public void startScanning(int groupId) {
+        executor.execute(() -> scannerService.scanGroup(groupId, Period.ofMonths(1)));
     }
 }
