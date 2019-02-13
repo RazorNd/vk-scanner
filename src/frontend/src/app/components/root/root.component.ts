@@ -18,9 +18,9 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'sc-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './root.component.html',
+  styleUrls: ['./root.component.scss']
 })
-export class AppComponent {
+export class RootComponent {
   title = 'frontend';
 }

@@ -14,25 +14,16 @@
  * limitations under the License.
  */
 
-import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {RootComponent} from './root/root.component';
 
-import {AppRoutingModule} from './app-routing.module';
-import {RootComponent} from './components/root/root.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {LayoutModule} from '@angular/cdk/layout';
-import {ComponentModule} from './components';
+export const COMPONENTS = [
+  RootComponent
+];
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    LayoutModule,
-    ComponentModule
-  ],
-  providers: [],
-  bootstrap: [RootComponent]
+  declarations: COMPONENTS,
+  exports: COMPONENTS
 })
-export class AppModule {
+export class ComponentModule {
 }
