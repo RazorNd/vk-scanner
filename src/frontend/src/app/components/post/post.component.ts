@@ -14,24 +14,14 @@
  * limitations under the License.
  */
 
-import {NgModule} from '@angular/core';
-import {RootComponent} from './root/root.component';
-import {PostComponent} from './post/post.component';
-import {CommonModule} from '@angular/common';
-import {MatCardModule} from '@angular/material';
+import {Component, Input} from '@angular/core';
+import {Post} from '../../models/post';
 
-export const COMPONENTS = [
-  RootComponent,
-  PostComponent
-];
-
-@NgModule({
-  imports: [
-    CommonModule,
-    MatCardModule
-  ],
-  declarations: COMPONENTS,
-  exports: COMPONENTS
+@Component({
+  selector: 'sc-post',
+  templateUrl: './post.component.html',
+  styleUrls: ['./post.component.scss']
 })
-export class ComponentModule {
+export class PostComponent {
+  @Input() post: Post;
 }

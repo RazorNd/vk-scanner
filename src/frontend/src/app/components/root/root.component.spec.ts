@@ -15,18 +15,13 @@
  */
 
 import {async, TestBed} from '@angular/core/testing';
-import {RouterTestingModule} from '@angular/router/testing';
 import {RootComponent} from './root.component';
+import {ComponentModule} from '../index';
 
 describe('RootComponent', () => {
   beforeEach(async(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        RootComponent
-      ],
+      imports: [ComponentModule]
     }).compileComponents();
   }));
 
