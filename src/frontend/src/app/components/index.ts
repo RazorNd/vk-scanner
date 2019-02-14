@@ -18,17 +18,20 @@ import {NgModule} from '@angular/core';
 import {RootComponent} from './root/root.component';
 import {PostComponent} from './post/post.component';
 import {CommonModule} from '@angular/common';
-import {MatCardModule} from '@angular/material';
+import {MatCardModule, MatListModule} from '@angular/material';
+import {CommentsListComponent} from './comment/comments-list.component';
 
 export const COMPONENTS = [
   RootComponent,
-  PostComponent
+  PostComponent,
+  CommentsListComponent
 ];
 
 @NgModule({
   imports: [
     CommonModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

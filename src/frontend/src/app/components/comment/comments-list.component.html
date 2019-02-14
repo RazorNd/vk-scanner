@@ -1,0 +1,12 @@
+<mat-list>
+  <mat-list-item *ngFor="let comment of comments; last as last" class="sc-comment">
+    <img [alt]="comment.from.name"
+         [src]="comment.from.icon"
+         class="comment-from-icon"
+         mat-list-avatar/>
+    <h3 class="sc-comment-from mat-h3" mat-line>{{comment.from.name}}</h3>
+    <span class="sc-comment-date mat-small" mat-line>{{comment.dateTime | date:'medium'}}</span>
+    <p class="sc-comment-text mat-body-strong" mat-line>{{comment.text}}</p>
+    <mat-divider *ngIf="!last" [inset]="true"></mat-divider>
+  </mat-list-item>
+</mat-list>
