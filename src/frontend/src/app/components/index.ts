@@ -20,6 +20,7 @@ import {PostComponent} from './post/post.component';
 import {CommonModule} from '@angular/common';
 import {MatCardModule, MatListModule} from '@angular/material';
 import {CommentsListComponent} from './comment/comments-list.component';
+import {PipesModule} from '../pipes/pipes.module';
 
 export const COMPONENTS = [
   RootComponent,
@@ -31,7 +32,8 @@ export const COMPONENTS = [
   imports: [
     CommonModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    PipesModule
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

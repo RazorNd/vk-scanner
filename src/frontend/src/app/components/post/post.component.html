@@ -17,7 +17,7 @@
 <mat-card>
   <mat-card-header>
     <img [alt]="post.owner.name"
-         [src]="post.owner.icon"
+         [src]="post.owner | ownerIcon"
          class="post-owner-icon"
          mat-card-avatar/>
     <mat-card-title class="post-owner">{{post.owner.name}}</mat-card-title>
