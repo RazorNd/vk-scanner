@@ -20,10 +20,13 @@ import {PostComponent} from './post.component';
 import {ComponentModule} from '../index';
 import {By} from '@angular/platform-browser';
 import {POSTS} from '../../stubs/posts.stub';
+import {Post} from '../../models/post';
 
 describe('PostComponent', () => {
   let component: PostComponent;
   let fixture: ComponentFixture<PostComponent>;
+
+  const post = POSTS[0];
 
   beforeEach(async(async () => {
     await TestBed.configureTestingModule({
@@ -45,22 +48,40 @@ describe('PostComponent', () => {
     const postOwnerElement = fixture.debugElement.query(By.css('.post-owner'));
     const nativeElement: HTMLElement = postOwnerElement.nativeElement;
 
-    expect(nativeElement.textContent).toEqual(POSTS[0].owner.name);
+    expect(nativeElement.textContent).toEqual(post.owner.name);
   });
 
   it('should have text from post', () => {
     const postText = fixture.debugElement.query(By.css('.post-text'));
     const nativeElement: HTMLElement = postText.nativeElement;
 
-    expect(nativeElement.textContent).toContain(POSTS[0].text);
+    expect(nativeElement.textContent).toContain(post.text);
   });
 
   it('should have date from post', () => {
     const postDate = fixture.debugElement.query(By.css('.post-date'));
     const nativeElement: HTMLElement = postDate.nativeElement;
 
-    const date = POSTS[0].dateTime;
+    const date = post.dateTime;
     expect(nativeElement.textContent).toContain(date.getDate().toString(), 'wrong date component');
     expect(nativeElement.textContent).toContain(date.getFullYear().toString(), 'wrong year component');
+  });
+
+  it('should contain comments from post', () => {
+    const comments = fixture.debugElement.queryAll(By.css('.sc-comment'));
+
+    expect(comments.length).toEqual(post.comments.length);
+  });
+
+  it('shouldn\'t have divider if not contains comments', () => {
+    function expectDivider(newPost: Post) {
+      component.post = newPost;
+      fixture.detectChanges();
+      const dividers = fixture.debugElement.queryAll(By.css('.mat-divider'));
+      expect(dividers.length).toEqual(0);
+    }
+
+    expectDivider(POSTS[1]);
+    expectDivider({...POSTS[1], comments: []});
   });
 });

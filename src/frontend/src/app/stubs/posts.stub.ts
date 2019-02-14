@@ -15,20 +15,14 @@
  */
 
 import {Post} from '../models/post';
-import {Sex} from '../models/user';
 import {COMMENTS} from './comments.stub';
+import {USERS} from './users.stub';
 
 export const POSTS: Post[] = [
   {
     id: {ownerId: 1, postId: 12},
     dateTime: new Date('2019-02-13T20:56:48.987Z'),
-    from: {
-      id: 1,
-      name: 'Иванов Иван',
-      firstName: 'Иван',
-      lastName: 'Иванов',
-      sex: Sex.MALE
-    },
+    from: USERS[0],
     owner: {
       id: -1,
       name: 'Главная группа!',
@@ -36,5 +30,15 @@ export const POSTS: Post[] = [
     },
     text: 'Тестовый пост',
     comments: COMMENTS
-  }
+  },
+  {
+    id: {ownerId: 1, postId: 13},
+    dateTime: new Date('2019-02-13T20:56:48.987Z'),
+    from: USERS[1],
+    owner: {
+      id: -2,
+      name: 'Анонимная группа!'
+    },
+    text: 'Пост без комментариев'
+  },
 ];

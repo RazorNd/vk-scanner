@@ -24,4 +24,8 @@ import {Post} from '../../models/post';
 })
 export class PostComponent {
   @Input() post: Post;
+
+  get haveComments(): boolean {
+    return this.post.comments && this.post.comments.length > 0;
+  }
 }
