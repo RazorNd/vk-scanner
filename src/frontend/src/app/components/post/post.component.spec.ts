@@ -17,28 +17,9 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {PostComponent} from './post.component';
-import {Sex} from '../../models/user';
-import {Post} from '../../models/post';
 import {ComponentModule} from '../index';
 import {By} from '@angular/platform-browser';
-
-const post: Post = {
-  id: {ownerId: 1, postId: 12},
-  dateTime: new Date('2019-02-13T20:56:48.987Z'),
-  from: {
-    id: 1,
-    name: 'Иванов Иван',
-    firstName: 'Иван',
-    lastName: 'Иванов',
-    sex: Sex.MALE
-  },
-  owner: {
-    id: -1,
-    name: 'Главная группа!',
-    icon: 'https://sun1-9.userapi.com/c846220/v846220796/1723ea/e3X-TUhHOEs.jpg?ava=1'
-  },
-  text: 'Тестовый пост'
-};
+import {POSTS} from '../../stubs/posts.stub';
 
 describe('PostComponent', () => {
   let component: PostComponent;
@@ -52,7 +33,7 @@ describe('PostComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(PostComponent);
     component = fixture.componentInstance;
-    component.post = post;
+    component.post = POSTS[0];
     fixture.detectChanges();
   });
 
@@ -64,21 +45,21 @@ describe('PostComponent', () => {
     const postOwnerElement = fixture.debugElement.query(By.css('.post-owner'));
     const nativeElement: HTMLElement = postOwnerElement.nativeElement;
 
-    expect(nativeElement.textContent).toEqual(post.owner.name);
+    expect(nativeElement.textContent).toEqual(POSTS[0].owner.name);
   });
 
   it('should have text from post', () => {
     const postText = fixture.debugElement.query(By.css('.post-text'));
     const nativeElement: HTMLElement = postText.nativeElement;
 
-    expect(nativeElement.textContent).toContain(post.text);
+    expect(nativeElement.textContent).toContain(POSTS[0].text);
   });
 
   it('should have date from post', () => {
     const postDate = fixture.debugElement.query(By.css('.post-date'));
     const nativeElement: HTMLElement = postDate.nativeElement;
 
-    const date = post.dateTime;
+    const date = POSTS[0].dateTime;
     expect(nativeElement.textContent).toContain(date.getDate().toString(), 'wrong date component');
     expect(nativeElement.textContent).toContain(date.getFullYear().toString(), 'wrong year component');
   });

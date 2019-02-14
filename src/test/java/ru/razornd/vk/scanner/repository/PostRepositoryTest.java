@@ -58,7 +58,7 @@ public class PostRepositoryTest {
                 .dateTime(LocalDateTime.now())
                 .from(createUser())
                 .owner(-1)
-                .text("Test post")
+                .text("Test POSTS")
                 .comments(newArrayList(
                         Comment.builder()
                                 .id(Comment.key(1, 1, 1))

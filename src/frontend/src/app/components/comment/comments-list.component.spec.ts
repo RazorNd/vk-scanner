@@ -1,49 +1,25 @@
+/*
+ * Copyright 2019 Daniil <razornd> Razorenov
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {CommentsListComponent} from './comments-list.component';
-import {Comment} from '../../models/comment';
-import {Sex} from '../../models/user';
 import {ComponentModule} from '../index';
 import {By} from '@angular/platform-browser';
-
-const comments: Comment[] = [
-  {
-    id: {
-      ownerId: -1,
-      postId: 1,
-      commentId: 1
-    },
-    dateTime: new Date('2019-02-14T15:36:48.987Z'),
-    from: {
-      id: 1,
-      name: 'Иванов Иван',
-      firstName: 'Иван',
-      lastName: 'Иванов',
-      sex: Sex.MALE,
-      icon: 'https://pp.userapi.com/c836333/v836333001/31193/dNxZpRF-z_M.jpg?ava=1'
-    },
-    text: 'Первый нах!'
-  },
-  {
-    id: {
-      ownerId: -1,
-      postId: 1,
-      commentId: 1
-    },
-    dateTime: new Date('2019-02-14T16:12:00.987Z'),
-    from: {
-      id: 1,
-      name: 'Василий Петров',
-      firstName: 'Иван',
-      lastName: 'Иванов',
-      sex: Sex.MALE,
-      icon: 'https://sun1-1.userapi.com/c7008/v7008306/75709/h6u4kDmDO5Y.jpg'
-    },
-    text: 'Ну чо пасаны,цифровое сопротивление\n' +
-      'UPD:Го 1К лайков? :D\n' +
-      'UPDD:Чувак сверху спиздил с сохраненки.крыса!!!'
-  }
-];
+import {COMMENTS} from '../../stubs/comments.stub';
 
 describe('CommentsListComponent', () => {
   let component: CommentsListComponent;
@@ -58,7 +34,7 @@ describe('CommentsListComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(CommentsListComponent);
     component = fixture.componentInstance;
-    component.comments = comments;
+    component.comments = COMMENTS;
     fixture.detectChanges();
   });
 
