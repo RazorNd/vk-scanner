@@ -43,7 +43,7 @@ describe('CommentsListComponent', () => {
   });
 
   it('should have 2 item in list', () => {
-    const elements = fixture.debugElement.queryAll(By.css('.cs-comment'));
+    const elements = fixture.debugElement.queryAll(By.css('.sc-comment'));
     expect(elements.length).toEqual(2);
   });
 
