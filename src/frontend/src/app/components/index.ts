@@ -18,21 +18,29 @@ import {NgModule} from '@angular/core';
 import {RootComponent} from './root/root.component';
 import {PostComponent} from './post/post.component';
 import {CommonModule} from '@angular/common';
-import {MatCardModule, MatListModule} from '@angular/material';
+import {MatAutocompleteModule, MatCardModule, MatInputModule, MatListModule} from '@angular/material';
 import {CommentsListComponent} from './comment/comments-list.component';
 import {PipesModule} from '../pipes/pipes.module';
+import {PostsListComponent} from './posts-list/posts-list.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ReactiveFormsModule} from '@angular/forms';
 
 export const COMPONENTS = [
   RootComponent,
   PostComponent,
+  PostsListComponent,
   CommentsListComponent
 ];
 
 @NgModule({
   imports: [
+    BrowserAnimationsModule,
     CommonModule,
+    ReactiveFormsModule,
     MatCardModule,
     MatListModule,
+    MatInputModule,
+    MatAutocompleteModule,
     PipesModule
   ],
   declarations: COMPONENTS,
