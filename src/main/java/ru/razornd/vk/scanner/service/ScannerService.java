@@ -25,7 +25,6 @@ import ru.razornd.vk.scanner.component.CommentCrawler;
 import ru.razornd.vk.scanner.component.PostCrawler;
 import ru.razornd.vk.scanner.model.Comment;
 import ru.razornd.vk.scanner.model.Post;
-import ru.razornd.vk.scanner.model.User;
 import ru.razornd.vk.scanner.repository.CommentRepository;
 import ru.razornd.vk.scanner.repository.PostRepository;
 
@@ -33,7 +32,6 @@ import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.ZoneOffset;
 import java.util.List;
-import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
@@ -46,7 +44,7 @@ public class ScannerService {
 
     private final CommentCrawler commentCrawler;
     private final PostCrawler postCrawler;
-    private final UserService userService;
+    private final SubjectService subjectService;
     private final PostRepository postRepository;
     private final CommentRepository commentRepository;
 
@@ -70,8 +68,8 @@ public class ScannerService {
                 .id(Post.key(wallPostFull.getOwnerId(), wallPostFull.getId()))
                 .dateTime(mapDateTime(wallPostFull.getDate()))
                 .text(wallPostFull.getText())
-                .from(getUser(wallPostFull.getFromId()))
-                .owner(wallPostFull.getOwnerId())
+                .from(subjectService.getSubject(wallPostFull.getFromId()))
+                .owner(subjectService.getSubject(wallPostFull.getOwnerId()))
                 .comments(scanCommentFor(wallPostFull.getOwnerId(), wallPostFull.getId()))
                 .build();
     }
@@ -87,17 +85,9 @@ public class ScannerService {
         return Comment.builder()
                 .id(Comment.key(ownerId, postId, wallComment.getId()))
                 .dateTime(mapDateTime(wallComment.getDate()))
-                .from(getUser(wallComment.getFromId()))
+                .from(subjectService.getSubject(wallComment.getFromId()))
                 .text(wallComment.getText())
                 .build();
-    }
-
-    private User getUser(Integer fromId) {
-        return Optional.ofNullable(fromId)
-                .filter(id -> id > 0)
-                .map(Object::toString)
-                .map(userService::getUser)
-                .orElse(null);
     }
 
     private LocalDateTime mapDateTime(Integer date) {

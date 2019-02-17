@@ -28,6 +28,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static com.vk.api.sdk.client.Lang.RU;
 import static com.vk.api.sdk.queries.users.UserField.*;
 
 @RequiredArgsConstructor
@@ -57,7 +58,8 @@ public class ApiUserFetcher implements UserFetcher {
         return client.users()
                 .get(actor)
                 .userIds(userName)
-                .fields(SEX, BDATE, SCREEN_NAME, ABOUT)
+                .fields(SEX, BDATE, SCREEN_NAME, ABOUT, PHOTO_100)
+                .lang(RU)
                 .execute();
     }
 
@@ -69,6 +71,7 @@ public class ApiUserFetcher implements UserFetcher {
                 .sex(userFull.getSex())
                 .birthday(userFull.getBdate())
                 .screenName(userFull.getScreenName())
+                .icon(userFull.getPhoto100())
                 .build();
     }
 }

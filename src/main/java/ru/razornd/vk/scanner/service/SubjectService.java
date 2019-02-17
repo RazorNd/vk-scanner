@@ -16,26 +16,11 @@
 
 package ru.razornd.vk.scanner.service;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-import ru.razornd.vk.scanner.component.UserFetcher;
-import ru.razornd.vk.scanner.model.User;
+import ru.razornd.vk.scanner.model.Subject;
 
-import java.util.List;
+public interface SubjectService {
 
-@Service
-@RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
+    Subject getSubject(int subjectId);
 
-    private final UserFetcher fetcher;
-
-    @Override
-    public User getUser(String userId) {
-        return fetcher.fetch(userId);
-    }
-
-    @Override
-    public List<User> getUsers(List<String> userIds) {
-        return fetcher.fetch(userIds);
-    }
+    Subject synchronize(int subjectId);
 }

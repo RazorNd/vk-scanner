@@ -24,6 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import ru.razornd.vk.scanner.model.Comment;
+import ru.razornd.vk.scanner.model.Group;
 import ru.razornd.vk.scanner.model.Post;
 import ru.razornd.vk.scanner.model.User;
 
@@ -57,7 +58,7 @@ public class PostRepositoryTest {
                 .id(POST_KEY)
                 .dateTime(LocalDateTime.now())
                 .from(createUser())
-                .owner(-1)
+                .owner(Group.builder().id(-1).build())
                 .text("Test post")
                 .comments(newArrayList(
                         Comment.builder()

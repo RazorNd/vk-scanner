@@ -19,21 +19,37 @@ package ru.razornd.vk.scanner.model;
 import com.vk.api.sdk.objects.base.Sex;
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
+import lombok.EqualsAndHashCode;
 
-@Builder
 @Data
-public class User {
-    @Id
-    private final int id;
+@SubjectModel
+@EqualsAndHashCode(callSuper = true)
+public class User extends AbstractSubject {
+
     private final String firstName;
     private final String lastName;
     private final String birthday;
     private final String screenName;
     private final Sex sex;
 
+    @Builder
+    public User(int id,
+                String icon,
+                String firstName,
+                String lastName,
+                String birthday,
+                String screenName,
+                Sex sex) {
+        super(id, icon);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+        this.screenName = screenName;
+        this.sex = sex;
+    }
+
     @Override
-    public String toString() {
-        return firstName + " " + lastName;
+    public String getName() {
+        return toString();
     }
 }

@@ -38,4 +38,9 @@ public class CrawlerConfiguration {
     public UserFetcher apiUserFetcher(VkApiClient client, ServiceActor actor) {
         return new ApiUserFetcher(client, actor);
     }
+
+    @Bean
+    public GroupFetcher apiGroupFetcher(VkApiClient client, ServiceActor actor) {
+        return new ApiGroupFetcher(client, actor);
+    }
 }

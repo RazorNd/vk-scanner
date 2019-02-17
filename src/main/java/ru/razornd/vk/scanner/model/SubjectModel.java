@@ -14,28 +14,15 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.service;
+package ru.razornd.vk.scanner.model;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-import ru.razornd.vk.scanner.component.UserFetcher;
-import ru.razornd.vk.scanner.model.User;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.List;
+import java.lang.annotation.*;
 
-@Service
-@RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
-
-    private final UserFetcher fetcher;
-
-    @Override
-    public User getUser(String userId) {
-        return fetcher.fetch(userId);
-    }
-
-    @Override
-    public List<User> getUsers(List<String> userIds) {
-        return fetcher.fetch(userIds);
-    }
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Document("subject")
+@interface SubjectModel {
 }
