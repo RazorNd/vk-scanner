@@ -22,5 +22,4 @@ import {Component} from '@angular/core';
   styleUrls: ['./root.component.scss']
 })
 export class RootComponent {
-  title = 'frontend';
 }

@@ -18,7 +18,16 @@ import {NgModule} from '@angular/core';
 import {RootComponent} from './root/root.component';
 import {PostComponent} from './post/post.component';
 import {CommonModule} from '@angular/common';
-import {MatAutocompleteModule, MatCardModule, MatInputModule, MatListModule} from '@angular/material';
+import {
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatCardModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatSidenavModule,
+  MatToolbarModule
+} from '@angular/material';
 import {CommentsListComponent} from './comment/comments-list.component';
 import {PipesModule} from '../pipes/pipes.module';
 import {PostsListComponent} from './posts-list/posts-list.component';
@@ -45,6 +54,11 @@ export const COMPONENTS = [
     MatListModule,
     MatInputModule,
     MatAutocompleteModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule,
+    MatToolbarModule,
     InfiniteScrollModule,
     PipesModule,
     AppRoutingModule
