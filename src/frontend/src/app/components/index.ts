@@ -24,11 +24,13 @@ import {PipesModule} from '../pipes/pipes.module';
 import {PostsListComponent} from './posts-list/posts-list.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from '@angular/forms';
+import {PostsFilterComponent} from './posts-filter/posts-filter.component';
 
 export const COMPONENTS = [
   RootComponent,
   PostComponent,
   PostsListComponent,
+  PostsFilterComponent,
   CommentsListComponent
 ];
 
