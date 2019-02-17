@@ -1,4 +1,4 @@
-/*
+/*!
  * Copyright 2019 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,18 +14,12 @@
  * limitations under the License.
  */
 
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {PostsSearchComponent} from './containers/posts-search/posts-search.component';
+.sc-posts-search {
+  display: flex;
+  flex-direction: column;
 
-const routes: Routes = [
-  {path: 'posts', component: PostsSearchComponent},
-  {path: '', redirectTo: '/posts', pathMatch: 'full'}
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {
+  sc-posts-filter {
+    margin: 15px;
+  }
 }
+

@@ -16,23 +16,36 @@
 
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
-import {AppRoutingModule} from './app-routing.module';
 import {RootComponent} from './components/root/root.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LayoutModule} from '@angular/cdk/layout';
 import {ComponentModule} from './components';
+import {StoreModule} from '@ngrx/store';
+import {metaReducers, reducers} from './reducers';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
+import {environment} from '../environments/environment';
+import {PostsSearchComponent} from './containers/posts-search/posts-search.component';
+import {EffectsModule} from '@ngrx/effects';
+import {PostsEffects} from './effects/posts.effects';
+import {MockPostsService, PostsService} from './services/posts.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    ComponentModule
+    ComponentModule,
+    HttpClientModule,
+    StoreModule.forRoot(reducers, {metaReducers}),
+    StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
+    EffectsModule.forRoot([PostsEffects])
   ],
-  providers: [],
-  bootstrap: [RootComponent]
+  providers: [{
+    provide: PostsService, useClass: MockPostsService
+  }],
+  bootstrap: [RootComponent],
+  declarations: [PostsSearchComponent]
 })
 export class AppModule {
 }

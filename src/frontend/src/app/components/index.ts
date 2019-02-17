@@ -25,6 +25,8 @@ import {PostsListComponent} from './posts-list/posts-list.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from '@angular/forms';
 import {PostsFilterComponent} from './posts-filter/posts-filter.component';
+import {AppRoutingModule} from '../app-routing.module';
+import {InfiniteScrollModule} from 'ngx-infinite-scroll';
 
 export const COMPONENTS = [
   RootComponent,
@@ -43,7 +45,9 @@ export const COMPONENTS = [
     MatListModule,
     MatInputModule,
     MatAutocompleteModule,
-    PipesModule
+    InfiniteScrollModule,
+    PipesModule,
+    AppRoutingModule
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

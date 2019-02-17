@@ -14,10 +14,9 @@
   ~ limitations under the License.
   -->
 
-<div (scrolled)="onScroll()"
-     *ngIf="posts"
-     class="sc-posts-list"
-     infinite-scroll>
-  <sc-post *ngFor="let post of posts"
-           [post]="post"></sc-post>
+<div class="sc-posts-search">
+  <sc-posts-filter (search)="dispatchSearch($event)"
+                   [values]="users"></sc-posts-filter>
+  <sc-posts-list (nextPage)="dispatchNextPage()"
+                 [posts]="posts$ | async"></sc-posts-list>
 </div>

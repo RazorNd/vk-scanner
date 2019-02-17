@@ -16,13 +16,9 @@
 
 import {Component, Input, Output} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
-import {map, startWith} from 'rxjs/operators';
-import {Observable} from 'rxjs';
-
-export interface Filter {
-  from: string;
-  owner: string;
-}
+import {debounceTime, map} from 'rxjs/operators';
+import {asyncScheduler, Observable} from 'rxjs';
+import {Filter} from '../../services/posts.service';
 
 @Component({
   selector: 'sc-posts-filter',
@@ -37,21 +33,25 @@ export class PostsFilterComponent {
 
   @Input() values: string[];
 
-  @Output() search: Observable<Filter> = this.form.valueChanges;
+  @Output() search: Observable<Filter> = this.form.valueChanges.pipe(
+    debounceTime(500, asyncScheduler)
+  );
 
   fromAutoComplete$ = this.getPreFilteredValues('from');
   ownerAutoComplete$ = this.getPreFilteredValues('owner');
 
   getPreFilteredValues(key: keyof Filter): Observable<string[]> {
     return this.form.valueChanges.pipe(
-      startWith({from: '', owner: ''}),
       map(filter => filter[key] as string),
       map(value => this.filterValues(value))
     );
   }
 
-  filterValues(input: string): string[] {
+  filterValues(input?: string): string[] {
+    if (!input) {
+      return [];
+    }
     const searchString = input.toLowerCase();
-    return this.values == null ? [] : this.values.filter(value => value.toLowerCase().includes(searchString));
+    return this.values ? this.values.filter(value => value.toLowerCase().includes(searchString)) : [];
   }
 }

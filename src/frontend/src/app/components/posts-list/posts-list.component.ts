@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Post} from '../../models/post';
 
 @Component({
@@ -24,4 +24,9 @@ import {Post} from '../../models/post';
 })
 export class PostsListComponent {
   @Input() posts: Post[];
+  @Output() nextPage = new EventEmitter<void>();
+
+  onScroll() {
+    this.nextPage.emit();
+  }
 }
