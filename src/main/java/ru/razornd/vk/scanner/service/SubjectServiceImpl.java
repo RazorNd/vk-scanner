@@ -17,6 +17,7 @@
 package ru.razornd.vk.scanner.service;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import ru.razornd.vk.scanner.component.GroupFetcher;
@@ -28,6 +29,7 @@ import java.util.function.Function;
 
 @RequiredArgsConstructor
 @Service
+@Slf4j
 public class SubjectServiceImpl implements SubjectService {
 
     private final SubjectRepository repository;
@@ -42,6 +44,7 @@ public class SubjectServiceImpl implements SubjectService {
 
     @Override
     public Subject synchronize(int subjectId) {
+        log.debug("Synchronize subject: {}", subjectId);
         return repository.save(choseRepository(subjectId).compose(this::prepareId).apply(subjectId));
     }
 
@@ -50,6 +53,12 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     private Function<Integer, Subject> choseRepository(int subjectId) {
-        return subjectId > 0 ? userFetcher::fetch : groupFetcher::fetch;
+        if (subjectId > 0) {
+            log.trace("For subject {}, chose UserFetcher", subjectId);
+            return userFetcher::fetch;
+        } else {
+            log.trace("For subject {}, chose GroupFetcher", subjectId);
+            return groupFetcher::fetch;
+        }
     }
 }
