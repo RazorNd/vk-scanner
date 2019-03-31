@@ -16,7 +16,6 @@
 
 package ru.razornd.vk.scanner.repository;
 
-import com.vk.api.sdk.objects.base.Sex;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,13 +25,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 import ru.razornd.vk.scanner.model.Comment;
 import ru.razornd.vk.scanner.model.Group;
 import ru.razornd.vk.scanner.model.Post;
-import ru.razornd.vk.scanner.model.User;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
 
 import static de.flapdoodle.embed.process.collections.Collections.newArrayList;
 import static org.assertj.core.api.Assertions.assertThat;
+import static ru.razornd.vk.scanner.stub.Users.createUser;
 
 @DataMongoTest
 @RunWith(SpringRunner.class)
@@ -95,15 +94,5 @@ public class PostRepositoryTest {
                 .asList()
                 .as("В сохраненном посте должно находится сохраняемое число комментариев.")
                 .hasSize(2);
-    }
-
-    private User createUser() {
-        return User.builder()
-                .firstName("Иван")
-                .lastName("Петрович")
-                .sex(Sex.MALE)
-                .birthday("21.12")
-                .screenName("ivan2112")
-                .build();
     }
 }
