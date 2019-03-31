@@ -50,6 +50,6 @@ public class User extends AbstractSubject {
 
     @Override
     public String getName() {
-        return toString();
+        return firstName + " " + lastName;
     }
 }

@@ -44,5 +44,9 @@ public class Comment {
         private final int ownerId;
         private final int postId;
         private final int commentId;
+
+        public Post.PostKey toPostKey() {
+            return Post.key(ownerId, postId);
+        }
     }
 }
