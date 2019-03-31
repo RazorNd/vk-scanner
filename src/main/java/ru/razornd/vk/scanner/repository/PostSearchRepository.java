@@ -16,12 +16,12 @@
 
 package ru.razornd.vk.scanner.repository;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.querydsl.QuerydslPredicateExecutor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import ru.razornd.vk.scanner.model.Post;
 
-public interface PostRepository extends
-        MongoRepository<Post, Post.PostKey>,
-        QuerydslPredicateExecutor<Post>,
-        PostSearchRepository {
+public interface PostSearchRepository {
+    Page<Post> findAllWithFromId(int from, Pageable pageable);
+
+    Page<Post> findAllWithFromId(int from, int ownerId, Pageable pageable);
 }

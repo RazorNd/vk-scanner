@@ -14,14 +14,24 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.repository;
+package ru.razornd.vk.scanner.service;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.querydsl.QuerydslPredicateExecutor;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 import ru.razornd.vk.scanner.model.Post;
+import ru.razornd.vk.scanner.repository.PostRepository;
 
-public interface PostRepository extends
-        MongoRepository<Post, Post.PostKey>,
-        QuerydslPredicateExecutor<Post>,
-        PostSearchRepository {
+@Service
+@RequiredArgsConstructor
+@Slf4j
+public class PostService {
+
+    private final PostRepository postRepository;
+
+    public Page<Post> searchPosts(int from, int owner, Pageable pageable) {
+        return postRepository.findAllWithFromId(from, owner, pageable);
+    }
 }
