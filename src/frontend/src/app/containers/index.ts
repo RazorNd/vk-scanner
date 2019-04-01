@@ -18,15 +18,25 @@ import {NgModule} from '@angular/core';
 import {PostsSearchComponent} from './posts-search/posts-search.component';
 import {ComponentModule} from '../components';
 import {CommonModule} from '@angular/common';
+import {RootComponent} from './root/root.component';
+import {MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
+import {AppRoutingModule} from '../app-routing.module';
 
 export const COMPONENTS = [
+  RootComponent,
   PostsSearchComponent
 ];
 
 @NgModule({
   imports: [
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatIconModule,
+    MatButtonModule,
     ComponentModule,
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

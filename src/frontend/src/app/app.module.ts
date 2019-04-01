@@ -16,7 +16,7 @@
 
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {RootComponent} from './components/root/root.component';
+import {RootComponent} from './containers/root/root.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LayoutModule} from '@angular/cdk/layout';
 import {StoreModule} from '@ngrx/store';
