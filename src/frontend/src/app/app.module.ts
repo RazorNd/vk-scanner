@@ -19,23 +19,22 @@ import {NgModule} from '@angular/core';
 import {RootComponent} from './components/root/root.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LayoutModule} from '@angular/cdk/layout';
-import {ComponentModule} from './components';
 import {StoreModule} from '@ngrx/store';
 import {metaReducers, reducers} from './reducers';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {environment} from '../environments/environment';
-import {PostsSearchComponent} from './containers/posts-search/posts-search.component';
 import {EffectsModule} from '@ngrx/effects';
 import {PostsEffects} from './effects/posts.effects';
 import {MockPostsService, PostsService} from './services/posts.service';
 import {HttpClientModule} from '@angular/common/http';
+import {ContainersModule} from './containers';
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     LayoutModule,
-    ComponentModule,
+    ContainersModule,
     HttpClientModule,
     StoreModule.forRoot(reducers, {metaReducers}),
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
@@ -44,8 +43,7 @@ import {HttpClientModule} from '@angular/common/http';
   providers: [{
     provide: PostsService, useClass: MockPostsService
   }],
-  bootstrap: [RootComponent],
-  declarations: [PostsSearchComponent]
+  bootstrap: [RootComponent]
 })
 export class AppModule {
 }
