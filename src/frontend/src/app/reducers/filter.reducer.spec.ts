@@ -14,7 +14,10 @@
  * limitations under the License.
  */
 
-import {initialState, reducer} from './filter.reducer';
+import {initialState, reducer, State} from './filter.reducer';
+import {FilterChanged, OptionsLoaded} from '../actions/filter.actions';
+import {USERS} from '../stubs/users.stub';
+import {OWNERS} from '../stubs/owners.stub';
 
 describe('Filter Reducer', () => {
   describe('an unknown action', () => {
@@ -24,6 +27,72 @@ describe('Filter Reducer', () => {
       const result = reducer(initialState, action);
 
       expect(result).toBe(initialState);
+    });
+  });
+
+  describe('an filter actions', () => {
+
+    it('should fill fromOptions', () => {
+      const action = new OptionsLoaded(USERS, 'fromOptions');
+
+      const state: State = {
+        ...initialState,
+        load: {
+          ...initialState.load,
+          fromOptions: true
+        },
+        fromOptions: USERS,
+        ownerOptions: []
+      };
+
+      const result = reducer(state, action);
+
+      expect(result).toEqual({
+        ...initialState,
+        fromOptions: USERS,
+        ownerOptions: []
+      });
+    });
+
+    it('should fill ownerOptions', () => {
+      const action = new OptionsLoaded(OWNERS, 'ownerOptions');
+
+      const state: State = {
+        ...initialState,
+        load: {
+          ...initialState.load,
+          fromOptions: true,
+          ownerOptions: true
+        },
+        fromOptions: USERS,
+        ownerOptions: USERS
+      };
+
+      const result = reducer(state, action);
+
+      expect(result).toEqual({
+        ...initialState,
+        load: {
+          ...initialState.load,
+          fromOptions: true
+        },
+        fromOptions: USERS,
+        ownerOptions: OWNERS
+      });
+    });
+
+    it('should change to load state', () => {
+      const action = new FilterChanged('Иван', 'ownerOptions');
+
+      const result = reducer(initialState, action);
+
+      expect(result).toEqual({
+        ...initialState,
+        load: {
+          ...initialState.load,
+          ownerOptions: true
+        }
+      });
     });
   });
 });

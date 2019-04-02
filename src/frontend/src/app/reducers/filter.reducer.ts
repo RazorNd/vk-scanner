@@ -14,23 +14,47 @@
  * limitations under the License.
  */
 
-import {FilterActions} from '../actions/filter.actions';
+import {FilterActions, FilterActionTypes} from '../actions/filter.actions';
 import {Owner} from '../models/owner';
 
 
 export interface State {
+  load: {
+    fromOptions: boolean;
+    ownerOptions: boolean;
+  };
   fromOptions: Owner[];
   ownerOptions: Owner[];
 }
 
 export const initialState: State = {
+  load: {
+    fromOptions: false,
+    ownerOptions: false,
+  },
   fromOptions: [],
   ownerOptions: []
 };
 
 export function reducer(state = initialState, action: FilterActions): State {
   switch (action.type) {
-
+    case FilterActionTypes.FilterChanged:
+      return {
+        ...state,
+        load: {
+          ...state.load,
+          [action.optionsType]: true
+        }
+      };
+    case FilterActionTypes.OptionsLoaded:
+      return {
+        ...state,
+        [action.optionsType]: action.options,
+        load: {
+          ...state.load,
+          [action.optionsType]: false
+        }
+      };
     default:
       return state;
   }
