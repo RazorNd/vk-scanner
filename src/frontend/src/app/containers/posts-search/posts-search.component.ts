@@ -16,12 +16,8 @@
 
 import {Component} from '@angular/core';
 import {select, Store} from '@ngrx/store';
-import {Filter} from '../../services/posts.service';
-import {GetNextPageAction, SearchPostsAction} from '../../actions/posts.actions';
-import {Observable} from 'rxjs';
-import {Post} from '../../models/post';
-import {getLoadedPosts, State} from '../../reducers';
-import {USERS} from '../../stubs/users.stub';
+import {GetNextPageAction, SearchFromChangeAction, SearchOwnerChangeAction} from '../../actions/posts.actions';
+import {getFilterFromOptions, getFilterOwnerOptions, getLoadedPosts, State} from '../../reducers';
 
 @Component({
   selector: 'sc-posts-search',
@@ -30,16 +26,29 @@ import {USERS} from '../../stubs/users.stub';
 })
 export class PostsSearchComponent {
 
-  posts$: Observable<Post[]>;
+  posts$ = this.store.pipe(select(getLoadedPosts));
 
-  users = USERS.map(u => u.name);
+  fromOptions$ = this.store.pipe(select(getFilterFromOptions));
+
+  ownerOptions$ = this.store.pipe(select(getFilterOwnerOptions));
 
   constructor(private store: Store<State>) {
-    this.posts$ = store.pipe(select(getLoadedPosts));
   }
 
-  dispatchSearch(filter: Filter) {
-    this.store.dispatch(new SearchPostsAction(filter));
+  dispatchFromChange(from: number) {
+    this.store.dispatch(new SearchFromChangeAction(from));
+  }
+
+  dispatchOwnerChange(owner: number) {
+    this.store.dispatch(new SearchOwnerChangeAction(owner));
+  }
+
+  dispatchFilterFromChange(from: string) {
+    console.log(from);
+  }
+
+  dispatchFilterOwnerChange(owner: string) {
+    console.log(owner);
   }
 
   dispatchNextPage() {

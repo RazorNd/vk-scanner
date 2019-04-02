@@ -14,6 +14,7 @@
   ~ limitations under the License.
   -->
 
+<!--suppress HtmlFormInputWithoutLabel -->
 <mat-card class="sc-posts-filter">
   <mat-card-content>
     <form [formGroup]="form" class="sc-posts-filter-form">
@@ -25,7 +26,9 @@
         >
       </mat-form-field>
       <mat-autocomplete #fromAuto>
-        <mat-option *ngFor="let value of fromAutoComplete$ | async" [value]="value">{{value}}</mat-option>
+        <mat-option (onSelectionChange)="fromSelected.emit(from.id)"
+                    *ngFor="let from of fromOptions"
+                    [value]="from.name">{{from.name}}</mat-option>
       </mat-autocomplete>
 
       <mat-form-field class="sc-posts-filter-field sc-posts-filter-owner">
@@ -36,7 +39,9 @@
         >
       </mat-form-field>
       <mat-autocomplete #ownerAuto>
-        <mat-option *ngFor="let value of ownerAutoComplete$ | async" [value]="value">{{value}}</mat-option>
+        <mat-option (onSelectionChange)="ownerSelected.emit(owner.id)"
+                    *ngFor="let owner of ownerOptions"
+                    [value]="owner.name">{{owner.name}}</mat-option>
       </mat-autocomplete>
     </form>
   </mat-card-content>

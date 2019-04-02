@@ -28,7 +28,7 @@ export class PostsEffects {
 
   @Effect()
   loadPosts$ = this.actions$.pipe(
-    ofType(PostsActionTypes.Search, PostsActionTypes.GetNextPage),
+    ofType(PostsActionTypes.SearchFromChange, PostsActionTypes.GetNextPage),
     withLatestFrom(this.store$.pipe(select(getPostsRequest))),
     switchMap(([, {filter, page}]) => this.postsService.getPosts(filter, page)),
     map(posts => new PostsLoadedAction(posts))

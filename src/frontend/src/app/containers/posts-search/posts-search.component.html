@@ -15,8 +15,12 @@
   -->
 
 <div class="sc-posts-search">
-  <sc-posts-filter (search)="dispatchSearch($event)"
-                   [values]="users"></sc-posts-filter>
+  <sc-posts-filter (filterFromChanged)="dispatchFilterFromChange($event)"
+                   (filterOwnerChanged)="dispatchFilterOwnerChange($event)"
+                   (fromSelected)="dispatchFromChange($event)"
+                   (ownerSelected)="dispatchOwnerChange($event)"
+                   [fromOptions]="fromOptions$ | async"
+                   [ownerOptions]="ownerOptions$ | async"></sc-posts-filter>
   <sc-posts-list (nextPage)="dispatchNextPage()"
                  [posts]="posts$ | async"></sc-posts-list>
 </div>

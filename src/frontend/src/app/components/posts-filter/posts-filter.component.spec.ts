@@ -19,6 +19,7 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {PostsFilterComponent} from './posts-filter.component';
 import {ComponentModule} from '../index';
 import {USERS} from '../../stubs/users.stub';
+import {OWNERS} from '../../stubs/owners.stub';
 
 describe('PostsFilterComponent', () => {
   let component: PostsFilterComponent;
@@ -33,11 +34,14 @@ describe('PostsFilterComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(PostsFilterComponent);
     component = fixture.componentInstance;
-    component.values = USERS.map(u => u.name);
+    component.fromOptions = USERS;
+    component.ownerOptions = OWNERS;
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // TODO: more tests
 });

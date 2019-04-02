@@ -31,19 +31,22 @@ export const initialState: State = {
   page: 0,
   loading: false,
   filter: {
-    owner: '',
-    from: ''
+    owner: undefined,
+    from: undefined
   }
 };
 
 export function reducer(state = initialState, action: PostsActions): State {
   switch (action.type) {
-    case PostsActionTypes.Search:
+    case PostsActionTypes.SearchFromChange:
+    case PostsActionTypes.SearchOwnerChange:
       return {
+        ...initialState,
         loading: true,
-        page: initialState.page,
-        posts: initialState.posts,
-        filter: action.payload
+        filter: {
+          ...state.filter,
+          ...action.getFilter()
+        }
       };
     case PostsActionTypes.PostsLoaded:
       return {

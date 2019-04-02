@@ -24,8 +24,8 @@ import {HttpClient} from '@angular/common/http';
 
 
 export interface Filter {
-  from: string;
-  owner: string;
+  from: number;
+  owner: number;
 }
 
 export abstract class PostsService {

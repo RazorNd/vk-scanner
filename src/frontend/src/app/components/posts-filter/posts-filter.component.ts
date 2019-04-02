@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import {Component, Input, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {debounceTime, map} from 'rxjs/operators';
 import {asyncScheduler, Observable} from 'rxjs';
-import {Filter} from '../../services/posts.service';
+import {Owner} from '../../models/owner';
 
 @Component({
   selector: 'sc-posts-filter',
@@ -31,27 +31,21 @@ export class PostsFilterComponent {
     owner: new FormControl(),
   });
 
-  @Input() values: string[];
+  @Input() fromOptions: Owner[] = [];
 
-  @Output() search: Observable<Filter> = this.form.valueChanges.pipe(
+  @Input() ownerOptions: Owner[] = [];
+
+  @Output() filterFromChanged: Observable<string> = this.form.valueChanges.pipe(
+    map(value => value.from as string),
     debounceTime(500, asyncScheduler)
   );
 
-  fromAutoComplete$ = this.getPreFilteredValues('from');
-  ownerAutoComplete$ = this.getPreFilteredValues('owner');
+  @Output() filterOwnerChanged: Observable<string> = this.form.valueChanges.pipe(
+    map(value => value.owner as string),
+    debounceTime(500, asyncScheduler)
+  );
 
-  getPreFilteredValues(key: keyof Filter): Observable<string[]> {
-    return this.form.valueChanges.pipe(
-      map(filter => filter[key] as string),
-      map(value => this.filterValues(value))
-    );
-  }
+  @Output() fromSelected: EventEmitter<number> = new EventEmitter();
 
-  filterValues(input?: string): string[] {
-    if (!input) {
-      return [];
-    }
-    const searchString = input.toLowerCase();
-    return this.values ? this.values.filter(value => value.toLowerCase().includes(searchString)) : [];
-  }
+  @Output() ownerSelected: EventEmitter<number> = new EventEmitter();
 }

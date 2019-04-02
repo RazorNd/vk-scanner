@@ -17,13 +17,16 @@
 import {ActionReducerMap, createSelector, MetaReducer} from '@ngrx/store';
 import {environment} from '../../environments/environment';
 import * as fromPosts from './posts.reducer';
+import * as fromFilter from './filter.reducer';
 
 export interface State {
   posts: fromPosts.State;
+  filter: fromFilter.State;
 }
 
 export const reducers: ActionReducerMap<State> = {
-  posts: fromPosts.reducer
+  posts: fromPosts.reducer,
+  filter: fromFilter.reducer
 };
 
 export const metaReducers: MetaReducer<State>[] = !environment.production ? [] : [];
@@ -44,3 +47,9 @@ export const getPostsRequest = createSelector(
   getPostsState,
   fromPosts.getPostsRequest
 );
+
+export const getFilterState = (state: State) => state.filter;
+
+export const getFilterFromOptions = createSelector(getFilterState, fromFilter.getFromOptions);
+
+export const getFilterOwnerOptions = createSelector(getFilterState, fromFilter.getOwnerOptions);
