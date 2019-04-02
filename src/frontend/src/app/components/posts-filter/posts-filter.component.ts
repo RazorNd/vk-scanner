@@ -16,9 +16,20 @@
 
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
-import {debounceTime, map} from 'rxjs/operators';
-import {asyncScheduler, Observable} from 'rxjs';
+import {debounceTime, distinctUntilChanged, filter, map} from 'rxjs/operators';
+import {asyncScheduler, Observable, OperatorFunction} from 'rxjs';
 import {Owner} from '../../models/owner';
+
+function selectChanges(property: string, dueTime = 500): OperatorFunction<any, string> {
+  return function selectChangesOperator(source$: Observable<any>): Observable<string> {
+    return source$.pipe(
+      map(value => value[property] as string),
+      filter(Boolean),
+      distinctUntilChanged(),
+      debounceTime(dueTime, asyncScheduler)
+    );
+  };
+}
 
 @Component({
   selector: 'sc-posts-filter',
@@ -35,15 +46,9 @@ export class PostsFilterComponent {
 
   @Input() ownerOptions: Owner[] = [];
 
-  @Output() filterFromChanged: Observable<string> = this.form.valueChanges.pipe(
-    map(value => value.from as string),
-    debounceTime(500, asyncScheduler)
-  );
+  @Output() filterFromChanged: Observable<string> = this.form.valueChanges.pipe(selectChanges('from'));
 
-  @Output() filterOwnerChanged: Observable<string> = this.form.valueChanges.pipe(
-    map(value => value.owner as string),
-    debounceTime(500, asyncScheduler)
-  );
+  @Output() filterOwnerChanged: Observable<string> = this.form.valueChanges.pipe(selectChanges('owner'));
 
   @Output() fromSelected: EventEmitter<number> = new EventEmitter();
 

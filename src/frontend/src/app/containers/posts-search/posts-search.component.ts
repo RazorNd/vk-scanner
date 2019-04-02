@@ -18,6 +18,7 @@ import {Component} from '@angular/core';
 import {select, Store} from '@ngrx/store';
 import {GetNextPageAction, SearchFromChangeAction, SearchOwnerChangeAction} from '../../actions/posts.actions';
 import {getFilterFromOptions, getFilterOwnerOptions, getLoadedPosts, State} from '../../reducers';
+import {FilterChanged} from '../../actions/filter.actions';
 
 @Component({
   selector: 'sc-posts-search',
@@ -44,11 +45,11 @@ export class PostsSearchComponent {
   }
 
   dispatchFilterFromChange(from: string) {
-    console.log(from);
+    this.store.dispatch(new FilterChanged(from, 'fromOptions'));
   }
 
   dispatchFilterOwnerChange(owner: string) {
-    console.log(owner);
+    this.store.dispatch(new FilterChanged(owner, 'ownerOptions'));
   }
 
   dispatchNextPage() {
