@@ -16,14 +16,14 @@
 
 import {Action} from '@ngrx/store';
 import {Owner} from '../models/owner';
-import {State} from '../reducers/filter.reducer';
 
 export enum FilterActionTypes {
   FilterChanged = '[Filter] Filter value changed',
-  OptionsLoaded = '[Filter] From options loaded',
+  OptionsLoaded = '[Filter] Options loaded',
+  OptionsLoadFailed = '[Filter] Load options failed'
 }
 
-export type OptionsType = keyof State;
+export type OptionsType = 'fromOptions' | 'ownerOptions';
 
 export class FilterChanged {
   readonly type = FilterActionTypes.FilterChanged;
@@ -39,5 +39,12 @@ export class OptionsLoaded implements Action {
   }
 }
 
+export class OptionsLoadedFailed implements Action {
+  readonly type = FilterActionTypes.OptionsLoadFailed;
 
-export type FilterActions = FilterChanged | OptionsLoaded;
+  constructor(readonly err: any, readonly optionsType: OptionsType) {
+  }
+}
+
+
+export type FilterActions = FilterChanged | OptionsLoaded | OptionsLoadedFailed;

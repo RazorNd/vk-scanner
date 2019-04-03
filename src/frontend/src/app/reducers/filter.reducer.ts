@@ -55,6 +55,14 @@ export function reducer(state = initialState, action: FilterActions): State {
           [action.optionsType]: false
         }
       };
+    case FilterActionTypes.OptionsLoadFailed:
+      return {
+        ...state,
+        load: {
+          ...state.load,
+          [action.optionsType]: false
+        }
+      };
     default:
       return state;
   }

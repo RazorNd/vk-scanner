@@ -15,7 +15,7 @@
  */
 
 import {initialState, reducer, State} from './filter.reducer';
-import {FilterChanged, OptionsLoaded} from '../actions/filter.actions';
+import {FilterChanged, OptionsLoaded, OptionsLoadedFailed} from '../actions/filter.actions';
 import {USERS} from '../stubs/users.stub';
 import {OWNERS} from '../stubs/owners.stub';
 
@@ -81,7 +81,7 @@ describe('Filter Reducer', () => {
       });
     });
 
-    it('should change to load state', () => {
+    it('should change to load state on FilterChanged', () => {
       const action = new FilterChanged('Иван', 'ownerOptions');
 
       const result = reducer(initialState, action);
@@ -93,6 +93,16 @@ describe('Filter Reducer', () => {
           ownerOptions: true
         }
       });
+    });
+
+    it('should change to not load state on OptionsLoadedFailed', () => {
+      const action = new OptionsLoadedFailed('Потомучто', 'fromOptions');
+
+      const state = {...initialState, load: {fromOptions: true, ownerOptions: true}};
+
+      const result = reducer(state, action);
+
+      expect(result).toEqual({...state, load: {fromOptions: false, ownerOptions: true}});
     });
   });
 });
