@@ -20,7 +20,9 @@ import {Owner} from '../models/owner';
 import {SubjectType} from '../models/subject-type';
 import {USERS} from '../stubs/users.stub';
 import {OWNERS} from '../stubs/owners.stub';
-import {delay} from 'rxjs/operators';
+import {delay, map} from 'rxjs/operators';
+import {HttpClient, HttpParams} from '@angular/common/http';
+import {Page} from '../models/page';
 
 export abstract class SubjectService {
   abstract loadSubject(filter: string, subjectType: SubjectType): Observable<Owner[]>;
@@ -44,5 +46,31 @@ export class MockSubjectService extends SubjectService {
     }
 
     return of(result.filter(subject => subject.name.includes(filter))).pipe(delay(this.delayMS, this.scheduler));
+  }
+}
+
+interface FindSubjectDto {
+  content: Owner[];
+  page: Page;
+}
+
+@Injectable()
+export class BackendSubjectService extends SubjectService {
+  private static readonly TYPE = 'type';
+  private static readonly FILTER = 'f';
+  private static readonly URL = '/api/subjects';
+
+  constructor(private http: HttpClient) {
+    super();
+  }
+
+  loadSubject(filter: string, subjectType: SubjectType): Observable<Owner[]> {
+    return this.http.get<FindSubjectDto>(BackendSubjectService.URL, {
+      params: new HttpParams()
+        .set(BackendSubjectService.FILTER, filter)
+        .set(BackendSubjectService.TYPE, subjectType.toString())
+    }).pipe(
+      map(dto => dto.content)
+    );
   }
 }

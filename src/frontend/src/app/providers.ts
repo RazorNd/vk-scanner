@@ -16,14 +16,14 @@
 
 import {Provider} from '@angular/core';
 import {MockPostsService, PostsService} from './services/posts.service';
-import {MockSubjectService, SubjectService} from './services/subject.service';
+import {BackendSubjectService, SubjectService} from './services/subject.service';
 
 const providers: Provider[] = [
   {
     provide: PostsService, useClass: MockPostsService
   },
   {
-    provide: SubjectService, useValue: new MockSubjectService()
+    provide: SubjectService, useClass: BackendSubjectService
   }
 ];
 
