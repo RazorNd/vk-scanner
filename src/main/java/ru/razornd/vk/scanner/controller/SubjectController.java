@@ -17,6 +17,10 @@
 package ru.razornd.vk.scanner.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PagedResourcesAssembler;
+import org.springframework.hateoas.PagedResources;
+import org.springframework.hateoas.Resource;
 import org.springframework.web.bind.annotation.*;
 import ru.razornd.vk.scanner.model.Subject;
 import ru.razornd.vk.scanner.service.SubjectService;
@@ -28,9 +32,16 @@ public class SubjectController {
 
     private final SubjectService service;
 
-    @CrossOrigin
     @GetMapping("/{id}")
-    public Subject getPosts(@PathVariable int id) {
+    public Subject getSubject(@PathVariable int id) {
         return service.getSubject(id);
+    }
+
+    @GetMapping
+    public PagedResources<Resource<Subject>> getSubjects(@RequestParam("f") String filter,
+                                                         @RequestParam("type") String type,
+                                                         Pageable pageable,
+                                                         PagedResourcesAssembler<Subject> assembler) {
+        return assembler.toResource(service.findSubjects(filter, type, pageable));
     }
 }

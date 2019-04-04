@@ -19,6 +19,8 @@ package ru.razornd.vk.scanner.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import ru.razornd.vk.scanner.component.GroupFetcher;
 import ru.razornd.vk.scanner.component.UserFetcher;
@@ -46,6 +48,11 @@ public class SubjectServiceImpl implements SubjectService {
     public Subject synchronize(int subjectId) {
         log.debug("Synchronize subject: {}", subjectId);
         return repository.save(choseRepository(subjectId).compose(this::prepareId).apply(subjectId));
+    }
+
+    @Override
+    public Page<Subject> findSubjects(String filter, String type, Pageable pageable) {
+        return repository.findByName(filter, pageable);
     }
 
     private int prepareId(int subjectId) {

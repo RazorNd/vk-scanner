@@ -14,17 +14,7 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.service;
+@QueryEntities({User.class, Group.class})
+package ru.razornd.vk.scanner.model;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import ru.razornd.vk.scanner.model.Subject;
-
-public interface SubjectService {
-
-    Subject getSubject(int subjectId);
-
-    Subject synchronize(int subjectId);
-
-    Page<Subject> findSubjects(String filter, String type, Pageable pageable);
-}
+import com.querydsl.core.annotations.QueryEntities;
