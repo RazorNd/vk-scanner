@@ -22,18 +22,20 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.test.context.junit4.SpringRunner;
 import ru.razornd.vk.scanner.model.Group;
+import ru.razornd.vk.scanner.model.Subject;
 import ru.razornd.vk.scanner.model.User;
 import ru.razornd.vk.scanner.stub.Users;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@DataMongoTest
 @RunWith(SpringRunner.class)
-public class SubjectRepositoryTest {
-
+@DataMongoTest
+public class SubjectSearchRepositoryImplTest {
     private static final int ID = 123;
     private static final User USER = Users.defaultUserBuilder()
             .id(ID)
@@ -44,32 +46,26 @@ public class SubjectRepositoryTest {
             .build();
 
     @Autowired
-    SubjectRepository repository;
+    SubjectSearchRepositoryImpl repository;
 
     @Autowired
     MongoOperations operations;
 
     @After
     public void clean() {
-        repository.deleteAll();
+        operations.dropCollection(Subject.class);
     }
 
     @Before
     public void insertDefault() {
-        repository.save(USER);
-        repository.save(GROUP);
+        operations.save(USER);
+        operations.save(GROUP);
     }
 
     @Test
-    public void saveAndFindById() {
-        assertThat(repository.findById(ID))
-                .isNotEmpty()
-                .get()
-                .isEqualTo(USER);
+    public void findByName() {
+        final Page<Subject> byName = repository.findByName("Ива", Pageable.unpaged());
 
-        assertThat(repository.findById(321))
-                .isNotEmpty()
-                .get()
-                .isEqualTo(GROUP);
+        assertThat(byName.get()).contains(USER);
     }
 }

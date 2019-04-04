@@ -16,8 +16,10 @@
 
 package ru.razornd.vk.scanner.repository;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import ru.razornd.vk.scanner.model.Subject;
 
-public interface SubjectRepository extends MongoRepository<Subject, Integer>, SubjectSearchRepository {
+public interface SubjectSearchRepository {
+    Page<Subject> findByName(String name, Pageable pageable);
 }
