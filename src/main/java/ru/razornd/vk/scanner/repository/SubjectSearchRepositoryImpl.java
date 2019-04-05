@@ -35,6 +35,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
+import static java.util.Optional.ofNullable;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Stream.concat;
 import static org.springframework.data.mongodb.core.aggregation.Aggregation.*;
@@ -52,6 +53,7 @@ public class SubjectSearchRepositoryImpl implements SubjectSearchRepository {
     private static final String LAST_NAME = "lastName";
     private static final String DELIMITER = " ";
     private static final String SEARCH = "search";
+    private static final CountResult ZERO_COUNT = new CountResult(0);
 
     private final MongoOperations operations;
 
@@ -73,10 +75,12 @@ public class SubjectSearchRepositoryImpl implements SubjectSearchRepository {
     }
 
     private CountResult aggregateCount(Stream<AggregationOperation> searchOperations) {
-        return aggregate(concat(
+        final CountResult countResult = aggregate(concat(
                 searchOperations,
                 countOperations()
         ), CountResult.class).getUniqueMappedResult();
+
+        return ofNullable(countResult).orElse(ZERO_COUNT);
     }
 
     private <T> AggregationResults<T> aggregate(Stream<AggregationOperation> operations, Class<T> outputType) {
