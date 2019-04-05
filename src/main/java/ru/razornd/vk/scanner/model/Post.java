@@ -26,55 +26,26 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import static java.util.Collections.unmodifiableList;
 
 @Data
 @Builder
 @Document
+@SubjectModel
 public class Post {
     @Id
     private final PostKey id;
     private final LocalDateTime dateTime;
     private final String text;
-    private final User from;
-    private final int owner;
+    private final Subject from;
+    private final Subject owner;
     @DBRef
     @Builder.Default
     private final List<Comment> comments = new ArrayList<>();
 
     public List<Comment> getComments() {
         return unmodifiableList(comments);
-    }
-
-    public boolean isFrom(int userId) {
-        return Optional.ofNullable(from)
-                .map(User::getId)
-                .map(id -> id == userId)
-                .orElse(false);
-    }
-
-    public boolean isFrom(User user) {
-        return isFrom(user.getId());
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder stringBuilder = new StringBuilder()
-                .append("№")
-                .append(id)
-                .append("\nДата: ")
-                .append(dateTime)
-                .append("\nТекст:\n")
-                .append(text)
-                .append("\nКомментарии:\n");
-        for (Comment comment : comments) {
-            stringBuilder
-                    .append(comment)
-                    .append("\n");
-        }
-        return stringBuilder.toString();
     }
 
     public static PostKey key(int ownerId, int postId) {

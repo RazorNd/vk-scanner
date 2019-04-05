@@ -17,7 +17,11 @@
 package ru.razornd.vk.scanner.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import ru.razornd.vk.scanner.model.Post;
 
-public interface PostRepository extends MongoRepository<Post, Post.PostKey> {
+public interface PostRepository extends
+        MongoRepository<Post, Post.PostKey>,
+        QuerydslPredicateExecutor<Post>,
+        PostSearchRepository {
 }

@@ -14,28 +14,7 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.service;
+@QueryEntities({User.class, Group.class})
+package ru.razornd.vk.scanner.model;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-import ru.razornd.vk.scanner.component.UserFetcher;
-import ru.razornd.vk.scanner.model.User;
-
-import java.util.List;
-
-@Service
-@RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
-
-    private final UserFetcher fetcher;
-
-    @Override
-    public User getUser(String userId) {
-        return fetcher.fetch(userId);
-    }
-
-    @Override
-    public List<User> getUsers(List<String> userIds) {
-        return fetcher.fetch(userIds);
-    }
-}
+import com.querydsl.core.annotations.QueryEntities;

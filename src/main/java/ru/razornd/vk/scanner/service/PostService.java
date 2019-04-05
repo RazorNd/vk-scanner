@@ -17,25 +17,25 @@
 package ru.razornd.vk.scanner.service;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import ru.razornd.vk.scanner.component.UserFetcher;
-import ru.razornd.vk.scanner.model.User;
-
-import java.util.List;
+import ru.razornd.vk.scanner.model.Post;
+import ru.razornd.vk.scanner.repository.PostRepository;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
+@Slf4j
+public class PostService {
 
-    private final UserFetcher fetcher;
+    private final PostRepository postRepository;
 
-    @Override
-    public User getUser(String userId) {
-        return fetcher.fetch(userId);
-    }
-
-    @Override
-    public List<User> getUsers(List<String> userIds) {
-        return fetcher.fetch(userIds);
+    public Page<Post> searchPosts(int from, int owner, Pageable pageable) {
+        if (owner != 0) {
+            return postRepository.findAllWithFromId(from, owner, pageable);
+        } else {
+            return postRepository.findAllWithFromId(from, pageable);
+        }
     }
 }

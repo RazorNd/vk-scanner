@@ -14,28 +14,15 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.service;
+package ru.razornd.vk.scanner.component;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-import ru.razornd.vk.scanner.component.UserFetcher;
-import ru.razornd.vk.scanner.model.User;
+import ru.razornd.vk.scanner.model.Group;
 
-import java.util.List;
+public interface GroupFetcher {
 
-@Service
-@RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
+    Group fetch(String groupId);
 
-    private final UserFetcher fetcher;
-
-    @Override
-    public User getUser(String userId) {
-        return fetcher.fetch(userId);
-    }
-
-    @Override
-    public List<User> getUsers(List<String> userIds) {
-        return fetcher.fetch(userIds);
+    default Group fetch(int groupId) {
+        return fetch(String.valueOf(groupId));
     }
 }

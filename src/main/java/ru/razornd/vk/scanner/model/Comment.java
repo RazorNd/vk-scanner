@@ -23,7 +23,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 @Data
 @Builder
@@ -33,19 +32,7 @@ public class Comment {
     private final CommentKey id;
     private final LocalDateTime dateTime;
     private final String text;
-    private final User from;
-
-    public boolean isFrom(int fromId) {
-        return Optional.ofNullable(from)
-                .map(User::getId)
-                .map(id -> id == fromId)
-                .orElse(false);
-    }
-
-    @Override
-    public String toString() {
-        return "Коммент: " + from + " " + dateTime + "\n" + text + "\n";
-    }
+    private final Subject from;
 
     public static CommentKey key(int ownerId, int postId, int commentId) {
         return new CommentKey(ownerId, postId, commentId);
@@ -57,5 +44,9 @@ public class Comment {
         private final int ownerId;
         private final int postId;
         private final int commentId;
+
+        public Post.PostKey toPostKey() {
+            return Post.key(ownerId, postId);
+        }
     }
 }

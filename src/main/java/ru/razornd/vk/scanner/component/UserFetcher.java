@@ -23,7 +23,11 @@ import java.util.List;
 
 public interface UserFetcher {
 
-    User fetch(String userName);
+    User fetch(String userId);
+
+    default User fetch(int userId) {
+        return fetch(String.valueOf(userId));
+    }
 
     List<User> fetch(List<String> userIds);
 }
