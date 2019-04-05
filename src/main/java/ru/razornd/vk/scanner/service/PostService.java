@@ -32,6 +32,10 @@ public class PostService {
     private final PostRepository postRepository;
 
     public Page<Post> searchPosts(int from, int owner, Pageable pageable) {
-        return postRepository.findAllWithFromId(from, owner, pageable);
+        if (owner != 0) {
+            return postRepository.findAllWithFromId(from, owner, pageable);
+        } else {
+            return postRepository.findAllWithFromId(from, pageable);
+        }
     }
 }
