@@ -14,28 +14,22 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.service;
+package ru.razornd.vk.scanner.stub;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-import ru.razornd.vk.scanner.component.UserFetcher;
+import com.vk.api.sdk.objects.base.Sex;
 import ru.razornd.vk.scanner.model.User;
 
-import java.util.List;
-
-@Service
-@RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
-
-    private final UserFetcher fetcher;
-
-    @Override
-    public User getUser(String userId) {
-        return fetcher.fetch(userId);
+public final class Users {
+    public static User createUser() {
+        return defaultUserBuilder().build();
     }
 
-    @Override
-    public List<User> getUsers(List<String> userIds) {
-        return fetcher.fetch(userIds);
+    public static User.UserBuilder defaultUserBuilder() {
+        return User.builder()
+                .firstName("Иван")
+                .lastName("Петрович")
+                .sex(Sex.MALE)
+                .birthday("21.12")
+                .screenName("ivan2112");
     }
 }

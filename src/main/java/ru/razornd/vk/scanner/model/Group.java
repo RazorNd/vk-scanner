@@ -14,28 +14,23 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.service;
+package ru.razornd.vk.scanner.model;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-import ru.razornd.vk.scanner.component.UserFetcher;
-import ru.razornd.vk.scanner.model.User;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import java.util.List;
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class Group extends AbstractSubject {
 
-@Service
-@RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
+    private final String name;
+    private final String description;
 
-    private final UserFetcher fetcher;
-
-    @Override
-    public User getUser(String userId) {
-        return fetcher.fetch(userId);
-    }
-
-    @Override
-    public List<User> getUsers(List<String> userIds) {
-        return fetcher.fetch(userIds);
+    @Builder
+    public Group(int id, String icon, String name, String description) {
+        super(id, icon);
+        this.name = name;
+        this.description = description;
     }
 }
