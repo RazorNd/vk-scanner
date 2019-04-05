@@ -14,17 +14,9 @@
  * limitations under the License.
  */
 
-import {Provider} from '@angular/core';
-import {BackendPostsService, PostsService} from './services/posts.service';
-import {BackendSubjectService, SubjectService} from './services/subject.service';
-
-const providers: Provider[] = [
-  {
-    provide: PostsService, useClass: BackendPostsService
-  },
-  {
-    provide: SubjectService, useClass: BackendSubjectService
-  }
-];
-
-export default providers;
+export interface Page {
+  size: number;
+  totalElements: number;
+  totalPages: number;
+  number: number;
+}

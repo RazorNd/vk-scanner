@@ -19,8 +19,9 @@ import {Observable} from 'rxjs';
 import {Post} from '../models/post';
 import {POSTS} from '../stubs/posts.stub';
 import {of} from 'rxjs/internal/observable/of';
-import {delay} from 'rxjs/operators';
-import {HttpClient} from '@angular/common/http';
+import {delay, map} from 'rxjs/operators';
+import {HttpClient, HttpParams} from '@angular/common/http';
+import {Page} from '../models/page';
 
 
 export interface Filter {
@@ -32,15 +33,41 @@ export abstract class PostsService {
   abstract getPosts(filter: Filter, page: number): Observable<Post[]>;
 }
 
+
+interface BackendResult<T> {
+  content: T[];
+  page: Page;
+}
+
 @Injectable()
 export class BackendPostsService extends PostsService {
+  private static readonly URL = '/api/posts';
+  private static readonly FROM = 'f';
+  private static readonly OWNER = 'o';
 
   constructor(private http: HttpClient) {
     super();
   }
 
   getPosts(filter: Filter, page: number): Observable<Post[]> {
-    return undefined;
+    return this.http.get<BackendResult<Post>>(BackendPostsService.URL, {
+      params: this.createParams(filter)
+    }).pipe(
+      map(dto => dto.content)
+    );
+  }
+
+  private createParams(filter: Filter) {
+    let httpParams = new HttpParams();
+
+    if (filter.from) {
+      httpParams = httpParams.set(BackendPostsService.FROM, filter.from.toString());
+    }
+    if (filter.owner) {
+      httpParams = httpParams.set(BackendPostsService.OWNER, filter.owner.toString());
+    }
+
+    return httpParams;
   }
 }
 
