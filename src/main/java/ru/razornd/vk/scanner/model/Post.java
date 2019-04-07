@@ -23,7 +23,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +36,7 @@ import static java.util.Collections.unmodifiableList;
 public class Post {
     @Id
     private final PostKey id;
-    private final LocalDateTime dateTime;
+    private final Instant dateTime;
     private final String text;
     private final Subject from;
     private final Subject owner;

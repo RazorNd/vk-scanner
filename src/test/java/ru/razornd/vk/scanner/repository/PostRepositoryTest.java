@@ -26,7 +26,7 @@ import ru.razornd.vk.scanner.model.Comment;
 import ru.razornd.vk.scanner.model.Group;
 import ru.razornd.vk.scanner.model.Post;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.Optional;
 
 import static de.flapdoodle.embed.process.collections.Collections.newArrayList;
@@ -55,20 +55,20 @@ public class PostRepositoryTest {
     public void insert() {
         final Post post = Post.builder()
                 .id(POST_KEY)
-                .dateTime(LocalDateTime.now())
+                .dateTime(Instant.now())
                 .from(createUser())
                 .owner(Group.builder().id(-1).build())
                 .text("Test POSTS")
                 .comments(newArrayList(
                         Comment.builder()
                                 .id(Comment.key(1, 1, 1))
-                                .dateTime(LocalDateTime.now())
+                                .dateTime(Instant.now())
                                 .text("first comment")
                                 .from(createUser())
                                 .build(),
                         Comment.builder()
                                 .id(Comment.key(1, 2, 1))
-                                .dateTime(LocalDateTime.now())
+                                .dateTime(Instant.now())
                                 .text("second comment")
                                 .from(createUser())
                                 .build()

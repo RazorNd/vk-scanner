@@ -28,14 +28,13 @@ import ru.razornd.vk.scanner.model.Post;
 import ru.razornd.vk.scanner.repository.CommentRepository;
 import ru.razornd.vk.scanner.repository.PostRepository;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.time.Period;
-import java.time.ZoneOffset;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import static java.time.LocalDateTime.now;
+import static java.time.OffsetDateTime.now;
 
 @Service
 @Slf4j
@@ -48,19 +47,8 @@ public class ScannerService {
     private final PostRepository postRepository;
     private final CommentRepository commentRepository;
 
-    @SuppressWarnings("WeakerAccess")
-    public void scanGroup(int groupId, Period period) {
-        final AtomicInteger counter = new AtomicInteger(0);
-        final LocalDateTime startDateTime = now().minus(period);
-        postCrawler.fromGroup(groupId)
-                .getAllPosts()
-                .peek(post -> log.info("Scanned {} postID {}", counter.incrementAndGet(), post.getId()))
-                .map(this::mapPost)
-                .takeWhile(post -> post.getDateTime().isAfter(startDateTime))
-                .peek(postRepository::save)
-                .map(Post::getComments)
-                .flatMap(List::stream)
-                .forEach(commentRepository::save);
+    private static Instant mapDateTime(Integer date) {
+        return Instant.ofEpochSecond(date);
     }
 
     private Post mapPost(WallPostFull wallPostFull) {
@@ -90,7 +78,18 @@ public class ScannerService {
                 .build();
     }
 
-    private LocalDateTime mapDateTime(Integer date) {
-        return LocalDateTime.ofEpochSecond(date, 0, ZoneOffset.UTC);
+    @SuppressWarnings("WeakerAccess")
+    public void scanGroup(int groupId, Period period) {
+        final AtomicInteger counter = new AtomicInteger(0);
+        final Instant startDateTime = now().minus(period).toInstant();
+        postCrawler.fromGroup(groupId)
+                .getAllPosts()
+                .peek(post -> log.info("Scanned {} postID {}", counter.incrementAndGet(), post.getId()))
+                .map(this::mapPost)
+                .takeWhile(post -> post.getDateTime().isAfter(startDateTime))
+                .peek(postRepository::save)
+                .map(Post::getComments)
+                .flatMap(List::stream)
+                .forEach(commentRepository::save);
     }
 }
