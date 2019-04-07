@@ -16,6 +16,7 @@
 
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Post} from '../../models/post';
+import {Filter} from '../../services/posts.service';
 
 @Component({
   selector: 'sc-posts-list',
@@ -24,6 +25,9 @@ import {Post} from '../../models/post';
 })
 export class PostsListComponent {
   @Input() posts: Post[];
+
+  @Input() filter: Filter;
+
   @Output() nextPage = new EventEmitter<void>();
 
   onScroll() {

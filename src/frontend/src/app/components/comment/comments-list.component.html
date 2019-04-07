@@ -14,8 +14,8 @@
   ~ limitations under the License.
   -->
 
-<mat-list>
-  <mat-list-item *ngFor="let comment of comments; last as last" class="sc-comment">
+<mat-list class="sc-comment-list">
+  <mat-list-item *ngFor="let comment of commentsToShow(); last as last" class="sc-comment">
     <img [alt]="comment.from.name"
          [src]="comment.from | ownerIcon"
          class="sc-comment-from-icon"
@@ -29,4 +29,5 @@
     </p>
     <mat-divider *ngIf="!last" [inset]="true"></mat-divider>
   </mat-list-item>
+  <button (click)="showAll = !showAll" mat-button>{{showAll ? "Скрыть" : "Показать все"}}</button>
 </mat-list>

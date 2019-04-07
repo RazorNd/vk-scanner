@@ -17,7 +17,7 @@
 import {Component} from '@angular/core';
 import {select, Store} from '@ngrx/store';
 import {GetNextPageAction, SearchFromChangeAction, SearchOwnerChangeAction} from '../../actions/posts.actions';
-import {getFilterFromOptions, getFilterOwnerOptions, getLoadedPosts, State} from '../../reducers';
+import {getFilterFromOptions, getFilterOwnerOptions, getLoadedPosts, getPostsFilter, State} from '../../reducers';
 import {FilterChanged} from '../../actions/filter.actions';
 
 @Component({
@@ -28,6 +28,8 @@ import {FilterChanged} from '../../actions/filter.actions';
 export class PostsSearchComponent {
 
   posts$ = this.store.pipe(select(getLoadedPosts));
+
+  postsFilter$ = this.store.pipe(select(getPostsFilter));
 
   fromOptions$ = this.store.pipe(select(getFilterFromOptions));
 

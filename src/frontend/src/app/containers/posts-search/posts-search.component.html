@@ -22,5 +22,6 @@
                    [fromOptions]="fromOptions$ | async"
                    [ownerOptions]="ownerOptions$ | async"></sc-posts-filter>
   <sc-posts-list (nextPage)="dispatchNextPage()"
+                 [filter]="postsFilter$ | async"
                  [posts]="posts$ | async"></sc-posts-list>
 </div>

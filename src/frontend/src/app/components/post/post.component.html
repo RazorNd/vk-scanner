@@ -30,5 +30,6 @@
   </mat-card-content>
   <mat-divider *ngIf="haveComments"></mat-divider>
   <sc-comments-list *ngIf="haveComments"
+                    [commentFilterStrategy]="commentFilterStrategy"
                     [comments]="post.comments"></sc-comments-list>
 </mat-card>
