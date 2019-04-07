@@ -18,12 +18,14 @@ import {Post} from '../models/post';
 import {PostsActions, PostsActionTypes} from '../actions/posts.actions';
 import {Filter} from '../services/posts.service';
 
-
-export interface State {
-  posts: Post[];
+export interface PostsRequest {
   page: number;
-  loading: boolean;
   filter: Filter;
+}
+
+export interface State extends PostsRequest {
+  posts: Post[];
+  loading: boolean;
 }
 
 export const initialState: State = {
@@ -68,4 +70,6 @@ export const getPosts = (state: State) => state.posts;
 
 export const getPage = (state: State) => state.page;
 
-export const getPostsRequest = ({filter, page}: State) => ({filter, page});
+export const getPostsRequest = ({filter, page}: State): PostsRequest => ({filter, page});
+
+export const getFilter = (state: State) => state.filter;

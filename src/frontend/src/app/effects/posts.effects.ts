@@ -15,25 +15,30 @@
  */
 
 import {Injectable} from '@angular/core';
-import {Actions, Effect, ofType} from '@ngrx/effects';
-import {PostsActions, PostsActionTypes, PostsLoadedAction} from '../actions/posts.actions';
-import {map, switchMap, withLatestFrom} from 'rxjs/operators';
+import {Effect} from '@ngrx/effects';
+import {PostsLoadedAction} from '../actions/posts.actions';
+import {distinctUntilChanged, filter as filterOperator, map, switchMap} from 'rxjs/operators';
 import {select, Store} from '@ngrx/store';
 import {getPostsRequest, State} from '../reducers';
 import {PostsService} from '../services/posts.service';
+import {PostsRequest} from '../reducers/posts.reducer';
 
+
+function hash({page, filter}: PostsRequest): string {
+  return `${page}${filter.from}${filter.owner}`;
+}
 
 @Injectable()
 export class PostsEffects {
 
   @Effect()
-  loadPosts$ = this.actions$.pipe(
-    ofType(PostsActionTypes.SearchFromChange, PostsActionTypes.SearchOwnerChange, PostsActionTypes.GetNextPage),
-    withLatestFrom(this.store$.pipe(select(getPostsRequest))),
-    switchMap(([, {filter, page}]) => this.postsService.getPosts(filter, page)),
+  loadPosts$ = this.store$.pipe(select(getPostsRequest)).pipe(
+    filterOperator(({filter: {from}}) => Boolean(from)),
+    distinctUntilChanged(Object.is, hash),
+    switchMap(({filter, page}) => this.postsService.getPosts(filter, page)),
     map(posts => new PostsLoadedAction(posts))
   );
 
-  constructor(private actions$: Actions<PostsActions>, private postsService: PostsService, private store$: Store<State>) {
+  constructor(private postsService: PostsService, private store$: Store<State>) {
   }
 }
