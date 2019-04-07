@@ -25,11 +25,9 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {environment} from '../environments/environment';
 import {EffectsModule} from '@ngrx/effects';
 import {PostsEffects} from './effects/posts.effects';
-import {HttpClientModule} from '@angular/common/http';
 import {ContainersModule} from './containers';
 import {FilterEffects} from './effects/filter.effects';
-
-import providers from './providers';
+import {ServiceModule} from './services';
 
 @NgModule({
   imports: [
@@ -37,12 +35,11 @@ import providers from './providers';
     BrowserAnimationsModule,
     LayoutModule,
     ContainersModule,
-    HttpClientModule,
+    ServiceModule,
     StoreModule.forRoot(reducers, {metaReducers}),
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
     EffectsModule.forRoot([PostsEffects, FilterEffects])
   ],
-  providers,
   bootstrap: [RootComponent]
 })
 export class AppModule {
