@@ -1,0 +1,18 @@
+---
+resources:
+  - name: app-develop
+    type: git
+    source:
+      uri: https://github.com/RazorNd/vk-scanner.git
+      branch: develop
+
+jobs:
+  - name: build-java-develop
+    public: true
+    plan:
+      - get: app-develop
+        trigger: true
+      - task: build-java
+        input_mapping:
+          app: app-develop
+        file: app-develop/.concourse/tasks/build_java.yml
