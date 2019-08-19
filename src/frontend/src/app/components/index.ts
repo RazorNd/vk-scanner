@@ -17,15 +17,13 @@
 import {NgModule} from '@angular/core';
 import {PostComponent} from './post/post.component';
 import {CommonModule} from '@angular/common';
-import {
-  MatAutocompleteModule,
-  MatButtonModule,
-  MatButtonToggleModule,
-  MatCardModule,
-  MatIconModule,
-  MatInputModule,
-  MatListModule
-} from '@angular/material';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatButtonModule} from '@angular/material/button';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatListModule} from '@angular/material/list';
 import {CommentsListComponent} from './comment/comments-list.component';
 import {PipesModule} from '../pipes/pipes.module';
 import {PostsListComponent} from './posts-list/posts-list.component';

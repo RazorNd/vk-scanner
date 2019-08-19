@@ -24,7 +24,7 @@ function selectChanges(property: string, dueTime = 500): OperatorFunction<any, s
   return function selectChangesOperator(source$: Observable<any>): Observable<string> {
     return source$.pipe(
       map(value => value[property] as string),
-      filter(Boolean),
+      filter(s => Boolean(s)),
       distinctUntilChanged(),
       debounceTime(dueTime, asyncScheduler)
     );

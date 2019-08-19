@@ -29,7 +29,7 @@ export class PostComponent {
 
   @Input() filter: Filter;
 
-  commentFilterStrategy = (comment: Comment): boolean => comment.from.id === this.filter.from;
+  commentFilterStrategy = (comment: Comment): boolean => !this.filter || comment.from.id === this.filter.from;
 
   get haveComments(): boolean {
     return this.post.comments && this.post.comments.length > 0;
