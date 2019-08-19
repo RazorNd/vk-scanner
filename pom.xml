@@ -122,6 +122,11 @@
                 </executions>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/frontend/dist</directory>
+            </resource>
+        </resources>
     </build>
 
 </project>
