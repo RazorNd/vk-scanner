@@ -20,11 +20,14 @@ import com.vk.api.sdk.objects.wall.WallComment;
 import com.vk.api.sdk.objects.wall.WallPostFull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.messaging.simp.SimpMessageSendingOperations;
 import org.springframework.stereotype.Service;
 import ru.razornd.vk.scanner.component.CommentCrawler;
 import ru.razornd.vk.scanner.component.PostCrawler;
 import ru.razornd.vk.scanner.model.Comment;
 import ru.razornd.vk.scanner.model.Post;
+import ru.razornd.vk.scanner.model.events.CommentScanned;
+import ru.razornd.vk.scanner.model.events.PostScanned;
 import ru.razornd.vk.scanner.repository.CommentRepository;
 import ru.razornd.vk.scanner.repository.PostRepository;
 
@@ -47,6 +50,8 @@ public class ScannerService {
     private final PostRepository postRepository;
     private final CommentRepository commentRepository;
 
+    private final SimpMessageSendingOperations messageSendingOperations;
+
     private static Instant mapDateTime(Integer date) {
         return Instant.ofEpochSecond(date);
     }
@@ -66,6 +71,7 @@ public class ScannerService {
         return commentCrawler.forPost(postId, ownerId)
                 .getAllComments()
                 .map(wallComment -> mapComment(wallComment, ownerId, postId))
+                .peek(comment -> messageSendingOperations.convertAndSend(CommentScanned.EVENT_TOPIC, CommentScanned.of(comment)))
                 .collect(Collectors.toList());
     }
 
@@ -87,6 +93,7 @@ public class ScannerService {
                 .peek(post -> log.info("Scanned {} postID {}", counter.incrementAndGet(), post.getId()))
                 .map(this::mapPost)
                 .takeWhile(post -> post.getDateTime().isAfter(startDateTime))
+                .peek(post -> messageSendingOperations.convertAndSend(PostScanned.EVENT_TOPIC, PostScanned.of(post)))
                 .peek(postRepository::save)
                 .map(Post::getComments)
                 .flatMap(List::stream)
