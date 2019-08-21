@@ -28,6 +28,8 @@ import {PostsEffects} from './effects/posts.effects';
 import {ContainersModule} from './containers';
 import {FilterEffects} from './effects/filter.effects';
 import {ServiceModule} from './services';
+import {InjectableRxStompConfig, RxStompService, rxStompServiceFactory} from '@stomp/ng2-stompjs';
+import {rxStompConfig} from './rx-stomp.config';
 
 @NgModule({
   imports: [
@@ -40,7 +42,18 @@ import {ServiceModule} from './services';
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
     EffectsModule.forRoot([PostsEffects, FilterEffects])
   ],
-  bootstrap: [RootComponent]
+  bootstrap: [RootComponent],
+  providers: [
+    {
+      provide: InjectableRxStompConfig,
+      useValue: rxStompConfig
+    },
+    {
+      provide: RxStompService,
+      useFactory: rxStompServiceFactory,
+      deps: [InjectableRxStompConfig]
+    }
+  ]
 })
 export class AppModule {
 }
