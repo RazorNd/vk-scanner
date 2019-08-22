@@ -27,11 +27,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {AppRoutingModule} from '../app-routing.module';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import {ScanSpeedComponent} from './scan-speed/scan-speed.component';
 
 export const COMPONENTS = [
   DashboardComponent,
   RootComponent,
-  PostsSearchComponent
+  PostsSearchComponent,
+  ScanSpeedComponent
 ];
 
 @NgModule({

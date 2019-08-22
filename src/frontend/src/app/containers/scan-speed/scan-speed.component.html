@@ -14,13 +14,9 @@
   ~ limitations under the License.
   -->
 
-<div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="400px">
-    <mat-grid-tile colspan="2" rowspan="1">
-      <sc-dashboard-card title="Скорость сканирования">
-        <sc-scan-speed></sc-scan-speed>
-      </sc-dashboard-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+<div class="speedometers">
+  <sc-speedometer [value]="commentsPerSeconds$ | async"
+                  label="Комментарии"></sc-speedometer>
+  <sc-speedometer [value]="postsPerSeconds$ | async"
+                  label="Посты"></sc-speedometer>
 </div>
