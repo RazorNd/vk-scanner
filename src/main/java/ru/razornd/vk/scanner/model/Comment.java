@@ -22,7 +22,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 
 @Data
 @Builder
@@ -30,7 +30,7 @@ import java.time.LocalDateTime;
 public class Comment {
     @Id
     private final CommentKey id;
-    private final LocalDateTime dateTime;
+    private final Instant dateTime;
     private final String text;
     private final Subject from;
 

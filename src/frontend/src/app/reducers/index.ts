@@ -48,6 +48,8 @@ export const getPostsRequest = createSelector(
   fromPosts.getPostsRequest
 );
 
+export const getPostsFilter = createSelector(getPostsState, fromPosts.getFilter);
+
 export const getFilterState = (state: State) => state.filter;
 
 export const getFilterFromOptions = createSelector(getFilterState, fromFilter.getFromOptions);

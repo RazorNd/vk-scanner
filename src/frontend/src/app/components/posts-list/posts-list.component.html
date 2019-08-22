@@ -15,9 +15,12 @@
   -->
 
 <div (scrolled)="onScroll()"
+     [infiniteScrollDistance]="2"
+     [infiniteScrollThrottle]="1000"
      *ngIf="posts"
      class="sc-posts-list"
      infinite-scroll>
   <sc-post *ngFor="let post of posts"
+           [filter]="filter"
            [post]="post"></sc-post>
 </div>

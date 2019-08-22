@@ -14,17 +14,23 @@
  * limitations under the License.
  */
 
-import {Provider} from '@angular/core';
-import {BackendPostsService, PostsService} from './services/posts.service';
-import {BackendSubjectService, SubjectService} from './services/subject.service';
+import {NgModule} from '@angular/core';
+import {BackendPostsService, PostsService} from './posts.service';
+import {BackendSubjectService, SubjectService} from './subject.service';
+import {HttpClientModule} from '@angular/common/http';
 
-const providers: Provider[] = [
-  {
-    provide: PostsService, useClass: BackendPostsService
-  },
-  {
-    provide: SubjectService, useClass: BackendSubjectService
-  }
-];
-
-export default providers;
+@NgModule({
+  imports: [
+    HttpClientModule
+  ],
+  providers: [
+    {
+      provide: PostsService, useClass: BackendPostsService
+    },
+    {
+      provide: SubjectService, useClass: BackendSubjectService
+    }
+  ]
+})
+export class ServiceModule {
+}

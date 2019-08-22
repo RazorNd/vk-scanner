@@ -16,12 +16,13 @@
 
 import {TestBed} from '@angular/core/testing';
 
-import {SubjectService} from './subject.service';
-import providers from '../providers';
+import {MockSubjectService, SubjectService} from './subject.service';
 
 describe('SubjectService', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    providers
+    providers: [
+      {provide: SubjectService, useValue: new MockSubjectService()}
+    ]
   }));
 
   it('should be created', () => {

@@ -17,10 +17,12 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {PostsSearchComponent} from './containers/posts-search/posts-search.component';
+import {DashboardComponent} from './containers/dashboard/dashboard.component';
 
 const routes: Routes = [
+  {path: 'dashboard', component: DashboardComponent},
   {path: 'posts', component: PostsSearchComponent},
-  {path: '', redirectTo: '/posts', pathMatch: 'full'}
+  {path: '', redirectTo: '/dashboard', pathMatch: 'full'}
 ];
 
 @NgModule({

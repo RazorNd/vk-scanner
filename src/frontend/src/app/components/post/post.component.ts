@@ -16,6 +16,8 @@
 
 import {Component, Input} from '@angular/core';
 import {Post} from '../../models/post';
+import {Comment} from '../../models/comment';
+import {Filter} from '../../services/posts.service';
 
 @Component({
   selector: 'sc-post',
@@ -24,6 +26,10 @@ import {Post} from '../../models/post';
 })
 export class PostComponent {
   @Input() post: Post;
+
+  @Input() filter: Filter;
+
+  commentFilterStrategy = (comment: Comment): boolean => !this.filter || comment.from.id === this.filter.from;
 
   get haveComments(): boolean {
     return this.post.comments && this.post.comments.length > 0;

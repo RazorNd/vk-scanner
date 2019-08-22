@@ -19,12 +19,21 @@ import {PostsSearchComponent} from './posts-search/posts-search.component';
 import {ComponentModule} from '../components';
 import {CommonModule} from '@angular/common';
 import {RootComponent} from './root/root.component';
-import {MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatGridListModule} from '@angular/material/grid-list';
 import {AppRoutingModule} from '../app-routing.module';
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {ScanSpeedComponent} from './scan-speed/scan-speed.component';
 
 export const COMPONENTS = [
+  DashboardComponent,
   RootComponent,
-  PostsSearchComponent
+  PostsSearchComponent,
+  ScanSpeedComponent
 ];
 
 @NgModule({
@@ -32,6 +41,7 @@ export const COMPONENTS = [
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
+    MatGridListModule,
     MatIconModule,
     MatButtonModule,
     ComponentModule,

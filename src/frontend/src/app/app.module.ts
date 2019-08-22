@@ -25,11 +25,11 @@ import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {environment} from '../environments/environment';
 import {EffectsModule} from '@ngrx/effects';
 import {PostsEffects} from './effects/posts.effects';
-import {HttpClientModule} from '@angular/common/http';
 import {ContainersModule} from './containers';
 import {FilterEffects} from './effects/filter.effects';
-
-import providers from './providers';
+import {ServiceModule} from './services';
+import {InjectableRxStompConfig, RxStompService, rxStompServiceFactory} from '@stomp/ng2-stompjs';
+import {rxStompConfig} from './rx-stomp.config';
 
 @NgModule({
   imports: [
@@ -37,13 +37,23 @@ import providers from './providers';
     BrowserAnimationsModule,
     LayoutModule,
     ContainersModule,
-    HttpClientModule,
+    ServiceModule,
     StoreModule.forRoot(reducers, {metaReducers}),
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
     EffectsModule.forRoot([PostsEffects, FilterEffects])
   ],
-  providers,
-  bootstrap: [RootComponent]
+  bootstrap: [RootComponent],
+  providers: [
+    {
+      provide: InjectableRxStompConfig,
+      useValue: rxStompConfig
+    },
+    {
+      provide: RxStompService,
+      useFactory: rxStompServiceFactory,
+      deps: [InjectableRxStompConfig]
+    }
+  ]
 })
 export class AppModule {
 }

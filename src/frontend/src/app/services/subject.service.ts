@@ -28,7 +28,6 @@ export abstract class SubjectService {
   abstract loadSubject(filter: string, subjectType: SubjectType): Observable<Owner[]>;
 }
 
-@Injectable()
 export class MockSubjectService extends SubjectService {
   constructor(private delayMS: number = 700,
               private scheduler: SchedulerLike = asyncScheduler) {

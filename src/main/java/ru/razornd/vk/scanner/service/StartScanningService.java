@@ -28,6 +28,6 @@ public class StartScanningService {
     private final ScannerService scannerService;
 
     public void startScanning(int groupId) {
-        executor.execute(() -> scannerService.scanGroup(groupId, Period.ofMonths(1)));
+        executor.execute(() -> scannerService.scanGroup(groupId, Period.ofMonths(3)));
     }
 }

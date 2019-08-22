@@ -26,7 +26,7 @@ import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.test.context.junit4.SpringRunner;
 import ru.razornd.vk.scanner.model.Comment;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -50,7 +50,7 @@ public class CommentRepositoryTest {
     public void insert() {
         final Comment testComment = Comment.builder()
                 .id(Comment.key(1, 1, 1))
-                .dateTime(LocalDateTime.now())
+                .dateTime(Instant.now())
                 .text("test comment")
                 .build();
 
@@ -71,13 +71,13 @@ public class CommentRepositoryTest {
     public void duplicate() {
         repository.insert(Comment.builder()
                 .id(Comment.key(1, 1, 1))
-                .dateTime(LocalDateTime.now())
+                .dateTime(Instant.now())
                 .text("test comment")
                 .build());
 
         repository.insert(Comment.builder()
                 .id(Comment.key(1, 1, 1))
-                .dateTime(LocalDateTime.now())
+                .dateTime(Instant.now())
                 .text("test comment")
                 .build());
     }

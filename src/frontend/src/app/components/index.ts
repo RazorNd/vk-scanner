@@ -17,20 +17,32 @@
 import {NgModule} from '@angular/core';
 import {PostComponent} from './post/post.component';
 import {CommonModule} from '@angular/common';
-import {MatAutocompleteModule, MatButtonModule, MatCardModule, MatIconModule, MatInputModule, MatListModule} from '@angular/material';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatButtonModule} from '@angular/material/button';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
 import {CommentsListComponent} from './comment/comments-list.component';
 import {PipesModule} from '../pipes/pipes.module';
 import {PostsListComponent} from './posts-list/posts-list.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from '@angular/forms';
 import {PostsFilterComponent} from './posts-filter/posts-filter.component';
+import {DashboardCardComponent} from './dashboard-card/dashboard-card.component';
 import {InfiniteScrollModule} from 'ngx-infinite-scroll';
+import {SpeedometerComponent} from './speedometer/speedometer.component';
+import {NgxGaugeModule} from 'ngx-gauge';
 
 export const COMPONENTS = [
+  DashboardCardComponent,
   PostComponent,
   PostsListComponent,
   PostsFilterComponent,
-  CommentsListComponent
+  CommentsListComponent,
+  SpeedometerComponent
 ];
 
 @NgModule({
@@ -38,6 +50,7 @@ export const COMPONENTS = [
     BrowserAnimationsModule,
     CommonModule,
     ReactiveFormsModule,
+    NgxGaugeModule,
     MatCardModule,
     MatListModule,
     MatInputModule,
@@ -46,6 +59,8 @@ export const COMPONENTS = [
     MatIconModule,
     InfiniteScrollModule,
     PipesModule,
+    MatButtonToggleModule,
+    MatMenuModule,
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

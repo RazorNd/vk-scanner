@@ -16,6 +16,8 @@
 
 package ru.razornd.vk.scanner.repository;
 
+import com.querydsl.core.types.Order;
+import com.querydsl.core.types.OrderSpecifier;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -51,6 +53,7 @@ public class PostSearchRepositoryImpl implements PostSearchRepository {
         final SpringDataMongodbQuery<Post> query = operator.apply(new SpringDataMongodbQuery<>(mongoOperations, Post.class)
                 .join(post.comments, comment)
                 .on(comment.from.id.eq(from))
+                .orderBy(new OrderSpecifier<>(Order.DESC, post.dateTime))
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize()));
 

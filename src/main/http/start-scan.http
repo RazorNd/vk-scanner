@@ -11,3 +11,17 @@ Content-Type: application/json
 65836378
 
 ###
+
+POST http://localhost:8080/api/scan
+Content-Type: application/json
+
+79364564
+
+###
+
+POST http://localhost:8080/api/scan
+Content-Type: application/json
+
+44554443
+
+###
