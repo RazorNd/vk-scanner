@@ -1,4 +1,4 @@
-/*!
+/*
  * Copyright 2019 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,26 +14,21 @@
  * limitations under the License.
  */
 
-.sidenav-container {
-  height: 100%;
-}
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
-.logo {
-  height: 26px;
-  margin: 0 4px 3px 0;
-  fill: #fff;
-}
+@Component({
+  selector: 'sc-dashboard-card',
+  templateUrl: './dashboard-card.component.html',
+  styleUrls: ['./dashboard-card.component.scss']
+})
+export class DashboardCardComponent {
 
-.sidenav {
-  width: 200px;
+  @Input() title: string;
+  @Input() menuItems: string[] = [];
 
-  .mat-toolbar {
-    background: inherit;
-  }
+  @Output() menuClicked = new EventEmitter<string>();
 
-  .mat-toolbar.mat-primary {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  onMenuClick(item: string) {
+    this.menuClicked.emit(item);
   }
 }

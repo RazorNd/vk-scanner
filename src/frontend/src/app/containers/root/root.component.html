@@ -19,6 +19,7 @@
                mode="over">
     <mat-toolbar>Меню</mat-toolbar>
     <mat-nav-list>
+      <a mat-list-item routerLink="dashboard">Dashboard</a>
       <a mat-list-item routerLink="posts">Посты</a>
     </mat-nav-list>
   </mat-sidenav>
@@ -31,7 +32,10 @@
         type="button">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>VK - сканер</span>
+      <a mat-button routerLink="/">
+        <img alt="vk-scanner" class="logo" src="assets/icons/loupe.svg">
+        <span>VK - сканер</span>
+      </a>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

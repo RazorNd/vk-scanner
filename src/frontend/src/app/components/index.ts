@@ -31,8 +31,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ReactiveFormsModule} from '@angular/forms';
 import {PostsFilterComponent} from './posts-filter/posts-filter.component';
 import {InfiniteScrollModule} from 'ngx-infinite-scroll';
+import {DashboardCardComponent} from './dashboard-card/dashboard-card.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 export const COMPONENTS = [
+  DashboardCardComponent,
   PostComponent,
   PostsListComponent,
   PostsFilterComponent,
@@ -53,6 +56,7 @@ export const COMPONENTS = [
     InfiniteScrollModule,
     PipesModule,
     MatButtonToggleModule,
+    MatMenuModule,
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS

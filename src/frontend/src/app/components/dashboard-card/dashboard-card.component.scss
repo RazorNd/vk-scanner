@@ -14,26 +14,16 @@
  * limitations under the License.
  */
 
-.sidenav-container {
-  height: 100%;
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
 }
 
-.logo {
-  height: 26px;
-  margin: 0 4px 3px 0;
-  fill: #fff;
-}
-
-.sidenav {
-  width: 200px;
-
-  .mat-toolbar {
-    background: inherit;
-  }
-
-  .mat-toolbar.mat-primary {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
 }

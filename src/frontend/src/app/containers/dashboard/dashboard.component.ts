@@ -1,4 +1,4 @@
-/*!
+/*
  * Copyright 2019 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,26 +14,13 @@
  * limitations under the License.
  */
 
-.sidenav-container {
-  height: 100%;
-}
+import {Component} from '@angular/core';
 
-.logo {
-  height: 26px;
-  margin: 0 4px 3px 0;
-  fill: #fff;
-}
+@Component({
+  selector: 'sc-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.scss']
+})
+export class DashboardComponent {
 
-.sidenav {
-  width: 200px;
-
-  .mat-toolbar {
-    background: inherit;
-  }
-
-  .mat-toolbar.mat-primary {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
 }
