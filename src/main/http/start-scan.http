@@ -8,20 +8,30 @@
 POST http://localhost:8080/api/scan
 Content-Type: application/json
 
-65836378
+{
+  "groupId": 65836378,
+  "duration": 1
+}
 
 ###
 
 POST http://localhost:8080/api/scan
 Content-Type: application/json
 
-79364564
+
+{
+  "groupId": 79364564,
+  "duration": 1
+}
 
 ###
 
 POST http://localhost:8080/api/scan
 Content-Type: application/json
 
-44554443
+{
+  "groupId": 44554443,
+  "duration": 1
+}
 
 ###

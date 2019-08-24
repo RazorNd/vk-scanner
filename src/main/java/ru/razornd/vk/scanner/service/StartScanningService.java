@@ -27,7 +27,7 @@ public class StartScanningService {
     private final Executor executor;
     private final ScannerService scannerService;
 
-    public void startScanning(int groupId) {
-        executor.execute(() -> scannerService.scanGroup(groupId, Period.ofMonths(3)));
+    public void startScanning(int groupId, int periodOfMonths) {
+        executor.execute(() -> scannerService.scanGroup(groupId, Period.ofMonths(periodOfMonths)));
     }
 }

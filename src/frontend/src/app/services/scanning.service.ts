@@ -18,6 +18,8 @@ import {Injectable} from '@angular/core';
 import {RxStompService} from '@stomp/ng2-stompjs';
 import {Observable} from 'rxjs';
 import {bufferCount, count, flatMap, map, windowTime} from 'rxjs/operators';
+import {HttpClient} from '@angular/common/http';
+import {ScanningOptions} from '../models/scanning-options';
 
 function average(numbers: number[]): number {
   return numbers.reduce((sum, current) => sum + current) / numbers.length;
@@ -32,7 +34,15 @@ export enum ScanningEventType {
   providedIn: 'root'
 })
 export class ScanningService {
-  constructor(private stompService: RxStompService) {
+  constructor(private stompService: RxStompService,
+              private httpClient: HttpClient) {
+  }
+
+  startScanning(scanningOption: ScanningOptions): Observable<boolean> {
+    return this.httpClient.post('/api/scan', scanningOption, {observe: 'response'})
+      .pipe(
+        map(r => r.ok)
+      );
   }
 
   scanned(eventType: ScanningEventType): Observable<any> {

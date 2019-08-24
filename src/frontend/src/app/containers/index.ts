@@ -29,6 +29,7 @@ import {AppRoutingModule} from '../app-routing.module';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {ScanSpeedComponent} from './scan-speed/scan-speed.component';
 import {StartScanningComponent} from './start-scanning/start-scanning.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 export const COMPONENTS = [
   DashboardComponent,
@@ -46,6 +47,7 @@ export const COMPONENTS = [
     MatGridListModule,
     MatIconModule,
     MatButtonModule,
+    MatSnackBarModule,
     ComponentModule,
     CommonModule,
     AppRoutingModule
