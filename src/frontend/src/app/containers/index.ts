@@ -28,12 +28,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {AppRoutingModule} from '../app-routing.module';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {ScanSpeedComponent} from './scan-speed/scan-speed.component';
+import {StartScanningComponent} from './start-scanning/start-scanning.component';
 
 export const COMPONENTS = [
   DashboardComponent,
   RootComponent,
   PostsSearchComponent,
-  ScanSpeedComponent
+  ScanSpeedComponent,
+  StartScanningComponent
 ];
 
 @NgModule({
