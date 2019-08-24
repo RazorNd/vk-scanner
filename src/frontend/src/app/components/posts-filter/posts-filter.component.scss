@@ -16,14 +16,23 @@
 
 .sc-posts-filter-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   .sc-posts-filter-field {
     width: 100%;
-    margin-left: 26px;
+    min-width: 200px;
+    flex: 1;
 
-    &:first-child {
-      margin-left: 0;
+    @media (min-width: 528px) {
+      padding: 0 13px;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+      &:first-of-type {
+        padding-left: 0;
+      }
     }
   }
 }
