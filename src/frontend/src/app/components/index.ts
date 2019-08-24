@@ -35,6 +35,9 @@ import {DashboardCardComponent} from './dashboard-card/dashboard-card.component'
 import {InfiniteScrollModule} from 'ngx-infinite-scroll';
 import {SpeedometerComponent} from './speedometer/speedometer.component';
 import {NgxGaugeModule} from 'ngx-gauge';
+import {MatSelectModule} from '@angular/material/select';
+import {MatRadioModule} from '@angular/material/radio';
+import {StartScanningFormComponent} from './start-scanning-form/start-scanning-form.component';
 
 export const COMPONENTS = [
   DashboardCardComponent,
@@ -42,7 +45,8 @@ export const COMPONENTS = [
   PostsListComponent,
   PostsFilterComponent,
   CommentsListComponent,
-  SpeedometerComponent
+  SpeedometerComponent,
+  StartScanningFormComponent
 ];
 
 @NgModule({
@@ -61,6 +65,8 @@ export const COMPONENTS = [
     PipesModule,
     MatButtonToggleModule,
     MatMenuModule,
+    MatSelectModule,
+    MatRadioModule,
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS
