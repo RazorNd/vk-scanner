@@ -55,6 +55,11 @@ public class SubjectServiceImpl implements SubjectService {
         return repository.findByName(filter, pageable);
     }
 
+    @Override
+    public long count() {
+        return repository.count();
+    }
+
     private int prepareId(int subjectId) {
         return Math.abs(subjectId);
     }

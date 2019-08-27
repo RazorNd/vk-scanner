@@ -14,19 +14,23 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.service;
+package ru.razornd.vk.scanner.controller;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import ru.razornd.vk.scanner.model.Subject;
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import ru.razornd.vk.scanner.repository.CommentRepository;
 
-public interface SubjectService {
+@RestController
+@RequestMapping("/api/comments")
+@RequiredArgsConstructor
+public class CommentsController {
 
-    Subject getSubject(int subjectId);
+    private final CommentRepository repository;
 
-    Subject synchronize(int subjectId);
-
-    Page<Subject> findSubjects(String filter, String type, Pageable pageable);
-
-    long count();
+    @GetMapping("/count")
+    public long count() {
+        return repository.count();
+    }
 }

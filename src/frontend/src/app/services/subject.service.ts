@@ -26,6 +26,8 @@ import {Page} from '../models/page';
 
 export abstract class SubjectService {
   abstract loadSubject(filter: string, subjectType: SubjectType): Observable<Owner[]>;
+
+  abstract count(): Observable<number>;
 }
 
 export class MockSubjectService extends SubjectService {
@@ -45,6 +47,10 @@ export class MockSubjectService extends SubjectService {
     }
 
     return of(result.filter(subject => subject.name.includes(filter))).pipe(delay(this.delayMS, this.scheduler));
+  }
+
+  count(): Observable<number> {
+    return of(USERS.length + OWNERS.length);
   }
 }
 
@@ -71,5 +77,9 @@ export class BackendSubjectService extends SubjectService {
     }).pipe(
       map(dto => dto.content)
     );
+  }
+
+  count(): Observable<number> {
+    return this.http.get<number>(BackendSubjectService.URL + '/count');
   }
 }

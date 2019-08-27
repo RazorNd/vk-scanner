@@ -31,6 +31,8 @@ export interface Filter {
 
 export abstract class PostsService {
   abstract getPosts(filter: Filter, page: number): Observable<Post[]>;
+
+  abstract count(): Observable<number>;
 }
 
 
@@ -69,6 +71,10 @@ export class BackendPostsService extends PostsService {
 
     return httpParams;
   }
+
+  count(): Observable<number> {
+    return this.http.get<number>(BackendPostsService.URL + '/count');
+  }
 }
 
 @Injectable()
@@ -78,5 +84,9 @@ export class MockPostsService extends PostsService {
       return of([]).pipe(delay(1300));
     }
     return of(POSTS).pipe(delay(700));
+  }
+
+  count(): Observable<number> {
+    return of(POSTS.length);
   }
 }

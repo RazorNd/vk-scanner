@@ -42,4 +42,9 @@ public class PostsController {
 
         return assembler.toResource(service.searchPosts(fromId, ownerId, pageable));
     }
+
+    @GetMapping("/count")
+    public long count() {
+        return service.count();
+    }
 }

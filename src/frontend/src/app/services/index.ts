@@ -18,6 +18,10 @@ import {NgModule} from '@angular/core';
 import {BackendPostsService, PostsService} from './posts.service';
 import {BackendSubjectService, SubjectService} from './subject.service';
 import {HttpClientModule} from '@angular/common/http';
+import {CommentsService} from './comments.service';
+import {StatsService} from './stats.service';
+import {asyncScheduler} from 'rxjs';
+import scheduler from './scheduler';
 
 @NgModule({
   imports: [
@@ -29,7 +33,12 @@ import {HttpClientModule} from '@angular/common/http';
     },
     {
       provide: SubjectService, useClass: BackendSubjectService
-    }
+    },
+    {
+      provide: scheduler, useValue: asyncScheduler
+    },
+    CommentsService,
+    StatsService
   ]
 })
 export class ServiceModule {

@@ -44,4 +44,9 @@ public class SubjectController {
                                                          PagedResourcesAssembler<Subject> assembler) {
         return assembler.toResource(service.findSubjects(filter, type, pageable));
     }
+
+    @GetMapping("/count")
+    public long count() {
+        return service.count();
+    }
 }

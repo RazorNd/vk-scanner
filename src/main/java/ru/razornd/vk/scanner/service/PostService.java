@@ -38,4 +38,8 @@ public class PostService {
             return postRepository.findAllWithFromId(from, pageable);
         }
     }
+
+    public long count() {
+        return postRepository.count();
+    }
 }

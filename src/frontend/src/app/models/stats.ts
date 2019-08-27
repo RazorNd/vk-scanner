@@ -14,19 +14,8 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.service;
-
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import ru.razornd.vk.scanner.model.Subject;
-
-public interface SubjectService {
-
-    Subject getSubject(int subjectId);
-
-    Subject synchronize(int subjectId);
-
-    Page<Subject> findSubjects(String filter, String type, Pageable pageable);
-
-    long count();
+export interface Stats {
+  subjectCount: number;
+  postsCount: number;
+  commentsCount: number;
 }

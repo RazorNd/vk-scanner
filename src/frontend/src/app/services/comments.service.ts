@@ -14,19 +14,18 @@
  * limitations under the License.
  */
 
-package ru.razornd.vk.scanner.service;
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import ru.razornd.vk.scanner.model.Subject;
+@Injectable()
+export class CommentsService {
+  private static readonly URL = '/api/comments';
 
-public interface SubjectService {
+  constructor(private readonly http: HttpClient) {
+  }
 
-    Subject getSubject(int subjectId);
-
-    Subject synchronize(int subjectId);
-
-    Page<Subject> findSubjects(String filter, String type, Pageable pageable);
-
-    long count();
+  count(): Observable<number> {
+    return this.http.get<number>(CommentsService.URL + '/count');
+  }
 }
