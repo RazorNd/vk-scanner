@@ -94,12 +94,12 @@ describe('StatsService', () => {
 
     testScheduler.maxFrames = 3100;
 
-    expect(service.getStatInterval(1000)).toBeObservable(cold('1s ----r 990ms r 990ms r', {
+    expect(service.getStatInterval(1000)).toBeObservable(cold('----r 990ms r 990ms r 990ms r', {
       r: stats
     }));
 
-    expect(subjectService.count.calls.count()).toBe(3);
-    expect(postsService.count.calls.count()).toBe(3);
-    expect(commentsService.count.calls.count()).toBe(3);
+    expect(subjectService.count.calls.count()).toBe(5);
+    expect(postsService.count.calls.count()).toBe(5);
+    expect(commentsService.count.calls.count()).toBe(5);
   });
 });

@@ -20,7 +20,7 @@ import {PostsService} from './posts.service';
 import {CommentsService} from './comments.service';
 import {asyncScheduler, combineLatest, interval, Observable, Scheduler} from 'rxjs';
 import {Stats} from '../models/stats';
-import {flatMap, map} from 'rxjs/operators';
+import {flatMap, map, startWith} from 'rxjs/operators';
 import SCHEDULER from './scheduler';
 
 @Injectable()
@@ -48,6 +48,7 @@ export class StatsService {
 
   getStatInterval(period: number): Observable<Stats> {
     return interval(period, this.scheduler).pipe(
+      startWith(this.getStat()),
       flatMap(_ => this.getStat())
     );
   }
