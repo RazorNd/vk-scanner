@@ -17,8 +17,17 @@
 import {Component} from '@angular/core';
 import {select, Store} from '@ngrx/store';
 import {GetNextPageAction, SearchFromChangeAction, SearchOwnerChangeAction} from '../../actions/posts.actions';
-import {getFilterFromOptions, getFilterOwnerOptions, getLoadedPosts, getPostsFilter, State} from '../../reducers';
+import {
+  getFilterFromOptions,
+  getFilterOwnerOptions,
+  getFromValue,
+  getLoadedPosts,
+  getOwnerValue,
+  getPostsFilter,
+  State
+} from '../../reducers';
 import {FilterChanged} from '../../actions/filter.actions';
+import {filter, pluck, take} from 'rxjs/operators';
 
 @Component({
   selector: 'sc-posts-search',
@@ -34,6 +43,20 @@ export class PostsSearchComponent {
   fromOptions$ = this.store.pipe(select(getFilterFromOptions));
 
   ownerOptions$ = this.store.pipe(select(getFilterOwnerOptions));
+
+  fromValue$ = this.store.pipe(
+    select(getFromValue),
+    take(1),
+    filter(Boolean),
+    pluck('name')
+  );
+
+  ownerValue$ = this.store.pipe(
+    select(getOwnerValue),
+    take(1),
+    filter(Boolean),
+    pluck('name')
+  );
 
   constructor(private store: Store<State>) {
   }

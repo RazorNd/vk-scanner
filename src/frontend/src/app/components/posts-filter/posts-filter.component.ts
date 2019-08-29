@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {debounceTime, distinctUntilChanged, filter, map} from 'rxjs/operators';
 import {asyncScheduler, Observable, OperatorFunction} from 'rxjs';
@@ -36,7 +36,7 @@ function selectChanges(property: string, dueTime = 500): OperatorFunction<any, s
   templateUrl: './posts-filter.component.html',
   styleUrls: ['./posts-filter.component.scss']
 })
-export class PostsFilterComponent {
+export class PostsFilterComponent implements OnInit {
   form = new FormGroup({
     from: new FormControl(),
     owner: new FormControl(),
@@ -46,6 +46,10 @@ export class PostsFilterComponent {
 
   @Input() ownerOptions: Owner[] = [];
 
+  @Input() fromValue: string;
+
+  @Input() ownerValue: string;
+
   @Output() filterFromChanged: Observable<string> = this.form.valueChanges.pipe(selectChanges('from'));
 
   @Output() filterOwnerChanged: Observable<string> = this.form.valueChanges.pipe(selectChanges('owner'));
@@ -53,4 +57,11 @@ export class PostsFilterComponent {
   @Output() fromSelected: EventEmitter<number> = new EventEmitter();
 
   @Output() ownerSelected: EventEmitter<number> = new EventEmitter();
+
+  ngOnInit(): void {
+    this.form.patchValue({
+      from: this.fromValue,
+      owner: this.ownerValue
+    });
+  }
 }
