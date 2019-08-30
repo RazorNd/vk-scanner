@@ -15,7 +15,10 @@
  */
 
 .grid-container {
-  margin: 20px;
+  margin: 8px;
+  @media (min-width: 450px) {
+    margin: 20px;
+  }
 }
 
 .dashboard {
@@ -23,10 +26,10 @@
   flex-flow: row wrap;
 
   .dashboard-card {
-    padding: 15px;
+    padding-bottom: 16px;
 
     &.full-width {
-      flex-basis: calc(100% - 30px);
+      flex-basis: 100%;
 
       @media (max-width: 700px) {
         display: none;
@@ -34,10 +37,20 @@
     }
 
     &.half-width {
-      flex-basis: calc(50% - 30px);
-
+      flex-grow: 1;
       @media (max-width: 950px) {
-        flex-grow: 1;
+        min-width: 100%;
+      }
+      @media (min-width: 950px) {
+        padding: 0 8px;
+
+        &:nth-child(2n) {
+          padding-left: 0;
+        }
+        &:nth-child(2n+1) {
+          padding-right: 0;
+        }
+        max-width: 50%;
       }
     }
   }

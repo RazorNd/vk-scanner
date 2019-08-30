@@ -30,12 +30,15 @@ import {DashboardComponent} from './dashboard/dashboard.component';
 import {ScanSpeedComponent} from './scan-speed/scan-speed.component';
 import {StartScanningComponent} from './start-scanning/start-scanning.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {StatsComponent} from './stats/stats.component';
+import {ChartsModule} from 'ng2-charts';
 
 export const COMPONENTS = [
   DashboardComponent,
   RootComponent,
   PostsSearchComponent,
   ScanSpeedComponent,
+  StatsComponent,
   StartScanningComponent
 ];
 
@@ -50,7 +53,8 @@ export const COMPONENTS = [
     MatSnackBarModule,
     ComponentModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   declarations: COMPONENTS,
   exports: COMPONENTS
