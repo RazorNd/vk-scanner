@@ -18,11 +18,15 @@ import {TestBed} from '@angular/core/testing';
 
 import {ScanningService} from './scanning.service';
 import {RxStompService} from '@stomp/ng2-stompjs';
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 describe('ScanningService', () => {
   beforeEach(() => TestBed.configureTestingModule({
+    imports: [
+      HttpClientTestingModule
+    ],
     providers: [
-      {provide: RxStompService, useValue: null}
+      {provide: RxStompService, useValue: null},
     ]
   }));
 
