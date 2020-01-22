@@ -18,20 +18,48 @@ import {TestBed} from '@angular/core/testing';
 
 import {ScanningService} from './scanning.service';
 import {RxStompService} from '@stomp/ng2-stompjs';
-import {HttpClientTestingModule} from "@angular/common/http/testing";
+import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
 
 describe('ScanningService', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [
-      HttpClientTestingModule
-    ],
-    providers: [
-      {provide: RxStompService, useValue: null},
-    ]
-  }));
+  let testingController: HttpTestingController;
+  let service: ScanningService;
+  let stompService: jasmine.SpyObj<RxStompService>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      imports: [
+        HttpClientTestingModule
+      ],
+      providers: [
+        {provide: RxStompService, useValue: jasmine.createSpyObj('RxStompService', ['watch'])},
+      ]
+    });
+
+    testingController = TestBed.get(HttpTestingController);
+    service = TestBed.get(ScanningService);
+    stompService = TestBed.get(RxStompService);
+  });
 
   it('should be created', () => {
-    const service: ScanningService = TestBed.get(ScanningService);
     expect(service).toBeTruthy();
+  });
+
+  it('should be send request to backend on start scanning', () => {
+    service.startScanning({duration: 3, groupId: '32123'})
+      .subscribe(r => expect(r).toBeTruthy(), fail);
+
+    const request = testingController.expectOne('/api/scan');
+
+    expect(request.request.method).toBe('POST');
+
+    request.flush(null);
+  });
+
+  it('start scanning should return observable with error if backend send exception', () => {
+    service.startScanning({duration: 3, groupId: '32123'})
+      .subscribe(fail, error => expect(error).toBeTruthy());
+
+    const testRequest = testingController.expectOne('/api/scan');
+    testRequest.error(new ErrorEvent('Service Unavailable'), {status: 503})
   });
 });

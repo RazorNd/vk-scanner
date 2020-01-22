@@ -45,7 +45,7 @@ export class ScanningService {
       );
   }
 
-  scanned(eventType: ScanningEventType): Observable<any> {
+  private scanned(eventType: ScanningEventType): Observable<any> {
     return this.stompService.watch(eventType);
   }
 
