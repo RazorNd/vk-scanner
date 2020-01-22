@@ -22,7 +22,6 @@ import {PostsService} from './posts.service';
 import {CommentsService} from './comments.service';
 import {cold, getTestScheduler} from 'jasmine-marbles';
 import {Stats} from '../models/stats';
-import scheduler from './scheduler';
 import {TestScheduler} from 'rxjs/testing';
 
 describe('StatsService', () => {
@@ -38,13 +37,14 @@ describe('StatsService', () => {
         {provide: SubjectService, useValue: jasmine.createSpyObj('SubjectService', ['count'])},
         {provide: PostsService, useValue: jasmine.createSpyObj('PostsService', ['count'])},
         {provide: CommentsService, useValue: jasmine.createSpyObj('CommentsService', ['count'])},
-        {provide: scheduler, useValue: getTestScheduler()}
+        // {provide: scheduler, useValue: getTestScheduler()}
       ]
     });
 
     subjectService = TestBed.get(SubjectService);
     postsService = TestBed.get(PostsService);
     commentsService = TestBed.get(CommentsService);
+    TestBed.get(StatsService).scheduler = getTestScheduler();
   });
 
   it('should be created', () => {
@@ -90,7 +90,7 @@ describe('StatsService', () => {
     };
     mockResults(stats);
     const service: StatsService = TestBed.get(StatsService);
-    const testScheduler: TestScheduler = TestBed.get(scheduler);
+    const testScheduler: TestScheduler = service.scheduler as TestScheduler;
 
     testScheduler.maxFrames = 3100;
 

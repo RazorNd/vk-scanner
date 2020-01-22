@@ -14,30 +14,30 @@
  * limitations under the License.
  */
 
-import {Inject, Injectable} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {SubjectService} from './subject.service';
 import {PostsService} from './posts.service';
 import {CommentsService} from './comments.service';
-import {asyncScheduler, combineLatest, interval, Observable, Scheduler} from 'rxjs';
+import {asyncScheduler, combineLatest, interval, Observable, SchedulerLike} from 'rxjs';
 import {Stats} from '../models/stats';
 import {flatMap, map, startWith} from 'rxjs/operators';
-import SCHEDULER from './scheduler';
 
 @Injectable()
 export class StatsService {
 
+  public scheduler: SchedulerLike = asyncScheduler;
+
   constructor(private readonly subjectService: SubjectService,
               private readonly postsService: PostsService,
-              private readonly commentsService: CommentsService,
-              @Inject(SCHEDULER) private readonly scheduler: Scheduler = asyncScheduler) {
+              private readonly commentsService: CommentsService) {
   }
 
   getStat(): Observable<Stats> {
-    return combineLatest(
+    return combineLatest([
       this.subjectService.count(),
       this.postsService.count(),
       this.commentsService.count()
-    ).pipe(
+    ]).pipe(
       map(([subjectCount, postsCount, commentsCount]) => ({
         subjectCount,
         postsCount,
