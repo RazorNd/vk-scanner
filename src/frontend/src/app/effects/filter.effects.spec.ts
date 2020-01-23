@@ -36,7 +36,13 @@ describe('FilterEffects', () => {
       providers: [
         FilterEffects,
         provideMockActions(() => actions$),
-        {provide: SubjectService, useValue: new MockSubjectService(delay, getTestScheduler())}
+        {
+          provide: SubjectService, useFactory: () => {
+            const service = new MockSubjectService(delay);
+            service.scheduler = getTestScheduler();
+            return service;
+          }
+        }
       ]
     });
 

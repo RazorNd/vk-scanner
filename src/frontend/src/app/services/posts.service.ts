@@ -21,7 +21,7 @@ import {POSTS} from '../stubs/posts.stub';
 import {of} from 'rxjs/internal/observable/of';
 import {delay, map} from 'rxjs/operators';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {Page} from '../models/page';
+import {BackendPagedResponse} from "../models/backend-paged-response";
 
 
 export interface Filter {
@@ -36,11 +36,6 @@ export abstract class PostsService {
 }
 
 
-interface BackendResult<T> {
-  content: T[];
-  page: Page;
-}
-
 @Injectable()
 export class BackendPostsService extends PostsService {
   private static readonly URL = '/api/posts';
@@ -52,14 +47,14 @@ export class BackendPostsService extends PostsService {
   }
 
   getPosts(filter: Filter, page: number): Observable<Post[]> {
-    return this.http.get<BackendResult<Post>>(BackendPostsService.URL, {
+    return this.http.get<BackendPagedResponse<Post>>(BackendPostsService.URL, {
       params: this.createParams(filter)
     }).pipe(
       map(dto => dto.content)
     );
   }
 
-  private createParams(filter: Filter) {
+  protected createParams(filter: Filter) {
     let httpParams = new HttpParams();
 
     if (filter.from) {

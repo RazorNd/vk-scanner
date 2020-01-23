@@ -18,7 +18,7 @@ import 'chartjs-plugin-datalabels';
 import {Component} from '@angular/core';
 import {StatsService} from '../../services/stats.service';
 import {map, startWith} from 'rxjs/operators';
-import {Chart, ChartOptions} from 'chart.js';
+import {ChartOptions} from 'chart.js';
 
 @Component({
   selector: 'sc-stats',

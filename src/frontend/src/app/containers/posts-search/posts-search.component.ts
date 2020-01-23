@@ -48,14 +48,14 @@ export class PostsSearchComponent {
     select(getFromValue),
     take(1),
     filter(Boolean),
-    pluck('name')
+    pluck<State, string>('name')
   );
 
   ownerValue$ = this.store.pipe(
     select(getOwnerValue),
     take(1),
     filter(Boolean),
-    pluck('name')
+    pluck<State, string>('name')
   );
 
   constructor(private store: Store<State>) {

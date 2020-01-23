@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,8 +14,23 @@
  * limitations under the License.
  */
 
-export enum SubjectType {
-  user = 'user',
-  group = 'group',
-  all = 'all'
+import {Page} from "./page";
+
+export interface BackendPagedResponse<T> {
+  content: T[];
+  page: Page;
+}
+
+export function createBackendPagedResponse<T>(content: T[],
+                                              number: number = 0,
+                                              totalElements = content.length * 4): BackendPagedResponse<T> {
+  return {
+    content,
+    page: {
+      size: content.length,
+      number,
+      totalElements,
+      totalPages: Math.ceil(totalElements / content.length)
+    }
+  }
 }

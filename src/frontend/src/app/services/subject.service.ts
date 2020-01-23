@@ -22,7 +22,7 @@ import {USERS} from '../stubs/users.stub';
 import {OWNERS} from '../stubs/owners.stub';
 import {delay, map} from 'rxjs/operators';
 import {HttpClient, HttpParams} from '@angular/common/http';
-import {Page} from '../models/page';
+import {BackendPagedResponse} from "../models/backend-paged-response";
 
 export abstract class SubjectService {
   abstract loadSubject(filter: string, subjectType: SubjectType): Observable<Owner[]>;
@@ -31,8 +31,10 @@ export abstract class SubjectService {
 }
 
 export class MockSubjectService extends SubjectService {
-  constructor(private delayMS: number = 700,
-              private scheduler: SchedulerLike = asyncScheduler) {
+
+  scheduler: SchedulerLike = asyncScheduler;
+
+  constructor(private delayMS: number = 700) {
     super();
   }
 
@@ -54,11 +56,6 @@ export class MockSubjectService extends SubjectService {
   }
 }
 
-interface FindSubjectDto {
-  content: Owner[];
-  page: Page;
-}
-
 @Injectable()
 export class BackendSubjectService extends SubjectService {
   private static readonly TYPE = 'type';
@@ -70,7 +67,7 @@ export class BackendSubjectService extends SubjectService {
   }
 
   loadSubject(filter: string, subjectType: SubjectType): Observable<Owner[]> {
-    return this.http.get<FindSubjectDto>(BackendSubjectService.URL, {
+    return this.http.get<BackendPagedResponse<Owner>>(BackendSubjectService.URL, {
       params: new HttpParams()
         .set(BackendSubjectService.FILTER, filter)
         .set(BackendSubjectService.TYPE, subjectType.toString())

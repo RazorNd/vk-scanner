@@ -16,17 +16,96 @@
 
 import {TestBed} from '@angular/core/testing';
 
-import {MockSubjectService, SubjectService} from './subject.service';
+import {BackendSubjectService, MockSubjectService, SubjectService} from './subject.service';
+import {SubjectType} from "../models/subject-type";
+import {USERS} from "../stubs/users.stub";
+import {OWNERS} from "../stubs/owners.stub";
+import {Owner} from "../models/owner";
+import {HttpClientTestingModule, HttpTestingController} from "@angular/common/http/testing";
+import {createBackendPagedResponse} from "../models/backend-paged-response";
+
+function shouldBeCreated() {
+  const service: SubjectService = TestBed.get(SubjectService);
+  expect(service).toBeTruthy();
+}
 
 describe('SubjectService', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    providers: [
-      {provide: SubjectService, useValue: new MockSubjectService()}
-    ]
-  }));
 
-  it('should be created', () => {
-    const service: SubjectService = TestBed.get(SubjectService);
-    expect(service).toBeTruthy();
+  let service: SubjectService;
+
+  function serviceShouldReturn(filter: string, subjectType: SubjectType, expected: Owner[]) {
+    return (done) => {
+      service.loadSubject(filter, subjectType)
+        .subscribe(values => expect(values).toEqual(expected), fail, done);
+    };
+  }
+
+  describe('MockSubjectService', () => {
+
+    beforeEach(() => {
+      TestBed.configureTestingModule({
+        providers: [
+          {provide: SubjectService, useValue: new MockSubjectService()}
+        ]
+      });
+      service = TestBed.get(SubjectService);
+    });
+
+    it('should be created', shouldBeCreated);
+
+    it('should return all test data', serviceShouldReturn('', SubjectType.all, [...USERS, ...OWNERS]));
+
+    it('should return only users', serviceShouldReturn('Иван', SubjectType.user, [USERS[0]]));
+
+    it('should return only owners', serviceShouldReturn('Group', SubjectType.group, OWNERS));
   });
+
+  describe('BackendSubjectService', () => {
+    let testingController: HttpTestingController;
+
+    beforeEach(() => {
+      TestBed.configureTestingModule({
+        imports: [
+          HttpClientTestingModule
+        ],
+        providers: [
+          {provide: SubjectService, useClass: BackendSubjectService}
+        ]
+      });
+      testingController = TestBed.get(HttpTestingController);
+      service = TestBed.get(SubjectService);
+    });
+
+    it('should be created', shouldBeCreated);
+
+    it('should return subjects from backend', (done) => {
+      const expectedFilter = 'Filter';
+      const expectedResult = [...USERS, ...OWNERS];
+
+      service.loadSubject(expectedFilter, SubjectType.all)
+        .subscribe(values => expect(values).toEqual(expectedResult), fail, done);
+
+      const testRequest = testingController.expectOne(req => req.url.startsWith('/api/subjects') && req.method == 'GET');
+
+      expect(testRequest.request.params.get('f')).toBe(expectedFilter);
+      expect(testRequest.request.params.get('type')).toBe('all');
+
+      testRequest.flush(createBackendPagedResponse(expectedResult));
+
+      testingController.verify();
+    });
+
+    it('should return subjects count from backend', (done) => {
+      const expected = 42;
+      service.count()
+        .subscribe(count => expect(count).toBe(expected), fail, done);
+
+      const testRequest = testingController.expectOne('/api/subjects/count');
+
+      testRequest.flush(expected);
+
+      testingController.verify();
+    });
+  });
+
 });
