@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,13 @@
 
 package ru.razornd.vk.scanner.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
-@Data
+import java.net.URL;
+
+@Getter
+@Setter
+@ToString
 @EqualsAndHashCode(callSuper = true)
 public class Group extends AbstractSubject {
 
@@ -28,7 +30,7 @@ public class Group extends AbstractSubject {
     private final String description;
 
     @Builder
-    public Group(int id, String icon, String name, String description) {
+    public Group(int id, URL icon, String name, String description) {
         super(id, icon);
         this.name = name;
         this.description = description;

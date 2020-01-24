@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2019 Daniil <razornd> Razorenov
+  ~ Copyright (c) 2020 Daniil <razornd> Razorenov
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -32,7 +32,7 @@
 
     <properties>
         <java.version>9</java.version>
-        <vk.sdk.version>0.5.12</vk.sdk.version>
+        <vk.sdk.version>1.0.6</vk.sdk.version>
     </properties>
 
     <dependencies>
@@ -78,6 +78,12 @@
             <groupId>com.vk.api</groupId>
             <artifactId>sdk</artifactId>
             <version>${vk.sdk.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-slf4j-impl</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -130,11 +136,6 @@
                 </executions>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>src/frontend/dist</directory>
-            </resource>
-        </resources>
     </build>
 
 </project>

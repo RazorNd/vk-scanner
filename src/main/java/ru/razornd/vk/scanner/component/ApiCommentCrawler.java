@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,7 +74,8 @@ public class ApiCommentCrawler implements CommentCrawler {
 
         private WallGetCommentsQuery defaultPostQuery() {
             return client.wall()
-                    .getComments(actor, postId)
+                    .getComments(actor)
+                    .postId(postId)
                     .ownerId(ownerId);
         }
     }

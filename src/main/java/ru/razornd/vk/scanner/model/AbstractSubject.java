@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,12 +19,14 @@ package ru.razornd.vk.scanner.model;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
+import java.net.URL;
+
 @Data
 @SubjectModel
 public abstract class AbstractSubject implements Subject {
 
     @Id
     private final int id;
-    private final String icon;
+    private final URL icon;
 
 }

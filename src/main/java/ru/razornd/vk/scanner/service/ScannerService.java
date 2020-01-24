@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 package ru.razornd.vk.scanner.service;
 
 import com.vk.api.sdk.objects.wall.WallComment;
-import com.vk.api.sdk.objects.wall.WallPostFull;
+import com.vk.api.sdk.objects.wall.WallpostFull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.simp.SimpMessageSendingOperations;
@@ -56,7 +56,7 @@ public class ScannerService {
         return Instant.ofEpochSecond(date);
     }
 
-    private Post mapPost(WallPostFull wallPostFull) {
+    private Post mapPost(WallpostFull wallPostFull) {
         return Post.builder()
                 .id(Post.key(wallPostFull.getOwnerId(), wallPostFull.getId()))
                 .dateTime(mapDateTime(wallPostFull.getDate()))

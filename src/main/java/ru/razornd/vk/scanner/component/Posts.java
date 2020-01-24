@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +16,13 @@
 
 package ru.razornd.vk.scanner.component;
 
-import com.vk.api.sdk.objects.wall.WallPostFull;
+import com.vk.api.sdk.objects.wall.WallpostFull;
 
 import java.util.List;
 import java.util.stream.Stream;
 
 public interface Posts {
-    List<WallPostFull> getNextPosts();
+    List<WallpostFull> getNextPosts();
 
-    Stream<WallPostFull> getAllPosts();
+    Stream<WallpostFull> getAllPosts();
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,11 +17,13 @@
 package ru.razornd.vk.scanner.model;
 
 import com.vk.api.sdk.objects.base.Sex;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
-@Data
+import java.net.URL;
+
+@Getter
+@Setter
+@ToString
 @SubjectModel
 @EqualsAndHashCode(callSuper = true)
 public class User extends AbstractSubject {
@@ -33,13 +35,7 @@ public class User extends AbstractSubject {
     private final Sex sex;
 
     @Builder
-    public User(int id,
-                String icon,
-                String firstName,
-                String lastName,
-                String birthday,
-                String screenName,
-                Sex sex) {
+    public User(int id, URL icon, String firstName, String lastName, String birthday, String screenName, Sex sex) {
         super(id, icon);
         this.firstName = firstName;
         this.lastName = lastName;
