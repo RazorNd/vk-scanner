@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,12 +25,12 @@ import {BackendPagedResponse} from "../models/backend-paged-response";
 
 
 export interface Filter {
-  from: number;
-  owner: number;
+  from?: number;
+  owner?: number;
 }
 
 export abstract class PostsService {
-  abstract getPosts(filter: Filter, page: number): Observable<Post[]>;
+  abstract getPosts(filter: Filter, page?: number): Observable<Post[]>;
 
   abstract count(): Observable<number>;
 }
@@ -46,15 +46,15 @@ export class BackendPostsService extends PostsService {
     super();
   }
 
-  getPosts(filter: Filter, page: number): Observable<Post[]> {
+  getPosts(filter: Filter, page: number = 0): Observable<Post[]> {
     return this.http.get<BackendPagedResponse<Post>>(BackendPostsService.URL, {
-      params: this.createParams(filter)
+      params: this.createParams(filter, page)
     }).pipe(
       map(dto => dto.content)
     );
   }
 
-  protected createParams(filter: Filter) {
+  protected createParams(filter: Filter, page: number) {
     let httpParams = new HttpParams();
 
     if (filter.from) {
@@ -62,6 +62,9 @@ export class BackendPostsService extends PostsService {
     }
     if (filter.owner) {
       httpParams = httpParams.set(BackendPostsService.OWNER, filter.owner.toString());
+    }
+    if ((page > 0)) {
+      httpParams = httpParams.set('page', page.toString());
     }
 
     return httpParams;
@@ -74,7 +77,7 @@ export class BackendPostsService extends PostsService {
 
 @Injectable()
 export class MockPostsService extends PostsService {
-  getPosts(filter: Filter, page: number): Observable<Post[]> {
+  getPosts(filter: Filter, page: number = 0): Observable<Post[]> {
     if (page > 10) {
       return of([]).pipe(delay(1300));
     }
