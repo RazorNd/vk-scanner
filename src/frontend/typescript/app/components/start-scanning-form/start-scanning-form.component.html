@@ -1,0 +1,60 @@
+<!--
+  ~ Copyright (c) 2020 Daniil <razornd> Razorenov
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<form (ngSubmit)="onSubmit()" [formGroup]="startScanningForm" novalidate>
+  <mat-card class="shipping-card">
+    <mat-card-header>
+      <mat-card-title>Сканировать</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input formControlName="groupId" matInput placeholder="ID Группы" type="number">
+            <mat-error *ngIf="hasError('groupId', 'required')">
+              ID Группы <strong>обязателен</strong>
+            </mat-error>
+            <mat-error *ngIf="hasError('groupId', 'min')">
+              ID Группы должен быть <strong>положительным</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input formControlName="duration" matInput placeholder="Период сканирования" type="number">
+            <mat-hint align="start">в месяцах</mat-hint>
+            <mat-error *ngIf="hasError('duration', 'required')">
+              Период сканирования <strong>обязателен</strong>
+            </mat-error>
+            <mat-error *ngIf="hasError('duration', 'min')">
+              Период сканирования должен быть <strong>больше или равен 1</strong>
+            </mat-error>
+            <mat-error *ngIf="hasError('duration', 'max')">
+              Период сканирования должен быть <strong>меньше или равен 6</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button [disabled]="!startScanningForm.valid"
+              color="primary"
+              mat-raised-button
+              type="submit">Начать сканирование
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</form>
