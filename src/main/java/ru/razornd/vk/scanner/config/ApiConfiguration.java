@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,10 +19,11 @@ package ru.razornd.vk.scanner.config;
 import com.vk.api.sdk.client.TransportClient;
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.ServiceActor;
-import com.vk.api.sdk.httpclient.HttpTransportClient;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import ru.razornd.vk.api.client.RestOperationTransportClient;
 import ru.razornd.vk.scanner.properties.ClientProperty;
 
 @Configuration
@@ -30,8 +31,8 @@ import ru.razornd.vk.scanner.properties.ClientProperty;
 public class ApiConfiguration {
 
     @Bean
-    public TransportClient transportClient() {
-        return HttpTransportClient.getInstance();
+    public TransportClient transportClient(RestTemplateBuilder builder) {
+        return new RestOperationTransportClient(builder);
     }
 
     @Bean
