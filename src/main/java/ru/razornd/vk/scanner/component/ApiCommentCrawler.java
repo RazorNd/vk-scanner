@@ -26,6 +26,8 @@ import lombok.SneakyThrows;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static java.util.stream.Stream.concat;
+
 @RequiredArgsConstructor
 public class ApiCommentCrawler implements CommentCrawler {
 
@@ -50,8 +52,7 @@ public class ApiCommentCrawler implements CommentCrawler {
         @Override
         @SneakyThrows
         public List<WallComment> getNextComments() {
-            return defaultPostQuery()
-                    .count(COUNT)
+            return defaultPostQuery().count(COUNT)
                     .needLikes(true)
                     .offset(COUNT * offset++)
                     .execute()
@@ -61,22 +62,57 @@ public class ApiCommentCrawler implements CommentCrawler {
         @Override
         @SneakyThrows
         public Stream<WallComment> getAllComments() {
-            int count = defaultPostQuery()
-                    .count(1)
+            int count = defaultPostQuery().count(1)
                     .needLikes(false)
                     .execute()
                     .getCount();
 
             return Stream.generate(this::getNextComments)
                     .flatMap(List::stream)
+                    .flatMap(this::fetchThreads)
                     .limit(count);
         }
 
-        private WallGetCommentsQuery defaultPostQuery() {
+        Stream<WallComment> fetchThreads(WallComment wallComment) {
+            if (wallComment.getThread()
+                    .getCount() > 0) {
+                return concat(Stream.of(wallComment), getThreadComments(wallComment).getAllComments());
+            }
+            return Stream.of(wallComment);
+        }
+
+        private Comments getThreadComments(WallComment wallComment) {
+            return new ThreadEagerComments(postId, ownerId, wallComment.getId());
+        }
+
+        WallGetCommentsQuery defaultPostQuery() {
             return client.wall()
                     .getComments(actor)
                     .postId(postId)
                     .ownerId(ownerId);
         }
+    }
+
+    class ThreadEagerComments extends EagerComments {
+
+        private final int commentId;
+
+        public ThreadEagerComments(int postId, int ownerId, int commentId) {
+            super(postId, ownerId);
+            this.commentId = commentId;
+        }
+
+        @Override
+        Stream<WallComment> fetchThreads(WallComment wallComment) {
+            return Stream.of(wallComment);
+        }
+
+        @Override
+        WallGetCommentsQuery defaultPostQuery() {
+            return super.defaultPostQuery()
+                    .commentId(commentId);
+        }
+
+
     }
 }

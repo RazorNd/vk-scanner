@@ -70,6 +70,7 @@ public class ScannerService {
     private List<Comment> scanCommentFor(int ownerId, int postId) {
         return commentCrawler.forPost(postId, ownerId)
                 .getAllComments()
+                .filter(wallComment -> wallComment.getDeleted() == null || !wallComment.getDeleted())
                 .map(wallComment -> mapComment(wallComment, ownerId, postId))
                 .peek(comment -> messageSendingOperations.convertAndSend(CommentScanned.EVENT_TOPIC, CommentScanned.of(comment)))
                 .collect(Collectors.toList());
