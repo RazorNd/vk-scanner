@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
+ * Copyright (c) 2020 Daniil <razornd> Razorenov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ package ru.razornd.vk.scanner.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PagedResourcesAssembler;
-import org.springframework.hateoas.PagedResources;
-import org.springframework.hateoas.Resource;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.PagedModel;
 import org.springframework.web.bind.annotation.*;
 import ru.razornd.vk.scanner.model.Post;
 import ru.razornd.vk.scanner.service.PostService;
@@ -35,12 +35,12 @@ public class PostsController {
 
     @CrossOrigin
     @GetMapping
-    public PagedResources<Resource<Post>> getPosts(@RequestParam(name = "f") int fromId,
-                                                   @RequestParam(name = "o", defaultValue = "0") int ownerId,
-                                                   Pageable pageable,
-                                                   PagedResourcesAssembler<Post> assembler) {
+    public PagedModel<EntityModel<Post>> getPosts(@RequestParam(name = "f") int fromId,
+                                                  @RequestParam(name = "o", defaultValue = "0") int ownerId,
+                                                  Pageable pageable,
+                                                  PagedResourcesAssembler<Post> assembler) {
 
-        return assembler.toResource(service.searchPosts(fromId, ownerId, pageable));
+        return assembler.toModel(service.searchPosts(fromId, ownerId, pageable));
     }
 
     @GetMapping("/count")
