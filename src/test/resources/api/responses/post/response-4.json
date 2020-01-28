@@ -1,0 +1,6112 @@
+{
+  "response": {
+    "count": 390,
+    "items": [
+      {
+        "id": 71125,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1322945246,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "В разделе «Ответы» появилась статистика личных страниц. График с динамикой роста читателей доступен пользователям, у которых более 100 подписчиков.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 273417218,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_5f1a2c13.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_c905953b.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_9df2ac86.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_ce272089.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/z_87c2b81b.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1322945249,
+              "access_key": "f53b73e451eafa0e15"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 273417219,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_c3eeca37.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_aea5191b.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_8bca7b24.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_f85d0dbd.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1322945249,
+              "access_key": "8f316dc5af50349c3d"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 273417220,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_03d8e073.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_64e5729f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_656bc7db.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_9fd46f4f.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1322945249,
+              "access_key": "0a7b298660ed4619b0"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1878,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 173,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71124,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1322853537,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Теперь популярная музыка ВКонтакте доступна в разделе аудиозаписей.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 273345128,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-70.userapi.com\/c5957\/u03520\/-14\/s_810d5560.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-70.userapi.com\/c5957\/u03520\/-14\/m_68374006.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-70.userapi.com\/c5957\/u03520\/-14\/x_52c243ca.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-70.userapi.com\/c5957\/u03520\/-14\/y_92b1790f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-70.userapi.com\/c5957\/u03520\/-14\/z_fd2e7e9a.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1322853537,
+              "post_id": 71124,
+              "access_key": "94791b2e76f40ab99e"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 2434,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 195,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71123,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1322763572,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Стал доступен обновленный раздел «Поиск». Мы заметно переосмыслили структуру поисковой выдачи, усовершенствовав группировку информации, фильтры и подсказки.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 273273732,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_cfce5ce0.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_689f2858.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_8c9b605c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_3ec1b684.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/z_7bee71f3.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1322763572,
+              "access_key": "0766f4e0ffacc5041b"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 273273733,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_20e0764b.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_0d24ce8d.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_86e27b61.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_fe379b77.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/z_08d33119.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1322763572,
+              "access_key": "8d31aa4e94b0e5d587"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 273273734,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_e0f9b48b.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_edc22a42.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_55678430.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_0971aa04.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/z_72ed77cc.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1322763572,
+              "access_key": "3553b87ff3ca457c50"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1707,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 116,
+          "user_reposted": 0
+        },
+        "edited": 1322767517
+      },
+      {
+        "id": 71122,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1322206310,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Пресс-служба продолжает инвестировать свои сбережения в неизменно перспективные активы — имена своих руководителей. На этот раз мы захватили домен [id5|заместителя генерального директора] ВКонтакте. http:\/\/perekopsky.ru",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 272778494,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_88502155.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_da625231.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_ded2299a.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_aa261215.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1322206313,
+              "post_id": 71122,
+              "access_key": "98c4e45bf16b8ba5fb"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 2091,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 273,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71121,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1321607830,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "У каждой записи на стене есть отдельная страница, на которой с сегодняшнего дня мы выводим фотографии и видеозаписи в увеличенном формате. Посмотрите как смотрится запись [id13033|Игоря] о его поездке в США этим летом.\nhttp:\/\/vk.cc\/tnKiF",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1116,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 80,
+          "user_reposted": 0
+        },
+        "edited": 1321607854
+      },
+      {
+        "id": 71120,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1321471757,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "[club22884714|Команда поддержки]: Теперь каждый заблокированный пользователь, прежде чем снова получить доступ к странице, должен будет пройти небольшой тест. Большинство уверено, что для защиты страницы достаточно сложного пароля. Ответив на вопросы, можно получить базовые знания об угрозах нового времени.\n\nvkontakte.ru\/test",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 271621626,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_3db31099.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_df0c1084.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_864278c2.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/y_300ed81d.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1321471758,
+              "access_key": "b930df2203418683f7"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 271621627,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_16b85e92.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_60e5ec76.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_d6c4d559.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/y_1c647c5b.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1321471758,
+              "access_key": "5ea21bef2d99b3931b"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 271621628,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_057d0afb.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_4bf5c7af.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_7944aa50.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1321471758,
+              "access_key": "2138decd2acdb811cc"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1690,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 149,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71119,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1321470201,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Кстати, теперь Вы можете поместить на своей странице ссылки на бабушек и дедушек, а также внуков и внучек.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 271619985,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_6aea316d.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_2012bbbc.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_ddff4de2.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1321470203,
+              "post_id": 71119,
+              "access_key": "940e180f52c9dc83ca"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1726,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 176,
+          "user_reposted": 0
+        },
+        "edited": 1321470241
+      },
+      {
+        "id": 71118,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1321361982,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Упсала-цирк — проект, направленный на социальную адаптацию беспризорных детей с помощью цирковой педагогики. Новый шатер для детей будут строить всем рунетом, каждый может купить кусочек на их сайте. А мы, извините, не удержались и купили весь купол. http:\/\/vk.cc\/teOVG",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 271524518,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_8685c6c1.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_1de5f2ee.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_006a1b2d.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1321361985,
+              "access_key": "fd7ea65691e680d1fd"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 271524519,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_45035a5c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_ca98aef5.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_aff195ce.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1321361985,
+              "access_key": "699c2e88f9c04b5efa"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 998,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 88,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71117,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1321351210,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Меня попросили о чем-нибудь написать, намекнув, что не отрабатываю зарплату. Но о чем писать, если [id13033|Жуков] не переставая что-то жует, [id2943|Васи] нет на месте — зеленые штаны сегодня в стирке, [id8512|Эльдар] второй день не выходит из кабинета, вертит в руках [id53083705|айпад], [id66748|Олег] сушит баги на зиму, [id6492|Андрей] все ещё моет посуду после дня рождения, [id5|Перекопский] в Москве досиживает 15 суток (попался без регистрации на Мейл.ру), а [id1|Дуров] с утра ушел в салон татуировок?",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 271512334,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_1e77e8df.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_1d3d81f9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_8affd51e.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_82a97da9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/z_25836fc8.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "w",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/w_7809bafb.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1321351211,
+              "post_id": 71117,
+              "access_key": "818740ed1f2c889c72"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 37,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 2725,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 236,
+          "user_reposted": 0
+        },
+        "edited": 1321351541
+      },
+      {
+        "id": 71116,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1320673551,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "[club1|ВКонтакте API]: С 1 декабря мы отключаем возможность встраивать виджеты API ВКонтакте в Публичные страницы. К сожалению, за более чем полгода существования этого экспериментального сервиса, нам не встретилось ни одного достойного примера использования этих возможностей. В то же время, с виджетами нередко связаны злоупотребления, а качество исполнения популярных виджетов не соответствует уровню сайта. 1 декабря блок «Виджет» исчезнет со всех Публичных страниц, все виджеты будут отключены.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1625,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 96,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71115,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1320166549,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Теперь счетчик в пункте меню «Мои Новости» подскажет, когда кто-то ответит Вам или оставит комментарий к Вашим сообщениям, фотографиям и видеозаписям. Нажав на этот пункт меню в этом случае, Вы попадете на вкладку «Ответы».\n\nНа вкладку «Ответы» теперь можно попасть и кликнув на моментальное оповещение.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270576197,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_8fb56dc6.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_4954da02.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_24b71bb0.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1320166548,
+              "access_key": "97cf0cafcbe20f3a4d"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270576198,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_8043b346.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_2e32cb29.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_e74a21df.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/y_e5acabdf.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1320166548,
+              "access_key": "7d947dbf729f2ca9f3"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270576199,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_995036c0.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_a125c718.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_9c6ebbd9.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1320166548,
+              "access_key": "4c074839a00738c35e"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1846,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 115,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71114,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1320137848,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Теперь к записям можно прикреплять заметки. Любители больших текстов оценят наш уютный редактор.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270543225,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_a586fa7c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_91cee809.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_37326885.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_049ad6f9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/z_182ae0f1.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1320137850,
+              "access_key": "0dfd8b86fee3455e4a"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270543350,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_d3f764de.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_d84504f0.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_0ead5165.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_9447cd04.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/z_b4a29cfb.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1320137972,
+              "access_key": "64493b7acf8fff0643"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1184,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 97,
+          "user_reposted": 0
+        },
+        "edited": 1320137972
+      },
+      {
+        "id": 71113,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1320134114,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Для первых двух миллионов пользователей запущен новый вид раздела «Мои новости». В правом верхнем углу появился бегунок. Он позволяет определить, какие Новости будут отображаться.\n\nЧем правее бегунок, тем больше новостей в потоке. Смещая бегунок влево, Вы оставляете в ленте записи от самых важных для Вас страниц и людей. В режиме «Все новости» появлется ссылка «Редактировать», позволяющая скрывать новости определенных страниц.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270539774,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_ce9d8ce6.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_951fd8eb.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_740cff3e.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_f715bb9a.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/z_0a2775ef.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1320134116,
+              "post_id": 71113,
+              "access_key": "dc72aa2e1ed3c7a8b1"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1465,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 174,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71112,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1320059070,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Кстати, теперь при заходе на свою удалённую страницу Вы можете увидеть дату, до которой возможно восстановление. По истечении указанного срока страница будет удалена безвозвратно. Оставайтесь с нами.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270473360,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_e4d02382.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_6ec7d84f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_eb50a017.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/y_96709d24.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1320059069,
+              "post_id": 71112,
+              "access_key": "c5400afd42a43c8366"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1833,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 123,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71111,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1320051971,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Коллеги из Microsoft прислали в главный штаб ВКонтакте торт. Наша служба безопасности проверяет его на наличие яда.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270464502,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_fdad4a6f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_e0eaa928.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_610b65bb.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_d84a46eb.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1320051974,
+              "post_id": 71111,
+              "access_key": "c1ccfa208d99a57317"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 7,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 5153,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 407,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71110,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1319813360,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "[club22884714|Команда поддержки]: Начиная с сегодняшнего дня Межгалактическое Бюро Поддержки ВКонтакте доступно всем пользователям. Счастья для всех, даром, и пусть никто не уйдет обиженным.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270263372,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_819bdac8.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_484795e3.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_19f72957.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/y_45c7fce1.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/z_cf09d0b1.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319813363,
+              "post_id": 71110,
+              "access_key": "25b60cf6adb3d138c9"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1201,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 98,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71109,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1319707123,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Руками талантливых разработчиков из Украины, но под нашим чутким контролем, запустили приложение ВКонтакте для Windоws Phone 7.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270169820,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_7d9ab058.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_19df757f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_17e221a1.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_51b22105.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319707125,
+              "access_key": "37a3b414e351e2d542"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270169821,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_958250ba.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_ac142f23.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_3b683575.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_1e5798fb.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319707125,
+              "access_key": "6baf1552708e9c354c"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270169822,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_0c0f4f4c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_68ab9035.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_873cc633.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_416ffcbc.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319707125,
+              "access_key": "25d2023cee6624ffc0"
+            }
+          },
+          {
+            "type": "link",
+            "link": {
+              "url": "https:\/\/login.live.com\/login.srf?wa=wsignin1.0&rpsnv=11&checkda=1&ct=1319707117&rver=6.1.6195.0&wp=MBI&wreply=http:%2F%2Fwww.windowsphone.com%2Fru-RU%2Fapps%2Fedd920e2-b671-41b5-a9db-b89caccfa69c&lc=1033&id=268289",
+              "title": "",
+              "description": "",
+              "target": "internal"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1007,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 75,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71108,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1319623701,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "[club22884714|Команда поддержки]: Наконец-то первые 130 миллионов id имеют доступ к Новой Поддержке. И это еще не конец — но он уже близок.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 270101652,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_7618255c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_776a9f31.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_c64fd5c6.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319623700,
+              "post_id": 71108,
+              "access_key": "a3be09f334a2f77818"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 919,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 75,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71107,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1319485296,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Кстати, мы договорились с администрацией Тумблера об оперативном уничтожении спамеров. Так что ссылки на микроблоги tumblr больше не блокируются.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269999202,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_715a4b47.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_2dd50eb1.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_10cce102.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/y_c47a8069.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/z_7de90502.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319485297,
+              "post_id": 71107,
+              "access_key": "492dbc9f85ec3292ac"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 935,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 73,
+          "user_reposted": 0
+        },
+        "edited": 1319485333
+      },
+      {
+        "id": 71106,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1319483889,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Вкладка «Ответы», которая позволяет оперативно отслеживать реакцию и отзывы на любые Ваши действия, уже доступна всем пользователям.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269997691,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/s_f6ce7743.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/m_57eec5ec.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/x_2d9257fc.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9624\/u93388\/-14\/y_dc53982a.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319483890,
+              "post_id": 71106,
+              "access_key": "c9dc5b6e4ad7cc97f8"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 970,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 66,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71105,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1319122351,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Появилась возможность размещать записи ВКонтакте через электронную почту: «Мои Настройки» — вкладка «Мобильные сервисы». К письму можно прикрепить документ или фотографию.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269712746,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_f1f73465.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_752cb46a.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_e849323d.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319122351,
+              "post_id": 71105,
+              "access_key": "9de0e273963d4a045b"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 658,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 67,
+          "user_reposted": 0
+        },
+        "edited": 1319122717
+      },
+      {
+        "id": 71104,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1319036085,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Сегодня в тестовом режиме запускаем новый вид раздела «Упоминания». Вкладка теперь называется «Ответы». С ее помощью можно получать все отзывы и реагировать на них в одном месте: комментарии, упоминания, записи на стенах и отметки «Мне нравится» от друзей. Фильтры и быстрый доступ к чёрному списку помогут избавиться от ненужной информации.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269654178,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_396f6381.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_95cc176c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_698f6244.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_67ac57d0.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/z_e1556116.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319036520,
+              "access_key": "feb45e347182efc4d3"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269654179,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_350561b1.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_b66cad90.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_cc82eb79.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_84621883.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/z_89195173.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319036520,
+              "access_key": "28d9ee017f9dcadd97"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1015,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 98,
+          "user_reposted": 0
+        },
+        "edited": 1319036520
+      },
+      {
+        "id": 71103,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1319035488,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Иногда замечаешь, что незаметно для себя перебрался с ВКонтакте на VK. Или наоборот. Например, перейдя по ссылке, которую прислал друг.\n\nТеперь об этой проблеме можно забыть. Если Вы заходите через ВКонтакте, все ссылки, которые Вы увидите, будут вести именно на ВКонтакте. И наоборот.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269653177,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_81b27445.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_c8576695.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_bb144efb.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1319035489,
+              "post_id": 71103,
+              "access_key": "04e966b7027e3fcd0f"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 2491,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 221,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71102,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318980125,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Кнопки для добавления в друзья и отправки личных сообщений со страницы пользователей налились цветом и прибавили в размере. Второстепенные действия переехали в нижнюю часть левой колонки.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269618632,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_ec224fea.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_8574bc0f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_273f46d7.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318980125,
+              "access_key": "d335d5e52396e33704"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269618671,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_235870a3.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_308027d0.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_46e257b2.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318980207,
+              "access_key": "6f6051f70efb206da9"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269618672,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_5f141707.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_fe7c2be6.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_3ba41b1e.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318980207,
+              "access_key": "b918136f0904024fb0"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 963,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 72,
+          "user_reposted": 0
+        },
+        "edited": 1318980207
+      },
+      {
+        "id": 71101,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318857677,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "В вики-страницах и заметках появилась возможность вставлять документы. Кроме того, в разделе «Документы» можно получить отдельную ссылку на каждый файл.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269519922,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_d1ae75f9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_f4811015.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_b7dc20f0.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318857679,
+              "access_key": "92970929c65d213788"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269521724,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_9af29e8d.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_abf05bd8.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_e077ea35.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_4d339bd4.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318859086,
+              "access_key": "4e677586c2eeddf078"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 0,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 548,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 43,
+          "user_reposted": 0
+        },
+        "edited": 1318859086
+      },
+      {
+        "id": 71100,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318842604,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Приближаемся к отметке в 20 000. Уникальных.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269505517,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_a51146e5.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_c3e3430a.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_f95742a4.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_6a0838b4.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/z_0aeef3c1.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "w",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/w_ebd5d7cf.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318842606,
+              "post_id": 71100,
+              "access_key": "83d2fe2f8194643fe9"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 853,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 45,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71099,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318609436,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Публичные списки друзей теперь можно использовать при настройке приватности. Разумеется, для этого в публичном списке должны находиться какие-нибудь друзья. (Если Вы всё равно не видите своих публичных списков в выпадающем меню, попробуйте добавить какого-нибудь друга в такой список, снова удалить его и немного подождать — это небольшое колдунство должно всё исправить).",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269342737,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_0bc06c9f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_513f7d3a.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_2c5f34b5.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318609438,
+              "post_id": 71099,
+              "access_key": "2f3aad293798713dab"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 949,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 48,
+          "user_reposted": 0
+        },
+        "edited": 1318609650
+      },
+      {
+        "id": 71098,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318592362,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Несколько изменен дизайн блока «Интересных страниц» в Вашем профиле. Теперь в этом блоке будут показываться только те пользователи, у которых больше 1000 подписчиков.\n\nДля слежения за Вашими исходящими заявками мы скоро добавим отдельную вкладку в разделе Друзья.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269321075,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_a01f96a2.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_00da06b7.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_6abad8c1.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318592362,
+              "post_id": 71098,
+              "access_key": "bfde3c292e4a8b63c1"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 587,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 51,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71097,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318591115,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Мы запускаем сервис «Аудиозаписи друзей». Порядок отображения друзей в списке зависит от того, чьи аудиозаписи вы слушаете чаще.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269319709,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_ce55df9a.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_65433e4b.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_68311052.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_1c838aa6.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/z_66ffb4df.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318591117,
+              "post_id": 71097,
+              "access_key": "11bf95781cd44b9ec6"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1212,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 137,
+          "user_reposted": 0
+        },
+        "edited": 1318591722
+      },
+      {
+        "id": 71095,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318454852,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Небольшой текст от [id1|Павла Дурова], в котором он рассказывает об истории реформы и основных преимуществах новой системы Друзей.\nhttp:\/\/vkontakte.ru\/wall1_45097\n\n7 преимуществ новой системы:\n1. Теперь Вы видите все отправленные Вами заявки в друзья, а также текст сообщений, которые Вы к ним прикрепили.\n2. Теперь Вы можете отменять отправленные Вами заявки в друзья.\n3. Теперь Вы видите, кто удалил Вас из друзей.\n4. Теперь Вы можете скрывать людей, на обновления которых подписаны.\n5. Вам больше не смогут надоедать повторными заявками в друзья после того, как Вы однажды отклонили запрос. \n6. На страницах теперь только одна ссылка – \"Добавить в друзья\", она сразу же, в одно нажатие подписывает Вас на страницу интересного Вам человека.\n7. Популярным людям больше не придется раздражаться из-за растущего счетчика бессмысленных заявок в друзья и переводить их в подписчиков. Заявки в друзья теперь и есть подписчики.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 962,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 87,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71094,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318449349,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Пользователей, которые не являются Вашими друзьями, теперь можно добавить в Чёрный список прямо с их страницы. Пункт меню «Заблокировать» в «Других действиях».",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269231410,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_14f1f121.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_71692138.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_23ef777c.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318449350,
+              "post_id": 71094,
+              "access_key": "e832a3f032e1a9eac9"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 888,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 69,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71093,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318446400,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Мы начинаем избавляться от лишнего в системе Друзей. В течение суток доступ в новый мир получат все.\n\nТеперь пользователи могут отправить заявку в друзья и подписаться на обновления Вашей страницы в один клик. Точно так же, в один клик, Вы можете добавить любого из подписчиков в друзья, удалить друга или вернуть его обратно.\n\nВ ближайшем будущем люди у Вас в списке «Все подписчики» будут сортироваться по количеству общих друзей.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269228175,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_2f962ac9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_12c4c307.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_e4a1b9ce.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/y_e77bb089.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318446400,
+              "access_key": "a514463c988e6f08c3"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269228176,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_49159a75.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_c2f18cb2.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_73e2552f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/y_653a12ae.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318446400,
+              "access_key": "e7454eb0bb191c17f8"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 815,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 79,
+          "user_reposted": 0
+        },
+        "edited": 1318451432
+      },
+      {
+        "id": 71092,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318327678,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Обновилось приложение ВКонтакте для iPhone. http:\/\/vk.cc\/rhzBG",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269133937,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_46bb1c37.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_4a77e476.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_2813269f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_eb6a90f4.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/z_d35967d5.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318327679,
+              "post_id": 71092,
+              "access_key": "70ad30de5f10bc1a08"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 641,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 71,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71091,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318258434,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "В офис ВКонтакте продолжают приезжать подарки.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269086331,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_d7be4e8b.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_394deb80.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_ee90568b.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_54d7ed09.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/z_b68a4e3c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "w",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/w_b8b87d3a.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318258436,
+              "post_id": 71091,
+              "access_key": "0ac026636076371dd1"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1403,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 72,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71090,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318234840,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Пять лет с такой рок-звездой у руля пролетели для всех незаметно. И, судя по всему, всё самое интересное впереди. С днём рождения, ВКонтакте. С днём рождения, [id1|Павел Дуров]. http:\/\/durov2024.ru",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 269060001,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_5c5d663e.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_cdd15e29.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_001c46ae.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_16a1244e.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/z_e5801c3f.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318234840,
+              "post_id": 71090,
+              "access_key": "774f514dca7b1c957d"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 20,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 2435,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 250,
+          "user_reposted": 0
+        },
+        "edited": 1318234869
+      },
+      {
+        "id": 71089,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318014508,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Нам удалось, наконец, избавиться от ужасного слова «Подписки». Теперь блок называется «Интересные страницы» — и разделен на людей и не совсем людей.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268907077,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_a4831961.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_1bd1e49a.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_a04f9738.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318014508,
+              "post_id": 71089,
+              "access_key": "a7aef077138d147d69"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1798,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 84,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71088,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1318014328,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Список групп пользователя теперь располагается в блоке с личной информацией, в центральной части страницы. Перед «Показать полностью» выводятся 15 самых посещаемых групп. В этом списке названия выводятся без спец-символов. Приватность на списки групп сохраняется.\n\nА блок с аудиозаписями переехал в левую колонку, под видео.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268906821,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_851b86d1.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_2d5dabda.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_b2c925b6.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318014328,
+              "access_key": "2e1e76a1d14138cbc7"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268906822,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_4a6565c9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_63c35c49.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_0559a234.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1318014328,
+              "access_key": "192c1a8bd6ebceb201"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1028,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 77,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71087,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317995365,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Редактор Slon.ru несколько дней работал в техподдержке ВКонтакте: vk.cc\/r4Iu6",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268884804,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_6984af4c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_496371c8.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_db86d6c8.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317995368,
+              "post_id": 71087,
+              "access_key": "b414d56e330d600bee"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 492,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 65,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71086,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317914970,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Кроме этого, моментальные уведомления теперь могут приходить и о том, что кто-либо рассказал у себя на странице о Вашей записи, фотографии или видеоролике. Управляется пунктом «Мне нравится».",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268831088,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_84cc9ebc.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_49de1553.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_03a1eae6.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317914972,
+              "access_key": "8e14d6c5217b3dcaee"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268831089,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_583b282b.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_44ff3256.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_45050250.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317914972,
+              "access_key": "f15204605c64f02f11"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268831090,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_bf469734.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_56cbbced.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_3954669b.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317914972,
+              "access_key": "55dc66fcaa4de103b7"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268831091,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_675170aa.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_d47d3c13.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_476bd298.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317914972,
+              "access_key": "168bba8934ae087dd4"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 845,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 47,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71085,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317910466,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Отображение списка друзей в чужом профиле: теперь сортировка происходит исходя из количества общих друзей с человеком, профиль которого вы просматриваете.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268826706,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_767aff7e.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_c9e5dd95.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_6273134d.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_2d103937.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317910468,
+              "post_id": 71085,
+              "access_key": "49fe402973e791ed4d"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 752,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 62,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71084,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317896449,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Теперь Вы можете получать моментальные уведомления о новых подписчиках. Если на Ваши обновления подписаны более 10.000 человек, то уведомления будут появляться только в тех случаях, когда у Вас с подписчиком есть общие друзья. В Настройках оповещений управляет такими сообщениями пункт «Заявки в друзья».",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268811999,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_f34b53e3.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_304b4a81.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_a97c2a3b.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317896452,
+              "access_key": "12814644328f5545b7"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268812000,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_0c159ab9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_4b5b8426.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_76df1e25.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317896452,
+              "access_key": "6c3de583b94a8099e8"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 442,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 42,
+          "user_reposted": 0
+        },
+        "edited": 1317896518
+      },
+      {
+        "id": 71083,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317835740,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Загрузка фотографий через перетаскивание теперь работает и в разделе со списком альбомов.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268778003,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_46b3b060.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_a41a0e95.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_6f946424.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_a8942d3c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/z_10c7a151.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317835742,
+              "post_id": 71083,
+              "access_key": "7f4c93581307b70a43"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 808,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 66,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71082,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317834958,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Просматривать сообщения, попавшие в папку «Спам», теперь можно и в режиме диалогов. То есть с возможностью быстрого выделения отдельных сообщений для удаления или переноса в папку «Мои сообщения». Ссылка находится в правом нижнем углу.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268776649,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_59a6485a.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_5f0f3bf9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_4169ae0f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_8a627f70.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317834959,
+              "post_id": 71082,
+              "access_key": "3cf06a13eb6e781a7d"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 7,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 412,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 37,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71081,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317746178,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "[id1|Павел ]рассказывает о нововведениях прошедшего месяца в традиционном формате: vkontakte.ru\/blog.php",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268714285,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_9edb2151.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_9c8e225f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_84b9a518.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317747528,
+              "access_key": "43c5f842673c2a3bf7"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1779,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 179,
+          "user_reposted": 0
+        },
+        "edited": 1317747528
+      },
+      {
+        "id": 71080,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317739612,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Приятная мелочь: теперь, когда Вы переключаете проигрыватель на другую аудиозапись, звук плавно уходит в фон, а не обрывается. Раньше так было почему-то только при нажатии на паузу. Вселенная стала на шаг ближе к гармонии.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1985,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 62,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71079,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317728906,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Новый уровень дискуссий: ставить отметки «Мне нравится» теперь можно и комментариям к записям.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268693811,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-58.userapi.com\/c11435\/u13033\/-14\/s_3581f1ca.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-58.userapi.com\/c11435\/u13033\/-14\/m_7e9af7ac.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-58.userapi.com\/c11435\/u13033\/-14\/x_80b632ce.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-58.userapi.com\/c11435\/u13033\/-14\/y_8282d9fb.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317728909,
+              "post_id": 71079,
+              "access_key": "a335ad713cb3abcc35"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 4,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1582,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 115,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71078,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317718833,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "А теперь первые 100 миллионов пользователей могут задать вопросы и получить качественные ответы от Команды поддержки. Помощь идёт.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268685193,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_4ffc1952.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_a2daed29.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_2b2a6991.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317718836,
+              "post_id": 71078,
+              "access_key": "07aebaf07ff56919ef"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 8,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 788,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 41,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71077,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317639151,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Кстати, агенты поддержки ВКонтакте ждут в гости пользователей из 50-60 миллионов. Уже второй день. Мы просто забыли об этом сообщить.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268628114,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_fa2706eb.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_b0b6be64.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_9293e841.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317639151,
+              "post_id": 71077,
+              "access_key": "0a838ff521155fcc31"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 4,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 640,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 49,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71076,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317402638,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Сегодня ВКонтакте освобождает место на рынке для тех, кто может посвятить всю свою энергию сервисам для размещения объявлений. Мы не можем — мы заняты созданием идеального средства для коммуникации.\n\nОбъявления ВКонтакте закрыты. Владельцам объявлений рекомендуем забрать обратно все забытые там голоса.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268466920,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_2d87630e.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_dfb1168c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_48ea7325.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317402639,
+              "post_id": 71076,
+              "access_key": "9a26a4ede52070c13a"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 6,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 637,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 58,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71075,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317331492,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Межгалактическое Справочное Бюро ВКонтакте доступно первым 50 миллионам пользователей. #support http:\/\/vkontakte.ru\/support",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268418010,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_c0d857e4.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_609124ab.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_387fefb1.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/y_ac089faf.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317331492,
+              "post_id": 71075,
+              "access_key": "97e3fd632c66e65698"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 476,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 57,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71074,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317240995,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Мы изменили систему ответов на записи пользователей и публичных страниц, которые отключили комментарии. Если [id6492|Андрей Рогозов] ответил на своей стене на запись [id1|Павла Дурова], то [id2943|Вася Бабич] увидит это сообщение в своей ленте только в том случае, если он подписан и на Дурова, и на Рогозова. Теперь можно не переживать, что засоряете кому-то эфир.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268355309,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_1a0d7e21.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_a7b3715f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_79424fcc.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317240995,
+              "post_id": 71074,
+              "access_key": "830501c6eed1c63751"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 434,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 34,
+          "user_reposted": 0
+        },
+        "edited": 1317241809
+      },
+      {
+        "id": 71072,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317226613,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Ещё более простым способом упомянуть публичную страницу в записи на своей стене можно нажав под этой или любой другой новостью ссылку \"Ответить\". Все упоминания страницы доступны по ссылке под фотографией сообщества.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268338975,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-8.userapi.com\/c5333\/u06492\/-14\/s_ea0cc117.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-8.userapi.com\/c5333\/u06492\/-14\/m_01d69ddd.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-8.userapi.com\/c5333\/u06492\/-14\/x_2eb7acce.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317226615,
+              "access_key": "fc93be853f6f1b3adc"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268338977,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-8.userapi.com\/c5333\/u06492\/-14\/s_3aae194c.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-8.userapi.com\/c5333\/u06492\/-14\/m_18a57a70.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-8.userapi.com\/c5333\/u06492\/-14\/x_59f22170.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317226615,
+              "access_key": "99bf51218c239a2982"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 372,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 34,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71071,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317216997,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "[club22822305|Команда ВКонтакте] сообщает, что теперь Вы можете упоминать в записях не только людей, но и публичные страницы, группы или встречи. Для этого необходимо состоять в группе или быть подписанным на страницу.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 413,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 38,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71070,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317068110,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Итак, «Ваши Новости» теперь на главной странице (если у Вас достаточно друзей, чтобы она не пустовала). Новое и интересное стало на шаг ближе. А Ваша страница никуда не делась — и по-прежнему доступна из левого меню.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 3,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 323,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 32,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71069,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1317050834,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Через несколько минут раздел «Мои новости» станет стартовой страницей у первых 40 000 000 пользователей.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268214925,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_94cdc1e8.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_fb9f74f0.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_0d29b8d7.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/y_ede87248.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/z_6de2ef02.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1317050836,
+              "post_id": 71069,
+              "access_key": "4801c2918e9c91668c"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 3,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 575,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 85,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71068,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1316777200,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "На самом деле, даже первым 40 миллионам, что уж там.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268007615,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_842a0a98.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_9d6baef9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_622a4c5a.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1316777201,
+              "post_id": 71068,
+              "access_key": "89a6e0ef035f6aad28"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 8,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 352,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 36,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71067,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1316774540,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Тем временем, агенты Новой Технической Поддержки спешат на помощь уже первым 30 миллионам пользователей. Старая ссылка внизу страницы, новый подход к вопросам и ответам.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268004851,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_7f49b843.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_ff09737f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_509847cd.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1316774542,
+              "access_key": "1eb7d5883bfae51c1d"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268004855,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_2f1724af.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_177c3858.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_4dd57b53.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1316774542,
+              "access_key": "55213025b3ef2a9bc3"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268004926,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_1e7b36e3.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_85c106ea.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_2a27c9fb.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1316774621,
+              "access_key": "ecc94ae09b329583e3"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268004927,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_84d929af.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_72d98b08.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_c6b396c6.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1316774621,
+              "access_key": "f20b1ee42719dd19d0"
+            }
+          },
+          {
+            "type": "photo",
+            "photo": {
+              "id": 268004928,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/s_e9a8a61d.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/m_2a91109d.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c947\/u00021\/-14\/x_c4a04f1c.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1316774621,
+              "access_key": "9781af1a4c1b3e89b9"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 8,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 349,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 51,
+          "user_reposted": 0
+        },
+        "edited": 1316774621
+      },
+      {
+        "id": 71066,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1316721647,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "В эфире пресс-служба. Получили установку от руководства вдохнуть в эту страницу новую жизнь. Спасибо [id4766|Добромыслову] за логотип.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 267980148,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/s_d9d5c476.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/m_fac15c4f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-19.userapi.com\/c9363\/u93388\/-14\/x_75d66d84.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1316721648,
+              "access_key": "0869a7c78db66d7130"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 3,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 713,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 61,
+          "user_reposted": 0
+        },
+        "edited": 1316721696
+      },
+      {
+        "id": 71065,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1310571133,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "100 миллионов оригиналов",
+        "attachments": [
+          {
+            "type": "link",
+            "link": {
+              "url": "http:\/\/www.youtube.com\/watch?v=oHEiT9OK9rE",
+              "title": "100 миллионов оригиналов",
+              "caption": "www.youtube.com",
+              "description": "fruktoza.com\n\nMusic: \nAllie Moss - Melancholy Astronautic Man",
+              "photo": {
+                "id": 265274302,
+                "album_id": -2,
+                "owner_id": 100,
+                "sizes": [
+                  {
+                    "type": "s",
+                    "url": "https:\/\/sun9-19.userapi.com\/c4638\/u93388\/-2\/s_85cd5bca.jpg",
+                    "width": 0,
+                    "height": 0
+                  },
+                  {
+                    "type": "m",
+                    "url": "https:\/\/sun9-19.userapi.com\/c4638\/u93388\/-2\/m_5d82e878.jpg",
+                    "width": 0,
+                    "height": 0
+                  },
+                  {
+                    "type": "x",
+                    "url": "https:\/\/sun9-19.userapi.com\/c4638\/u93388\/-2\/x_dd1acaf1.jpg",
+                    "width": 0,
+                    "height": 0
+                  }
+                ],
+                "text": "",
+                "date": 1310571134
+              }
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1720,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 174,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71064,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1310122795,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Обновлены настройки оповещений по электронной почте.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 264385559,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-15.userapi.com\/c11183\/u172823\/-5\/s_3998c293.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-15.userapi.com\/c11183\/u172823\/-5\/m_91753940.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-15.userapi.com\/c11183\/u172823\/-5\/x_de738847.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1310122768,
+              "post_id": 71064,
+              "access_key": "5aa2659cd69a44f9a5"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 459,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 45,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71063,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1308782448,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "В профиле появились публичные списки друзей. Созданные Вами списки друзей остались и всегда будут скрытыми от других пользователей.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 263738594,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-31.userapi.com\/c4378\/u66748\/-5\/s_df05083a.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-31.userapi.com\/c4378\/u66748\/-5\/m_2a92ddc6.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-31.userapi.com\/c4378\/u66748\/-5\/x_25da4004.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1308782424,
+              "post_id": 71063,
+              "access_key": "8292abaf37ae5fb72d"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 456,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 40,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71062,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1308180420,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Вернулась возможность искать друзей через email.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 3,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 555,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 40,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 71060,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1307133373,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "В группы теперь можно добавлять документы. Желаем студентам удачи на сессии.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 262903871,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-31.userapi.com\/c11488\/u66748\/-5\/s_bf3eae45.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-31.userapi.com\/c11488\/u66748\/-5\/m_30ca9967.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-31.userapi.com\/c11488\/u66748\/-5\/x_1ca17846.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1307133340,
+              "post_id": 71060,
+              "access_key": "a0a844bebbbd1c301a"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 3,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1102,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 64,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70991,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1304202347,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Появился новый вариант семейного положения \"Влюблен(а) в ...\". При этом любимого человека можно выбрать и не из друзей, введя в соответствующее поле ссылку на его страницу ВКонтакте.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 4,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 5972,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 414,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70806,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1303756485,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Появилась функция моментальных оповещений. На страницах сайта в режиме реального времени появляются уведомления о новых личных сообщениях, комментариях, отметках \"Мне нравится\" и других событиях.\nВсплывающие окошки снабжены миниатюрами прикреплённых фотографий, видеозаписей и подарков.\nПользователи браузера Chrome будут также видеть эти уведомления и при неактивном браузере.\nНовые оповещения можно выключить в настройках http:\/\/vkontakte.ru\/settings?act=notify.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 254933211,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-58.userapi.com\/c5953\/u13033\/-5\/s_561da3de.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-58.userapi.com\/c5953\/u13033\/-5\/m_14e26d01.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-58.userapi.com\/c5953\/u13033\/-5\/x_050b535a.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1303756392,
+              "access_key": "a70e3676c33633a102"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 162,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 2905,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 113,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70718,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1302867199,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "У пользователей с большим количеством непросмотренных отметок на видеозаписях появилась кнопка \"Удалить новые отметки\".",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 249534048,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-31.userapi.com\/c10488\/u66748\/-5\/s_ad344042.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-31.userapi.com\/c10488\/u66748\/-5\/m_a4f3b715.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-31.userapi.com\/c10488\/u66748\/-5\/x_7c3dfb30.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1302867190,
+              "post_id": 70718,
+              "access_key": "8ecde9f37521e37931"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 49,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 882,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 68,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70639,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1301949956,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "В разделе редактирования приложений появилась возможность выбирать короткие адреса.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 244813205,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-31.userapi.com\/c10278\/u66748\/-5\/s_879fdfe2.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-31.userapi.com\/c10278\/u66748\/-5\/m_30560d0d.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-31.userapi.com\/c10278\/u66748\/-5\/x_81eac148.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1301949702,
+              "access_key": "0fd2768f3b8cc1f659"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 46,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 679,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 40,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70578,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1301863192,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Пользователи браузера Google Chrome могут воспользоваться новой функцией визуальных оповещений в Диалогах. Теперь даже если Вы переключились на другое окно, всплывающие подсказки уведомят Вас обо всех новых сообщениях.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 244352573,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-58.userapi.com\/c5817\/u13033\/-5\/s_b0fd6efb.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-58.userapi.com\/c5817\/u13033\/-5\/m_f45e4a74.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-58.userapi.com\/c5817\/u13033\/-5\/x_54bf3913.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1301863173,
+              "post_id": 70578,
+              "access_key": "b979b244f6b25a64fd"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 58,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1116,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 82,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70560,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1301335877,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Теперь система запоминает, каким способом просмотра сообщений Вы пользуетесь. Если Вы переписываетесь в Диалогах, то по ссылке «Мои Сообщения» в левом меню будет открываться именно этот раздел. Если Вы не пользуетесь Диалогами, все останется по-прежнему.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 3,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1312,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 47,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70526,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1301091751,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Обновился раздел \"Диалоги\". Отправлять и просматривать прикрепления в сообщениях теперь можно не покидая страницу с перепиской.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 239862100,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-58.userapi.com\/c4232\/u13033\/-5\/s_6db428e9.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-58.userapi.com\/c4232\/u13033\/-5\/m_aff50143.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-58.userapi.com\/c4232\/u13033\/-5\/x_51da6801.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1301091748,
+              "post_id": 70526,
+              "access_key": "8ecbf8c9a2c106c710"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 48,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 741,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 47,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70503,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1300906015,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Бывшая вкладка «Обновления» из Настроек теперь занимает всего одну строчку в настройках приватности: «Какие обновления видят в новостях мои друзья». Функционал не изменился.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 238845578,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-61.userapi.com\/c891\/u00021\/-5\/s_b036d77f.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-61.userapi.com\/c891\/u00021\/-5\/m_5ff61939.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-61.userapi.com\/c891\/u00021\/-5\/x_7df344ab.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1300906001,
+              "post_id": 70503,
+              "access_key": "c89518d6ff5d2f68ac"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 7,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 513,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 30,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70457,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1300530586,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Нововведения в Новостях: обновились разделы \"Группы\" и \"Друзья\"; Появилась возможность просматривать новости конкретного человека или группы. Для этого достаточно кликнуть на одну из его новостей, либо найти страницу через поиск в Новостях.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 7,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 778,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 33,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 70263,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1300121609,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Обновился сервис \"Диалоги\". Теперь раздел открывается в том же окне. Упростилась навигация, а также появилась возможность удаления сообщений. Предыдущая версия доступна по ссылке \"Открыть в отдельном окне\" внизу страницы диалогов.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 235070379,
+              "album_id": -7,
+              "owner_id": -22822305,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-58.userapi.com\/c10533\/u13033\/-5\/s_ee8afa5b.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-58.userapi.com\/c10533\/u13033\/-5\/m_88d9fbfe.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-58.userapi.com\/c10533\/u13033\/-5\/x_cde376ec.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "y",
+                  "url": "https:\/\/sun9-58.userapi.com\/c10533\/u13033\/-5\/y_dc5c1b38.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "z",
+                  "url": "https:\/\/sun9-58.userapi.com\/c10533\/u13033\/-5\/z_303f0396.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1300121596,
+              "post_id": 70263,
+              "access_key": "a5d7332748639e74bb"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 191,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 829,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 55,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 69738,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1298848647,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Обновлён сервис \"Сообщения\". Интерфейс стал более лаконичным, переходы внутри раздела — моментальными, а постраничный вывод сообщений уступил место автоматической подгрузке. Старая версия ещё какое-то время будет доступна по адресу vkontakte.ru\/mail.php",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 356,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1173,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 53,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 66611,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1297881414,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Запущена регистрация пользователей по приглашениям. Если Вы видите ссылку \"пригласить\" наверху страницы, значит у Вас уже есть возможность регистрировать своих друзей и родственников.",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 223814019,
+              "album_id": -5,
+              "owner_id": 6492,
+              "sizes": [
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-8.userapi.com\/c4793\/u06492\/-5\/s_34539279.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-8.userapi.com\/c4793\/u06492\/-5\/m_26b298e7.jpg",
+                  "width": 0,
+                  "height": 0
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-8.userapi.com\/c4793\/u06492\/-5\/x_6f188828.jpg",
+                  "width": 0,
+                  "height": 0
+                }
+              ],
+              "text": "",
+              "date": 1297881238,
+              "post_id": 66611,
+              "access_key": "adfcc3b167f4029654"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 659,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1689,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 71,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 61376,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1297350609,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Обновлён сервис Встречи, а также появилась возможность менять порядок фотографий в альбоме прямо при его просмотре.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2373,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1340,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 40,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 56305,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1296594912,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Нововведения января: http:\/\/vkontakte.ru\/blog.php?nid=168",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2515,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1162,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 31,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 40157,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1295562354,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Обновлён сервис \"быстрые сообщения\". Теперь Вы можете легко найти и продолжить незавершённую дискуссию с помощью раздела \"Диалоги\". Искать среди друзей по имени по-прежнему можно с помощью фильтра в заголовке раздела.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 4550,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 2752,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 48,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 39990,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1295561228,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Сегодня завершился перевод всех фотографий на быстрый просмотрщик. Теперь никогда не нужно целится в маленькие ссылки страниц - все загружается само, в прямом или обратном порядке - на выбор.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 2499,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1763,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 44,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 37971,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1295473372,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Добавлены графики новых участников (по дням и за всё время) и обратной связи пользователей в обновленном разделе статистики групп.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 715,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1097,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 26,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 35759,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1295437204,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Коллеги из Facebook отреагировали на наше письмо: оба приложения для экспорта записей из ВКонтаке в Facebook разблокированы (Мои настройки — Мобильные сервисы — Экспорт в Facebook).",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 919,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1289,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 49,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 32171,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1295342205,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "В личном кабинете появилась возможность оплачивать рекламу не только за переходы, но и за показы http:\/\/vk.cc\/cwGTi",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1156,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1021,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 34,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 5396,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1295015760,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Для того, чтобы подписаться на обновления (статусы) страницы пользователя без добавления его в друзья теперь достаточно нажать ссылку \"Подписаться на обновления\" в других действиях под фотографией.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 3200,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 2963,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 54,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 767,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1294695545,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "На днях в новостях появились отметки ваших друзей на фотографиях, а также фильтр новостей по типу. А прямо сейчас добавилась возможность убирать из своей ленты отдельные записи в один клик.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 1123,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1892,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 38,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 476,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1294193064,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 456239836,
+              "album_id": 247855731,
+              "owner_id": 436240084,
+              "sizes": [
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-19.userapi.com\/c824500\/v824500380\/4eaf\/usGPaUqPhd8.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "o",
+                  "url": "https:\/\/sun9-64.userapi.com\/c824500\/v824500380\/4eb1\/mqHX38JNlp0.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "p",
+                  "url": "https:\/\/sun9-45.userapi.com\/c824500\/v824500380\/4eb2\/t-2fWa3gNWg.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "q",
+                  "url": "https:\/\/sun9-57.userapi.com\/c824500\/v824500380\/4eb3\/ZE7VgRNeKVY.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "r",
+                  "url": "https:\/\/sun9-58.userapi.com\/c824500\/v824500380\/4eb4\/gOdORKRZHQs.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-6.userapi.com\/c824500\/v824500380\/4eae\/-3wPOCU3Y6I.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-56.userapi.com\/c824500\/v824500380\/4eb0\/c9SZcAGyNs4.jpg",
+                  "width": 1,
+                  "height": 1
+                }
+              ],
+              "text": "В разделе \"комментарии\" новостей теперь при автообновлении открытые записи с новыми комментариями переходят наверх, не мешая при этом просмотру остальной ленты. Добавлена пагинация при разворачивании больших списков комментариев.",
+              "date": 1509179110,
+              "access_key": "670abe92fe3a09e0ac"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 590,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1038,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 31,
+          "user_reposted": 0
+        },
+        "edited": 1509180245
+      },
+      {
+        "id": 339,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1294102573,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 456239024,
+              "album_id": 236785049,
+              "owner_id": -130757535,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun9-36.userapi.com\/c834203\/v834203371\/516c\/J7lMZL9Yrwc.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "o",
+                  "url": "https:\/\/sun9-51.userapi.com\/c834203\/v834203371\/516e\/zlnkmyCYXXU.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "p",
+                  "url": "https:\/\/sun9-44.userapi.com\/c834203\/v834203371\/516f\/wvXe-NgiRC0.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "q",
+                  "url": "https:\/\/sun9-45.userapi.com\/c834203\/v834203371\/5170\/rwmumDh5USo.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "r",
+                  "url": "https:\/\/sun9-39.userapi.com\/c834203\/v834203371\/5171\/ulg6DtJiS2o.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun9-70.userapi.com\/c834203\/v834203371\/516b\/TIreOTjb0QU.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun9-57.userapi.com\/c834203\/v834203371\/516d\/nVtHfT940fQ.jpg",
+                  "width": 1,
+                  "height": 1
+                }
+              ],
+              "text": "Появилась возможность модерирования комментариев к фотографиям, видео, темам и заметкам, с возможностью занесения в черный список\/бан-лист, прямо из раздела \"комментарии\" новостей. Нововведение придётся особенно полезным администраторам больших групп.",
+              "date": 1509180672,
+              "access_key": "b65442785cf424aa58"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 367,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 903,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 32,
+          "user_reposted": 0
+        },
+        "edited": 1509180992
+      },
+      {
+        "id": 257,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1294080372,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Разработчики iframe приложений теперь могут встраивать свои приложения в публичные страницы в виде виджета, для этого служит опция \"Приложение можно встраивать в публичные страницы\" в настройках.",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 275,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 746,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 22,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 199,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1294077500,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "Запущен экспорт в Facebook. Включить можно в меню Мои Настройки, на вкладке Мобильные сервисы. http:\/\/vkontakte.ru\/settings.php?act=mobile",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 216,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 659,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 38,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 3,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1294056396,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "В разделе \"комментарии\" новостей появилась первая версия автообновления. Новые новости появляются сверху, а уже присутствующие дополняются кнопкой \"показать ещё .. комментария\".",
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 321,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 765,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 30,
+          "user_reposted": 0
+        }
+      },
+      {
+        "id": 2,
+        "from_id": -22822305,
+        "owner_id": -22822305,
+        "date": 1294051140,
+        "marked_as_ads": 0,
+        "post_type": "post",
+        "text": "",
+        "attachments": [
+          {
+            "type": "photo",
+            "photo": {
+              "id": 305076385,
+              "album_id": -7,
+              "owner_id": -41233643,
+              "user_id": 100,
+              "sizes": [
+                {
+                  "type": "m",
+                  "url": "https:\/\/sun1-24.userapi.com\/c840321\/v840321491\/1e7b4\/KH0m6Tp6Ro4.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "o",
+                  "url": "https:\/\/sun1-26.userapi.com\/c840321\/v840321491\/1e7b6\/XY79o4GyXpM.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "p",
+                  "url": "https:\/\/sun1-86.userapi.com\/c840321\/v840321491\/1e7b7\/xFN4EKtx2vA.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "q",
+                  "url": "https:\/\/sun1-23.userapi.com\/c840321\/v840321491\/1e7b8\/lJinisQ2ljM.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "r",
+                  "url": "https:\/\/sun1-18.userapi.com\/c840321\/v840321491\/1e7b9\/OS8B2j1QuP4.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "s",
+                  "url": "https:\/\/sun1-17.userapi.com\/c840321\/v840321491\/1e7b3\/VrGsKR98ZVU.jpg",
+                  "width": 1,
+                  "height": 1
+                },
+                {
+                  "type": "x",
+                  "url": "https:\/\/sun1-26.userapi.com\/c840321\/v840321491\/1e7b5\/gDThvlm954k.jpg",
+                  "width": 1,
+                  "height": 1
+                }
+              ],
+              "text": "В разделе новостей временно вернули ссылки на обновления друзей и групп, чтобы не терять их из виду.",
+              "date": 1372506495,
+              "post_id": 1689,
+              "access_key": "2f1b69ebb38f21ecca"
+            }
+          }
+        ],
+        "post_source": {
+          "type": "vk"
+        },
+        "comments": {
+          "count": 748,
+          "can_post": 1,
+          "groups_can_post": true
+        },
+        "likes": {
+          "count": 1813,
+          "user_likes": 0,
+          "can_like": 1,
+          "can_publish": 1
+        },
+        "reposts": {
+          "count": 92,
+          "user_reposted": 0
+        },
+        "edited": 1509148894
+      }
+    ]
+  }
+}

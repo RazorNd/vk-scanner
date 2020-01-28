@@ -1,0 +1,13 @@
+POST https://api.vk.com/method/wall.getComments
+Content-Type: application/x-www-form-urlencoded
+
+access_token={{access_token}}&need_likes=1&post_id=1010195&v=5.101&owner_id=-22822305&count=100&client_secret={{client_secret}}
+
+###
+
+POST https://api.vk.com/method/wall.get
+Content-Type: application/x-www-form-urlencoded
+
+access_token={{access_token}}&v=5.101&owner_id=-22822305&count=100&client_secret={{client_secret}}
+
+###
