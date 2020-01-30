@@ -24,3 +24,16 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.mat-list-base .sc-comment.mat-list-item {
+  &.mat-3-line {
+    height: auto;
+  }
+  p.sc-comment-text {
+    white-space: normal;
+  }
+  .mat-list-item-content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
