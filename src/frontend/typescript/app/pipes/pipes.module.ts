@@ -17,8 +17,9 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {OwnerIconPipe} from './owner-icon.pipe';
+import {SubjectReferencePipe} from "./subject-reference.pipe";
 
-const PIPES = [OwnerIconPipe];
+const PIPES = [OwnerIconPipe, SubjectReferencePipe];
 
 @NgModule({
   imports: [

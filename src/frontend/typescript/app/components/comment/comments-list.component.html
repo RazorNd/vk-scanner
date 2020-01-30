@@ -24,9 +24,7 @@
     <span class="sc-comment-date mat-small" mat-line>{{comment.dateTime | date:'medium'}}</span>
     <p *ngFor="let line of comment.text.split('\n')"
        class="sc-comment-text mat-body-strong"
-       mat-line>
-      {{line}}
-    </p>
+       mat-line [innerHTML]="line | subjectReference"></p>
     <mat-divider *ngIf="!last" [inset]="true"></mat-divider>
   </mat-list-item>
   <button (click)="showAll = !showAll" mat-button>{{showAll ? "Скрыть" : "Показать все"}}</button>
