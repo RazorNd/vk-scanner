@@ -17,24 +17,19 @@
 import {Injectable} from '@angular/core';
 import {Effect} from '@ngrx/effects';
 import {PostsLoadedAction} from '../actions/posts.actions';
-import {distinctUntilChanged, filter as filterOperator, map, switchMap} from 'rxjs/operators';
+import {filter as filterOperator, map, switchMap} from 'rxjs/operators';
 import {select, Store} from '@ngrx/store';
 import {getPostsRequest, State} from '../reducers';
 import {PostsService} from '../services/posts.service';
-import {PostsRequest} from '../reducers/posts.reducer';
-
-
-function hash({page, filter}: PostsRequest): string {
-  return `${page}${filter.from}${filter.owner}`;
-}
 
 @Injectable()
 export class PostsEffects {
 
   @Effect()
-  loadPosts$ = this.store$.pipe(select(getPostsRequest)).pipe(
+  loadPosts$ = this.store$.pipe(
+    select(getPostsRequest),
+    filterOperator(({loading}) => loading),
     filterOperator(({filter: {from}}) => Boolean(from)),
-    distinctUntilChanged(Object.is, hash),
     switchMap(({filter, page}) => this.postsService.getPosts(filter, page)),
     map(posts => new PostsLoadedAction(posts))
   );

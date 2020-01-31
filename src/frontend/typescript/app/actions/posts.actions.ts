@@ -19,39 +19,15 @@ import {Filter} from '../services/posts.service';
 import {Post} from '../models/post';
 
 export enum PostsActionTypes {
-  SearchFromChange = '[PostsAction] Search From Change',
-  SearchOwnerChange = '[PostsAction] Search Owner Change',
+  SearchChange = '[PostsAction] Search Change',
   PostsLoaded = '[PostsAction] Posts Loaded',
   GetNextPage = '[PostsAction] Get Next Page'
 }
 
-interface ChangeFilter {
-  getFilter(): Partial<Filter>;
-}
+export class SearchChangeAction implements Action {
+  readonly type = PostsActionTypes.SearchChange;
 
-export class SearchFromChangeAction implements Action, ChangeFilter {
-  readonly type = PostsActionTypes.SearchFromChange;
-
-  constructor(readonly payload: number) {
-  }
-
-  getFilter(): Partial<Filter> {
-    return {
-      from: this.payload
-    };
-  }
-}
-
-export class SearchOwnerChangeAction implements Action, ChangeFilter {
-  readonly type = PostsActionTypes.SearchOwnerChange;
-
-  constructor(readonly payload: number) {
-  }
-
-  getFilter(): Partial<Filter> {
-    return {
-      owner: this.payload
-    };
+  constructor(readonly payload: Filter) {
   }
 }
 
@@ -66,4 +42,4 @@ export class GetNextPageAction implements Action {
   readonly type = PostsActionTypes.GetNextPage;
 }
 
-export type PostsActions = SearchFromChangeAction | SearchOwnerChangeAction | PostsLoadedAction | GetNextPageAction;
+export type PostsActions = SearchChangeAction | PostsLoadedAction | GetNextPageAction;

@@ -21,11 +21,11 @@ import {Filter} from '../services/posts.service';
 export interface PostsRequest {
   page: number;
   filter: Filter;
+  loading: boolean;
 }
 
 export interface State extends PostsRequest {
   posts: Post[];
-  loading: boolean;
 }
 
 export const initialState: State = {
@@ -33,21 +33,19 @@ export const initialState: State = {
   page: 0,
   loading: false,
   filter: {
-    owner: undefined,
-    from: undefined
+    owner: null,
+    from: null
   }
 };
 
 export function reducer(state = initialState, action: PostsActions): State {
   switch (action.type) {
-    case PostsActionTypes.SearchFromChange:
-    case PostsActionTypes.SearchOwnerChange:
+    case PostsActionTypes.SearchChange:
       return {
         ...initialState,
-        loading: true,
+        loading: Boolean(action.payload.owner || action.payload.from),
         filter: {
-          ...state.filter,
-          ...action.getFilter()
+          ...action.payload
         }
       };
     case PostsActionTypes.PostsLoaded:
@@ -70,6 +68,6 @@ export const getPosts = (state: State) => state.posts;
 
 export const getPage = (state: State) => state.page;
 
-export const getPostsRequest = ({filter, page}: State): PostsRequest => ({filter, page});
+export const getPostsRequest = ({filter, page, loading}: State): PostsRequest => ({filter, page, loading});
 
 export const getFilter = (state: State) => state.filter;

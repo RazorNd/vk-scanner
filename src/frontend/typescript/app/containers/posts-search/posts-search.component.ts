@@ -14,27 +14,21 @@
  * limitations under the License.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {select, Store} from '@ngrx/store';
-import {GetNextPageAction, SearchFromChangeAction, SearchOwnerChangeAction} from '../../actions/posts.actions';
-import {
-  getFilterFromOptions,
-  getFilterOwnerOptions,
-  getFromValue,
-  getLoadedPosts,
-  getOwnerValue,
-  getPostsFilter,
-  State
-} from '../../reducers';
+import {GetNextPageAction, SearchChangeAction} from '../../actions/posts.actions';
+import {getFilterFromOptions, getFilterOwnerOptions, getLoadedPosts, getPostsFilter, State} from '../../reducers';
 import {FilterChanged} from '../../actions/filter.actions';
-import {filter, pluck, take} from 'rxjs/operators';
+import {map} from 'rxjs/operators';
+import {ActivatedRoute, Router} from '@angular/router';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'sc-posts-search',
   templateUrl: './posts-search.component.html',
   styleUrls: ['./posts-search.component.scss']
 })
-export class PostsSearchComponent {
+export class PostsSearchComponent implements OnInit, OnDestroy {
 
   posts$ = this.store.pipe(select(getLoadedPosts));
 
@@ -44,29 +38,34 @@ export class PostsSearchComponent {
 
   ownerOptions$ = this.store.pipe(select(getFilterOwnerOptions));
 
-  fromValue$ = this.store.pipe(
-    select(getFromValue),
-    take(1),
-    filter(Boolean),
-    pluck<State, string>('name')
-  );
+  private subscription: Subscription;
 
-  ownerValue$ = this.store.pipe(
-    select(getOwnerValue),
-    take(1),
-    filter(Boolean),
-    pluck<State, string>('name')
-  );
-
-  constructor(private store: Store<State>) {
+  constructor(private store: Store<State>, private route: ActivatedRoute, private router: Router) {
+    this.subscription = this.route.queryParams.pipe(
+      map(queryParams => ({from: +queryParams.f || null, owner: +queryParams.o || null})),
+      map(payload => new SearchChangeAction(payload))
+    ).subscribe(action => this.store.dispatch(action));
   }
 
-  dispatchFromChange(from: number) {
-    this.store.dispatch(new SearchFromChangeAction(from));
+  ngOnInit(): void {
+    console.log('PostsSearchComponent Init');
   }
 
-  dispatchOwnerChange(owner: number) {
-    this.store.dispatch(new SearchOwnerChangeAction(owner));
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+    console.log('PostsSearchComponent Destroy');
+  }
+
+  fromChange(from: number) {
+    return this.router.navigate([], {
+      queryParams: {f: from}
+    });
+  }
+
+  ownerChange(owner: number) {
+    return this.router.navigate([], {
+      queryParams: {o: owner}
+    });
   }
 
   dispatchFilterFromChange(from: string) {

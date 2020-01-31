@@ -53,7 +53,3 @@ export const getFilterState = (state: State) => state.filter;
 export const getFilterFromOptions = createSelector(getFilterState, fromFilter.getFromOptions);
 
 export const getFilterOwnerOptions = createSelector(getFilterState, fromFilter.getOwnerOptions);
-
-export const getFromValue = (state: State) => state.filter.fromOptions.find(from => state.posts.filter.from === from.id);
-
-export const getOwnerValue = (state: State) => state.filter.ownerOptions.find(owner => state.posts.filter.owner === owner.id);
