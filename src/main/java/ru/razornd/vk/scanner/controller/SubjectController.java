@@ -18,8 +18,8 @@ package ru.razornd.vk.scanner.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PagedResourcesAssembler;
-import org.springframework.hateoas.PagedResources;
-import org.springframework.hateoas.Resource;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.PagedModel;
 import org.springframework.web.bind.annotation.*;
 import ru.razornd.vk.scanner.model.Subject;
 import ru.razornd.vk.scanner.service.SubjectService;
@@ -37,11 +37,11 @@ public class SubjectController {
     }
 
     @GetMapping
-    public PagedResources<Resource<Subject>> getSubjects(@RequestParam("f") String filter,
-                                                         @RequestParam("type") String type,
-                                                         Pageable pageable,
-                                                         PagedResourcesAssembler<Subject> assembler) {
-        return assembler.toResource(service.findSubjects(filter, type, pageable));
+    public PagedModel<EntityModel<Subject>> getSubjects(@RequestParam("f") String filter,
+                                                        @RequestParam("type") String type,
+                                                        Pageable pageable,
+                                                        PagedResourcesAssembler<Subject> assembler) {
+        return assembler.toModel(service.findSubjects(filter, type, pageable));
     }
 
     @GetMapping("/count")
