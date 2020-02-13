@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2020 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -17,7 +16,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {OwnerIconPipe} from './owner-icon.pipe';
-import {SubjectReferencePipe} from "./subject-reference.pipe";
+import {SubjectReferencePipe} from './subject-reference.pipe';
 
 const PIPES = [OwnerIconPipe, SubjectReferencePipe];
 
