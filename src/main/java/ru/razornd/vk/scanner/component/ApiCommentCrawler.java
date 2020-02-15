@@ -61,20 +61,16 @@ public class ApiCommentCrawler implements CommentCrawler {
         @Override
         @SneakyThrows
         public Stream<WallComment> getAllComments() {
-            int count = defaultPostQuery().count(1)
-                    .needLikes(false)
-                    .execute()
-                    .getCount();
-
             return Stream.generate(this::getNextComments)
+                    .takeWhile(list -> !list.isEmpty())
                     .flatMap(List::stream)
-                    .flatMap(this::fetchThreads)
-                    .limit(count);
+                    .flatMap(this::fetchThreads);
         }
 
         Stream<WallComment> fetchThreads(WallComment wallComment) {
-            if (wallComment.getThread()
-                    .getCount() > 0) {
+            final Integer count = wallComment.getThread()
+                    .getCount();
+            if (count > 0) {
                 return concat(Stream.of(wallComment), getThreadComments(wallComment).getAllComments());
             }
             return Stream.of(wallComment);

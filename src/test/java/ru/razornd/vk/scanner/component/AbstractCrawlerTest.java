@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2020 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -28,6 +27,7 @@ import org.springframework.http.converter.FormHttpMessageConverter;
 import org.springframework.mock.http.client.MockClientHttpRequest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.client.ExpectedCount;
 import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.test.web.client.RequestMatcher;
 import org.springframework.test.web.client.response.DefaultResponseCreator;
@@ -60,22 +60,28 @@ public abstract class AbstractCrawlerTest {
     MockRestServiceServer server;
 
     protected void expectServerRequest(int page) {
-        expectServerRequest(page, formData(page * 100));
+        expectServerRequest(formData(page * 100), withSuccessResponse(page));
     }
 
-    protected void expectServerRequest(int page, RequestMatcher contentMatcher) {
-        server.expect(once(), requestTo(expectedUri()))
+    protected void expectServerRequest(RequestMatcher contentMatcher, DefaultResponseCreator responseCreator) {
+        expectServerRequest(contentMatcher, responseCreator, once());
+    }
+
+    protected void expectServerRequest(RequestMatcher contentMatcher,
+                                       DefaultResponseCreator responseCreator,
+                                       ExpectedCount count) {
+        server.expect(count, requestTo(expectedUri()))
                 .andExpect(method(POST))
                 .andExpect(content().contentType(APPLICATION_FORM_URLENCODED))
                 .andExpect(contentMatcher)
-                .andRespond(withSuccessResponse(page));
+                .andRespond(responseCreator);
     }
 
-    private RequestMatcher formData(int offset) {
+    protected RequestMatcher formData(int offset) {
         return formData(content -> content.add("offset", Integer.toString(offset)));
     }
 
-    private RequestMatcher formData(Consumer<MultiValueMap<String, String>> additionalParameters) {
+    protected RequestMatcher formData(Consumer<MultiValueMap<String, String>> additionalParameters) {
         MultiValueMap<String, String> content = new LinkedMultiValueMap<>();
 
         defaultHeaders(content);
@@ -107,9 +113,12 @@ public abstract class AbstractCrawlerTest {
         content.add("client_secret", actor.getClientSecret());
     }
 
-    private DefaultResponseCreator withSuccessResponse(int responseNumber) {
-        return withSuccess(
-                new ClassPathResource(format("api/responses/%s/response-%d.json", getType(), responseNumber + 1)),
+    protected DefaultResponseCreator withSuccessResponse(int responseNumber) {
+        return withSuccessResponse(format("response-%d", responseNumber + 1));
+    }
+
+    protected DefaultResponseCreator withSuccessResponse(String json) {
+        return withSuccess(new ClassPathResource(format("api/responses/%s/%s.json", getType(), json)),
                 APPLICATION_JSON
         );
     }

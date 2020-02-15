@@ -1,0 +1,59 @@
+{
+  "response": {
+    "count": 16,
+    "items": [
+      {
+        "id": 1010539,
+        "from_id": 332293328,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [
+          1010196
+        ],
+        "date": 1577266306,
+        "text": "Привет ❤️",
+        "likes": {
+          "count": 0,
+          "user_likes": 0,
+          "can_like": 1
+        }
+      },
+      {
+        "id": 1010540,
+        "from_id": 495193490,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [
+          1010196
+        ],
+        "date": 1577266365,
+        "text": "ухыхы",
+        "likes": {
+          "count": 0,
+          "user_likes": 0,
+          "can_like": 1
+        }
+      },
+      {
+        "id": 1010542,
+        "from_id": 164226932,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [
+          1010196
+        ],
+        "date": 1577267041,
+        "text": "Кто-нибудь знает их электронную почту по всем вопросам? \nМне очень срочно надо с ними связаться по очень срочной проблеме.",
+        "likes": {
+          "count": 0,
+          "user_likes": 0,
+          "can_like": 1
+        }
+      }
+    ],
+    "current_level_count": 3,
+    "can_post": true,
+    "show_reply_button": true,
+    "groups_can_post": true
+  }
+}

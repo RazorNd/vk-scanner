@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2020 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -41,17 +40,21 @@ public class ApiCommentCrawlerTest extends AbstractCrawlerTest {
     @Test
     public void forPost() {
 
-        expectServerRequest(0, request -> {});
         expectServerRequest(0);
+        expectServerRequest(formData(data -> data.add("comment_id", "1010196")), withSuccessResponse("thread-1010196"));
+        expectServerRequest(formData(100), withSuccessResponse("empty"));
+        expectServerRequest(formData(data -> data.add("comment_id", "1010197")), withSuccessResponse("thread-1010197"));
+        expectServerRequest(formData(100), withSuccessResponse("empty"));
         expectServerRequest(1);
         expectServerRequest(2);
+        expectServerRequest(formData(300), withSuccessResponse("empty"));
 
         final List<WallComment> comments = crawler.forPost(POST_ID, OWNER_ID)
                 .getAllComments()
                 .collect(Collectors.toList());
 
         assertThat(comments).size()
-                .isEqualTo(289);
+                .isEqualTo(16);
 
         server.verify();
     }
