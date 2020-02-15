@@ -1,6 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -16,12 +15,16 @@
 
 package ru.razornd.vk.scanner.controller;
 
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.razornd.vk.scanner.service.StartScanningService;
+
+import javax.validation.constraints.NotNull;
 
 @RestController
 @RequestMapping("/api/scan")
@@ -31,7 +34,15 @@ public class StartScanningController {
     private final StartScanningService startScanningService;
 
     @PostMapping
-    public void startScanning(@RequestBody int groupId) {
-        startScanningService.startScanning(groupId);
+    public void startScanning(@RequestBody @Validated ScanningOptions scanningOptions) {
+        startScanningService.startScanning(scanningOptions.getGroupId(), scanningOptions.getDuration());
+    }
+
+    @Data
+    private static class ScanningOptions {
+        @NotNull
+        private Integer groupId;
+        @NotNull
+        private Integer duration;
     }
 }

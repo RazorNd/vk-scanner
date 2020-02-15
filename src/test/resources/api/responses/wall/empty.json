@@ -1,0 +1,10 @@
+{
+  "response": {
+    "count": 1,
+    "items": [],
+    "current_level_count": 1,
+    "can_post": true,
+    "show_reply_button": true,
+    "groups_can_post": true
+  }
+}

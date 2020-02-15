@@ -1,6 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -25,7 +24,8 @@ import ru.razornd.vk.scanner.model.Group;
 
 import java.util.List;
 
-import static com.vk.api.sdk.queries.groups.GroupField.DESCRIPTION;
+import static com.vk.api.sdk.objects.groups.Fields.DESCRIPTION;
+
 
 @RequiredArgsConstructor
 public class ApiGroupFetcher implements GroupFetcher {

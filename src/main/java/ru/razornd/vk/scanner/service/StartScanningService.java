@@ -1,6 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -27,7 +26,7 @@ public class StartScanningService {
     private final Executor executor;
     private final ScannerService scannerService;
 
-    public void startScanning(int groupId) {
-        executor.execute(() -> scannerService.scanGroup(groupId, Period.ofMonths(3)));
+    public void startScanning(int groupId, int periodOfMonths) {
+        executor.execute(() -> scannerService.scanGroup(groupId, Period.ofMonths(periodOfMonths)));
     }
 }

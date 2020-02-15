@@ -1,6 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -19,8 +18,8 @@ package ru.razornd.vk.scanner.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PagedResourcesAssembler;
-import org.springframework.hateoas.PagedResources;
-import org.springframework.hateoas.Resource;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.PagedModel;
 import org.springframework.web.bind.annotation.*;
 import ru.razornd.vk.scanner.model.Subject;
 import ru.razornd.vk.scanner.service.SubjectService;
@@ -38,10 +37,15 @@ public class SubjectController {
     }
 
     @GetMapping
-    public PagedResources<Resource<Subject>> getSubjects(@RequestParam("f") String filter,
-                                                         @RequestParam("type") String type,
-                                                         Pageable pageable,
-                                                         PagedResourcesAssembler<Subject> assembler) {
-        return assembler.toResource(service.findSubjects(filter, type, pageable));
+    public PagedModel<EntityModel<Subject>> getSubjects(@RequestParam("f") String filter,
+                                                        @RequestParam("type") String type,
+                                                        Pageable pageable,
+                                                        PagedResourcesAssembler<Subject> assembler) {
+        return assembler.toModel(service.findSubjects(filter, type, pageable));
+    }
+
+    @GetMapping("/count")
+    public long count() {
+        return service.count();
     }
 }

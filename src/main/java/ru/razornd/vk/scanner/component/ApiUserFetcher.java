@@ -1,6 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -29,7 +28,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.vk.api.sdk.client.Lang.RU;
-import static com.vk.api.sdk.queries.users.UserField.*;
+import static com.vk.api.sdk.objects.users.Fields.*;
 
 @RequiredArgsConstructor
 public class ApiUserFetcher implements UserFetcher {

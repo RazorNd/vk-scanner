@@ -1,0 +1,79 @@
+{
+  "response": {
+    "count": 16,
+    "items": [
+      {
+        "id": 1010196,
+        "parents_stack": [],
+        "date": 1577195512,
+        "thread": {
+          "count": 3,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        },
+        "deleted": true
+      },
+      {
+        "id": 1010197,
+        "parents_stack": [],
+        "date": 1577195523,
+        "thread": {
+          "count": 1,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        },
+        "deleted": true
+      },
+      {
+        "id": 1010199,
+        "from_id": 339346826,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195533,
+        "text": "У",
+        "likes": {
+          "count": 4,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      },
+      {
+        "id": 1010200,
+        "from_id": 574764754,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195542,
+        "text": "почините уведомления плез",
+        "likes": {
+          "count": 5,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      }
+    ],
+    "current_level_count": 12,
+    "can_post": true,
+    "show_reply_button": true,
+    "groups_can_post": true
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "response": {
+    "count": 289,
+    "items": [
+      {
+        "id": 1010206,
+        "from_id": 495193490,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195617,
+        "text": "ок да",
+        "likes": {
+          "count": 1,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      },
+      {
+        "id": 1010207,
+        "from_id": 520143369,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195618,
+        "text": "Добавьте дизлайки",
+        "likes": {
+          "count": 60,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      },
+      {
+        "id": 1010208,
+        "from_id": 470442,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195641,
+        "text": "Когда wiki-разметку до ума доведёте?",
+        "likes": {
+          "count": 4,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      },
+      {
+        "id": 1010209,
+        "from_id": 43131778,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195648,
+        "text": "сколько можно, никому не интересную, xepню постить❓🤦‍♂",
+        "likes": {
+          "count": 3,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      }
+    ],
+    "current_level_count": 206,
+    "can_post": true,
+    "show_reply_button": true,
+    "groups_can_post": true
+  }
+}

@@ -1,6 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -18,7 +17,7 @@ package ru.razornd.vk.scanner.component;
 
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.ServiceActor;
-import com.vk.api.sdk.objects.wall.WallPostFull;
+import com.vk.api.sdk.objects.wall.WallpostFull;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 
@@ -44,8 +43,9 @@ public class ApiPostCrawler implements PostCrawler {
 
         @Override
         @SneakyThrows
-        public List<WallPostFull> getNextPosts() {
-            return client.wall().get(actor)
+        public List<WallpostFull> getNextPosts() {
+            return client.wall()
+                    .get(actor)
                     .ownerId(-groupId)
                     .count(COUNT)
                     .offset(COUNT * offset++)
@@ -54,7 +54,7 @@ public class ApiPostCrawler implements PostCrawler {
         }
 
         @Override
-        public Stream<WallPostFull> getAllPosts() {
+        public Stream<WallpostFull> getAllPosts() {
             return Stream.generate(this::getNextPosts)
                     .takeWhile(list -> !list.isEmpty())
                     .flatMap(List::stream);

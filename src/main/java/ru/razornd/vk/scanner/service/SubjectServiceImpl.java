@@ -1,6 +1,5 @@
 /*
- * Copyright 2019 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -53,6 +52,11 @@ public class SubjectServiceImpl implements SubjectService {
     @Override
     public Page<Subject> findSubjects(String filter, String type, Pageable pageable) {
         return repository.findByName(filter, pageable);
+    }
+
+    @Override
+    public long count() {
+        return repository.count();
     }
 
     private int prepareId(int subjectId) {

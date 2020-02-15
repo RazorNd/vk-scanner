@@ -1,0 +1,158 @@
+{
+  "response": {
+    "count": 289,
+    "items": [
+      {
+        "id": 1010201,
+        "from_id": 276841584,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195571,
+        "text": "",
+        "likes": {
+          "count": 5,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "attachments": [
+          {
+            "type": "sticker",
+            "sticker": {
+              "product_id": 33,
+              "sticker_id": 1172,
+              "images": [
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-64",
+                  "width": 64,
+                  "height": 64
+                },
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-128",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-256",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-352",
+                  "width": 352,
+                  "height": 352
+                },
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-512",
+                  "width": 512,
+                  "height": 512
+                }
+              ],
+              "images_with_background": [
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-64b",
+                  "width": 64,
+                  "height": 64
+                },
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-128b",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-256b",
+                  "width": 256,
+                  "height": 256
+                },
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-352b",
+                  "width": 352,
+                  "height": 352
+                },
+                {
+                  "url": "https:\/\/vk.com\/sticker\/1-1172-512b",
+                  "width": 512,
+                  "height": 512
+                }
+              ]
+            }
+          }
+        ],
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      },
+      {
+        "id": 1010203,
+        "from_id": 457708620,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195600,
+        "text": "уведомления приходят после 12 минут после публикации записи, фикс просим",
+        "likes": {
+          "count": 3,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      },
+      {
+        "id": 1010204,
+        "from_id": 495193490,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195606,
+        "text": "ета шо",
+        "likes": {
+          "count": 4,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      },
+      {
+        "id": 1010205,
+        "from_id": 495193490,
+        "post_id": 1010195,
+        "owner_id": -22822305,
+        "parents_stack": [],
+        "date": 1577195615,
+        "text": "пак стикеров скиньте по братски",
+        "likes": {
+          "count": 2,
+          "user_likes": 0,
+          "can_like": 1
+        },
+        "thread": {
+          "count": 0,
+          "items": [],
+          "can_post": true,
+          "show_reply_button": true,
+          "groups_can_post": true
+        }
+      }
+    ],
+    "current_level_count": 206,
+    "can_post": true,
+    "show_reply_button": true,
+    "groups_can_post": true
+  }
+}

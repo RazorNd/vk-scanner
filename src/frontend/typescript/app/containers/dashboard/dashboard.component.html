@@ -1,0 +1,33 @@
+<!--
+  ~ Copyright 2020 Daniil <razornd> Razorenov
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <section class="dashboard">
+    <div class="dashboard-card full-width">
+      <sc-dashboard-card title="Скорость сканирования">
+        <sc-scan-speed></sc-scan-speed>
+      </sc-dashboard-card>
+    </div>
+    <div class="dashboard-card half-width">
+      <sc-start-scanning></sc-start-scanning>
+    </div>
+    <div class="dashboard-card half-width stats">
+      <sc-dashboard-card title="Количество">
+        <sc-stats></sc-stats>
+      </sc-dashboard-card>
+    </div>
+  </section>
+</div>
