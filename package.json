@@ -29,15 +29,15 @@
     "core-js": "^3.2.1",
     "hammerjs": "^2.0.8",
     "ng2-charts": "^2.3.0",
-    "ngx-gauge": "1.0.0-beta.10",
+    "ngx-gauge": "^1.1.0",
     "ngx-infinite-scroll": "^8.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.23",
-    "@angular/cli": "^8.3.23",
+    "@angular-devkit/build-angular": "^0.803.25",
+    "@angular/cli": "^8.3.25",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "^8.2.14",
     "@ngrx/schematics": "^8.6.0",
