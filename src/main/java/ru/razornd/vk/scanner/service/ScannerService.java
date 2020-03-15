@@ -84,7 +84,6 @@ public class ScannerService {
                 .build();
     }
 
-    @SuppressWarnings("WeakerAccess")
     public void scanGroup(int groupId, Period period) {
         final AtomicInteger counter = new AtomicInteger(0);
         final Instant startDateTime = now().minus(period).toInstant();
