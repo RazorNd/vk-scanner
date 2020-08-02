@@ -75,4 +75,17 @@ public class ApiCommentCrawlerTest extends AbstractCrawlerTest {
     protected String expectedUri() {
         return "https://api.vk.com/method/wall.getComments";
     }
+
+    @Test
+    public void problemJson() {
+        expectServerRequest(formData(0), withSuccessResponse("problem"));
+        expectServerRequest(formData(100), withSuccessResponse("empty"));
+
+        final List<WallComment> comments = crawler.forPost(POST_ID, OWNER_ID)
+                .getAllComments()
+                .collect(Collectors.toList());
+
+        assertThat(comments).size()
+                .isEqualTo(24);
+    }
 }
