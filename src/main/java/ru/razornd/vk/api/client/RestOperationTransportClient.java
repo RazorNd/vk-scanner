@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2020 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -33,9 +32,8 @@ public class RestOperationTransportClient implements TransportClient {
     private final RestOperations operations;
 
     public RestOperationTransportClient(RestTemplateBuilder builder) {
-        builder.errorHandler(new IgnoreErrorHandler());
-
-        operations = builder.build();
+        operations = builder.errorHandler(new IgnoreErrorHandler())
+                .build();
     }
 
     @Override
