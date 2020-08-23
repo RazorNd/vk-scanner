@@ -20,10 +20,13 @@ import com.google.gson.GsonBuilder;
 import com.vk.api.sdk.client.TransportClient;
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.ServiceActor;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import ru.razornd.vk.api.client.RestOperationTransportClient;
 import ru.razornd.vk.scanner.gson.URLTypeAdapter;
 import ru.razornd.vk.scanner.properties.ClientProperty;
@@ -38,7 +41,13 @@ public class ApiConfiguration {
 
     @Bean
     public TransportClient transportClient(RestTemplateBuilder builder) {
-        return new RestOperationTransportClient(builder);
+        final CloseableHttpClient httpClient = HttpClientBuilder.create()
+                .useSystemProperties()
+                .disableCookieManagement()
+                .build();
+
+        return new RestOperationTransportClient(builder.requestFactory(() -> new HttpComponentsClientHttpRequestFactory(
+                httpClient)));
     }
 
     @Bean
