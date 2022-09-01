@@ -17,7 +17,6 @@ package ru.razornd.vk.scanner.component;
 
 import com.vk.api.sdk.client.VkApiClient;
 import com.vk.api.sdk.client.actors.ServiceActor;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.client.RestClientTest;
 import org.springframework.core.io.ClassPathResource;
@@ -26,7 +25,7 @@ import org.springframework.http.HttpInputMessage;
 import org.springframework.http.converter.FormHttpMessageConverter;
 import org.springframework.mock.http.client.MockClientHttpRequest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.client.ExpectedCount;
 import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.test.web.client.RequestMatcher;
@@ -48,9 +47,9 @@ import static org.springframework.test.web.client.ExpectedCount.once;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.*;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
-@RestClientTest(ApiConfiguration.class)
+@RestClientTest
+@ContextConfiguration(classes = ApiConfiguration.class)
 @ActiveProfiles("test")
-@RunWith(SpringRunner.class)
 public abstract class AbstractCrawlerTest {
     @Autowired
     VkApiClient client;

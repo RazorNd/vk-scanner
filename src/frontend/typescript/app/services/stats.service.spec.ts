@@ -25,29 +25,29 @@ import {TestScheduler} from 'rxjs/testing';
 
 describe('StatsService', () => {
 
-  let subjectService: jasmine.SpyObj<SubjectService>;
-  let postsService: jasmine.SpyObj<PostsService>;
-  let commentsService: jasmine.SpyObj<CommentsService>;
+  const subjectService = jasmine.createSpyObj('SubjectService', ['count']);
+  const postsService = jasmine.createSpyObj('PostsService', ['count']);
+  const commentsService = jasmine.createSpyObj('CommentsService', ['count']);
+
+  let service: StatsService;
 
   beforeEach(() => {
+
     TestBed.configureTestingModule({
       providers: [
         StatsService,
-        {provide: SubjectService, useValue: jasmine.createSpyObj('SubjectService', ['count'])},
-        {provide: PostsService, useValue: jasmine.createSpyObj('PostsService', ['count'])},
-        {provide: CommentsService, useValue: jasmine.createSpyObj('CommentsService', ['count'])},
+        {provide: SubjectService, useValue: subjectService},
+        {provide: PostsService, useValue: postsService},
+        {provide: CommentsService, useValue: commentsService},
         // {provide: scheduler, useValue: getTestScheduler()}
       ]
     });
-
-    subjectService = TestBed.get(SubjectService);
-    postsService = TestBed.get(PostsService);
-    commentsService = TestBed.get(CommentsService);
-    TestBed.get(StatsService).scheduler = getTestScheduler();
+    service = TestBed.inject(StatsService);
+    service.scheduler = getTestScheduler();
+    [subjectService.count, postsService.count, commentsService.count].forEach(f => f.calls.reset());
   });
 
   it('should be created', () => {
-    const service: StatsService = TestBed.get(StatsService);
     expect(service).toBeTruthy();
   });
 
@@ -70,7 +70,6 @@ describe('StatsService', () => {
       commentsCount: 200
     };
     mockResults(stats);
-    const service: StatsService = TestBed.get(StatsService);
 
     expect(service.getStat()).toBeObservable(cold('----(r|)', {
       r: stats
@@ -88,7 +87,6 @@ describe('StatsService', () => {
       commentsCount: 200
     };
     mockResults(stats);
-    const service: StatsService = TestBed.get(StatsService);
     const testScheduler: TestScheduler = service.scheduler as TestScheduler;
 
     testScheduler.maxFrames = 3100;

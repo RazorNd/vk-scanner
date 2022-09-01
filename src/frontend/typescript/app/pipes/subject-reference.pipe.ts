@@ -31,7 +31,7 @@ export class SubjectReferencePipe implements PipeTransform {
   }
 
   private spanWrapper(classes: string): (substring: string, ...args: any[]) => string {
-    return (_, name) => `<span class="${classes}">${name}</span>`
+    return (_, name) => `<span class="${classes}">${name}</span>`;
   }
 
 }

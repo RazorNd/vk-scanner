@@ -20,7 +20,7 @@ import {POSTS} from '../stubs/posts.stub';
 import {createBackendPagedResponse} from '../models/backend-paged-response';
 import {Observable} from 'rxjs';
 import {HttpRequest} from '@angular/common/http';
-import {isArrayLike} from 'rxjs/internal-compatibility';
+import {isArrayLike} from 'rxjs/internal/util/isArrayLike';
 
 type RequestCreator<T> = (service: PostsService) => Observable<T>;
 

@@ -30,7 +30,7 @@ import {ScanSpeedComponent} from './scan-speed/scan-speed.component';
 import {StartScanningComponent} from './start-scanning/start-scanning.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {StatsComponent} from './stats/stats.component';
-import {ChartsModule} from 'ng2-charts';
+import {NgChartsModule as ChartsModule} from 'ng2-charts';
 
 export const COMPONENTS = [
   DashboardComponent,

@@ -16,8 +16,8 @@
 package ru.razornd.vk.scanner.component;
 
 import com.vk.api.sdk.objects.wall.WallComment;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.util.MultiValueMap;
 
 import java.util.List;
@@ -32,7 +32,7 @@ public class ApiCommentCrawlerTest extends AbstractCrawlerTest {
 
     ApiCommentCrawler crawler;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         crawler = new ApiCommentCrawler(client, actor);
     }
@@ -74,5 +74,18 @@ public class ApiCommentCrawlerTest extends AbstractCrawlerTest {
     @Override
     protected String expectedUri() {
         return "https://api.vk.com/method/wall.getComments";
+    }
+
+    @Test
+    public void problemJson() {
+        expectServerRequest(formData(0), withSuccessResponse("problem"));
+        expectServerRequest(formData(100), withSuccessResponse("empty"));
+
+        final List<WallComment> comments = crawler.forPost(POST_ID, OWNER_ID)
+                .getAllComments()
+                .collect(Collectors.toList());
+
+        assertThat(comments).size()
+                .isEqualTo(24);
     }
 }

@@ -15,14 +15,12 @@
 
 package ru.razornd.vk.scanner.repository;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.data.mongodb.core.MongoOperations;
-import org.springframework.test.context.junit4.SpringRunner;
 import ru.razornd.vk.scanner.model.Group;
 import ru.razornd.vk.scanner.model.User;
 import ru.razornd.vk.scanner.stub.Users;
@@ -30,7 +28,6 @@ import ru.razornd.vk.scanner.stub.Users;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataMongoTest
-@RunWith(SpringRunner.class)
 public class SubjectRepositoryTest {
 
     private static final int ID = 123;
@@ -48,12 +45,12 @@ public class SubjectRepositoryTest {
     @Autowired
     MongoOperations operations;
 
-    @After
+    @AfterEach
     public void clean() {
         repository.deleteAll();
     }
 
-    @Before
+    @BeforeEach
     public void insertDefault() {
         repository.save(USER);
         repository.save(GROUP);

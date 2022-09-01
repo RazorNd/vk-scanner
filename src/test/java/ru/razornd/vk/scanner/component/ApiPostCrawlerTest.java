@@ -17,8 +17,8 @@
 package ru.razornd.vk.scanner.component;
 
 import com.vk.api.sdk.objects.wall.WallpostFull;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.util.MultiValueMap;
 
 import java.util.List;
@@ -33,7 +33,7 @@ public class ApiPostCrawlerTest extends AbstractCrawlerTest {
 
     ApiPostCrawler crawler;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         crawler = new ApiPostCrawler(client, actor);
     }

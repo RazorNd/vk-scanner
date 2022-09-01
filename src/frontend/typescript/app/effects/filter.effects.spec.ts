@@ -45,7 +45,7 @@ describe('FilterEffects', () => {
       ]
     });
 
-    effects = TestBed.get(FilterEffects);
+    effects = TestBed.inject(FilterEffects);
   });
 
   it('should be created', () => {

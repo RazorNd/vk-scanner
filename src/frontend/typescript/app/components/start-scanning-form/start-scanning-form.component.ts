@@ -23,8 +23,8 @@ import {ScanningOptions} from '../../models/scanning-options';
   styleUrls: ['./start-scanning-form.component.scss']
 })
 export class StartScanningFormComponent {
-  startScanningForm = this.fb.group({
-    groupId: [null, Validators.compose([
+  startScanningForm = this.fb.nonNullable.group({
+    groupId: ['', Validators.compose([
       Validators.required,
       Validators.min(1)
     ])],
@@ -43,7 +43,7 @@ export class StartScanningFormComponent {
   }
 
   onSubmit() {
-    this.startScanning.emit(this.startScanningForm.value);
+    this.startScanning.emit(this.startScanningForm.getRawValue());
     this.startScanningForm.reset();
     this.form.resetForm();
   }

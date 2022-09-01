@@ -1,6 +1,5 @@
 /*
- * Copyright (c) 2020 Daniil <razornd> Razorenov
- *
+ * Copyright 2020 Daniil <razornd> Razorenov
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -21,10 +20,10 @@ import com.vk.api.sdk.client.TransportClient;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.*;
 import org.springframework.http.client.ClientHttpResponse;
+import org.springframework.lang.NonNull;
 import org.springframework.web.client.ResponseErrorHandler;
 import org.springframework.web.client.RestOperations;
 
-import javax.annotation.Nonnull;
 import java.io.File;
 import java.util.Optional;
 
@@ -33,9 +32,8 @@ public class RestOperationTransportClient implements TransportClient {
     private final RestOperations operations;
 
     public RestOperationTransportClient(RestTemplateBuilder builder) {
-        builder.errorHandler(new IgnoreErrorHandler());
-
-        operations = builder.build();
+        operations = builder.errorHandler(new IgnoreErrorHandler())
+                .build();
     }
 
     @Override
@@ -109,9 +107,9 @@ public class RestOperationTransportClient implements TransportClient {
 
     private static class IgnoreErrorHandler implements ResponseErrorHandler {
         @Override
-        public boolean hasError(@Nonnull ClientHttpResponse response) { return false; }
+        public boolean hasError(@NonNull ClientHttpResponse response) { return false; }
 
         @Override
-        public void handleError(@Nonnull ClientHttpResponse response) { }
+        public void handleError(@NonNull ClientHttpResponse response) { }
     }
 }

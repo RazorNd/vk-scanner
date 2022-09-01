@@ -17,24 +17,20 @@
 package ru.razornd.vk.scanner.component;
 
 import com.vk.api.sdk.objects.wall.WallComment;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.mongo.embedded.EmbeddedMongoAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Disabled("Because CI can't provide application-dev.yml and rate-miter for API not implemented")
 @SpringBootTest
-@EnableAutoConfiguration(exclude = EmbeddedMongoAutoConfiguration.class)
 @ActiveProfiles("dev")
-@RunWith(SpringRunner.class)
 public class CommentCrawlerTest {
 
     @Autowired
