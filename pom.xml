@@ -30,7 +30,7 @@
     <description>VK comment scanner</description>
 
     <properties>
-        <java.version>9</java.version>
+        <java.version>17</java.version>
         <vk.sdk.version>1.0.6</vk.sdk.version>
         <commons-io.version>2.11.0</commons-io.version>
     </properties>
