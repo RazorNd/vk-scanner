@@ -14,7 +14,7 @@
  */
 
 import {Injectable} from '@angular/core';
-import {Effect} from '@ngrx/effects';
+import {createEffect} from '@ngrx/effects';
 import {PostsLoadedAction} from '../actions/posts.actions';
 import {filter as filterOperator, map, switchMap} from 'rxjs/operators';
 import {select, Store} from '@ngrx/store';
@@ -24,14 +24,13 @@ import {PostsService} from '../services/posts.service';
 @Injectable()
 export class PostsEffects {
 
-  @Effect()
-  loadPosts$ = this.store$.pipe(
+  loadPosts$ = createEffect(() => this.store$.pipe(
     select(getPostsRequest),
     filterOperator(({loading}) => loading),
     filterOperator(({filter: {from}}) => Boolean(from)),
     switchMap(({filter, page}) => this.postsService.getPosts(filter, page)),
     map(posts => new PostsLoadedAction(posts))
-  );
+  ));
 
   constructor(private postsService: PostsService, private store$: Store<State>) {
   }

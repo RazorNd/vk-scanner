@@ -14,7 +14,7 @@
  */
 
 import {Injectable} from '@angular/core';
-import {Actions, Effect, ofType} from '@ngrx/effects';
+import {Actions, createEffect, ofType} from '@ngrx/effects';
 import {FilterActions, FilterActionTypes, OptionsLoaded, OptionsLoadedFailed} from '../actions/filter.actions';
 import {SubjectService} from '../services/subject.service';
 import {catchError, map, switchMap} from 'rxjs/operators';
@@ -25,14 +25,13 @@ import {of} from 'rxjs';
 @Injectable()
 export class FilterEffects {
 
-  @Effect()
-  loadOptions$ = this.actions$.pipe(
+  loadOptions$ = createEffect(() => this.actions$.pipe(
     ofType(FilterActionTypes.FilterChanged),
     switchMap(action => this.subjectService.loadSubject(action.filter, SubjectType.all).pipe(
       map(subjects => new OptionsLoaded(subjects, action.optionsType)),
       catchError((err) => of(new OptionsLoadedFailed(err, action.optionsType)))
     ))
-  );
+  ));
 
   constructor(private actions$: Actions<FilterActions>,
               private subjectService: SubjectService) {
