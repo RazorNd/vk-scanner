@@ -15,23 +15,21 @@
 
 package ru.razornd.vk.scanner.repository;
 
-import org.junit.After;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.data.mongodb.core.MongoOperations;
-import org.springframework.test.context.junit4.SpringRunner;
 import ru.razornd.vk.scanner.model.Comment;
 
 import java.time.Instant;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @DataMongoTest
-@RunWith(SpringRunner.class)
 public class CommentRepositoryTest {
 
     @Autowired
@@ -40,7 +38,7 @@ public class CommentRepositoryTest {
     @Autowired
     MongoOperations operations;
 
-    @After
+    @AfterEach
     public void tearDown() {
         repository.deleteAll();
     }
@@ -66,7 +64,7 @@ public class CommentRepositoryTest {
                 .isNotEmpty();
     }
 
-    @Test(expected = DuplicateKeyException.class)
+    @Test
     public void duplicate() {
         repository.insert(Comment.builder()
                 .id(Comment.key(1, 1, 1))
@@ -74,11 +72,12 @@ public class CommentRepositoryTest {
                 .text("test comment")
                 .build());
 
-        repository.insert(Comment.builder()
-                .id(Comment.key(1, 1, 1))
-                .dateTime(Instant.now())
-                .text("test comment")
-                .build());
+        assertThatThrownBy(() -> repository.insert(Comment.builder()
+                                                           .id(Comment.key(1, 1, 1))
+                                                           .dateTime(Instant.now())
+                                                           .text("test comment")
+                                                           .build()))
+                .isInstanceOf(DuplicateKeyException.class);
     }
 
     @Test

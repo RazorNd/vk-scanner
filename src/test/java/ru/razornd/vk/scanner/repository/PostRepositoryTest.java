@@ -15,25 +15,22 @@
 
 package ru.razornd.vk.scanner.repository;
 
-import org.junit.After;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
-import org.springframework.test.context.junit4.SpringRunner;
 import ru.razornd.vk.scanner.model.Comment;
 import ru.razornd.vk.scanner.model.Group;
 import ru.razornd.vk.scanner.model.Post;
 
 import java.time.Instant;
+import java.util.List;
 import java.util.Optional;
 
-import static de.flapdoodle.embed.process.collections.Collections.newArrayList;
 import static org.assertj.core.api.Assertions.assertThat;
 import static ru.razornd.vk.scanner.stub.Users.createUser;
 
 @DataMongoTest
-@RunWith(SpringRunner.class)
 public class PostRepositoryTest {
 
     private static final Post.PostKey POST_KEY = Post.key(1, 1);
@@ -44,7 +41,7 @@ public class PostRepositoryTest {
     @Autowired
     CommentRepository commentRepository;
 
-    @After
+    @AfterEach
     public void tearDown() {
         commentRepository.deleteAll();
         postRepository.deleteAll();
@@ -58,7 +55,7 @@ public class PostRepositoryTest {
                 .from(createUser())
                 .owner(Group.builder().id(-1).build())
                 .text("Test POSTS")
-                .comments(newArrayList(
+                .comments(List.of(
                         Comment.builder()
                                 .id(Comment.key(1, 1, 1))
                                 .dateTime(Instant.now())

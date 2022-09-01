@@ -20,10 +20,10 @@ import com.vk.api.sdk.client.TransportClient;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.*;
 import org.springframework.http.client.ClientHttpResponse;
+import org.springframework.lang.NonNull;
 import org.springframework.web.client.ResponseErrorHandler;
 import org.springframework.web.client.RestOperations;
 
-import javax.annotation.Nonnull;
 import java.io.File;
 import java.util.Optional;
 
@@ -107,9 +107,9 @@ public class RestOperationTransportClient implements TransportClient {
 
     private static class IgnoreErrorHandler implements ResponseErrorHandler {
         @Override
-        public boolean hasError(@Nonnull ClientHttpResponse response) { return false; }
+        public boolean hasError(@NonNull ClientHttpResponse response) { return false; }
 
         @Override
-        public void handleError(@Nonnull ClientHttpResponse response) { }
+        public void handleError(@NonNull ClientHttpResponse response) { }
     }
 }
